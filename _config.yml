@@ -3,19 +3,19 @@
 #------------------------------------------------------------
 
 # Domain for searches.
-domain: "https://gvwilson.github.io/new-lesson-example"
+domain: "https://data-lessons.github.io/library-data-intro"
 
 # URL for repository.
-repo: "https://github.com/gvwilson/new-lesson-example"
+repo: "https://github.com/library-data-intro"
 
 # Root URL for lesson below domain.
-root: "/new-lesson-example"
+root: "/library-data-intro"
 
 # Overall lesson title.
-title: "Lesson Example"
+title: "Data Intro for Librarians"
 
 # Contact email address.
-email: gvwilson@software-carpentry.org
+email: macdonellc4@macewan.ca
 
 # What kind of thing is this ("workshop", "lesson")?
 kind: "lesson"
