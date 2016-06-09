@@ -1,266 +1,215 @@
----
-layout: page
-title: "Instructors' Guide"
-permalink: /guide/
----
+% Library Carpentry
+% Introduction to Data
+% This work is licensed under a Creative Commons Attribution 4.0 International [License](http://creativecommons.org/licenses/by/4.0/). Exceptions: logos, embeds to and from external sources and direct quotations
 
-##Library Carpentry
-###Introduction to Data
+# Where to go for help
 
-This work is licensed under a Creative Commons Attribution 4.0 International [License](http://creativecommons.org/licenses/by/4.0/). Exceptions: logos, embeds to and from external sources and direct quotations
+*There are many places!*
 
- {#section-1 style="page-break-before:always; "}
+### Stickers
 
-##Where to go for help
+### Helpers
 
-Stickers
+### Sticky notes
 
-Helpers
+### github.com/???
 
-Sticky notes
+# Week 1: Introduction to Data
 
-github.com/???
+## Introduction
 
- {#section-2 style="page-break-before:always; "}
+## Jargon Busting
 
-##Week 1: Introduction to Data
+## Foundations
 
-Introduction
+## Regular Expressions
 
-Jargon Busting
+## Handout & Quiz
 
-Foundations
+# Jargon Busting
 
-Regular Expressions
+### Teams of 5 or 6
 
-Handout & Quiz
+### Write terms you want busting on stickies
 
- {#section-3 style="page-break-before:always; "}
+### Cluster (retaining duplicates)
 
-##Jargon Busting
+### Discuss and explain
 
-Teams of 5 or 6
+### Note resolved terms
 
-Write terms you want busting on stickies
+### Note unresolved terms
 
-Cluster (retaining duplicates)
+### Report back
 
-Discuss and explain
+# Foundations
 
-Note resolved terms
+## The Computer is Stupid
 
-Note unresolved terms
+## Why automate
 
-Report back
+## Keyboard shortcuts are your friend
 
- {#section-4 style="page-break-before:always; "}
+## Plain text formats are your friend
 
-##Foundations
+## Structuring files and folders
 
-*The Computer is Stupid*
+# Foundations
 
-*Why automate*
+## The Computer is Stupid
+	
+### ERROR
 
-*Keyboard shortcuts are your friend*
+# Foundations
 
-*Plain text formats are your friend*
+## Why automate?
+	
+### Borrow, borrow, borrow
+	
+### There is no correct language
+	
+### Professional development
+	
+### Knowing some code \~ evaluating software
+	
+### Making time to do fun stuff!
+	
+#### Andromeda Yelton, "Coding for Librarians: Learning by Example", *Library Technology Reports* 51:3 (April 2015), [doi: 10.5860/ltr.51n3](http://dx.doi.org/10.5860/ltr.51n3)
 
-*Structuring files and folders*
+# Foundations
 
- {#section-5 style="page-break-before:always; "}
-
-##Foundations
-
-*The Computer is Stupid*
-
-ERROR
-
- {#section-6 style="page-break-before:always; "}
-
-##Foundations
-
-*Why automate?*
-
-Borrow, borrow, borrow
-
-There is no correct language
-
-Professional development
-
-Knowing some code \~ evaluating software
-
-Making time to do fun stuff!
-
-Andromeda Yelton, "Coding for Librarians: Learning by Example", *Library Technology Reports* 51:3 (April 2015), [doi: 10.5860/ltr.51n3](http://dx.doi.org/10.5860/ltr.51n3)
-
- {#section-7 style="page-break-before:always; "}
-
-##Foundations
-
-*Why automate?*
-
+## Why automate?
+	
 Credit: [Andy Kirk](https://twitter.com/visualisingdata/statuses/621957383464599552?tw_i=621957383464599552&tw_e=media&tw_p=archive)
 
- {#section-8 style="page-break-before:always; "}
+# Foundations
 
-##Foundations
+## Keyboard shortcuts are your friend
+	
+### Efficiency and control
 
-*Keyboard shortcuts are your friend*
+# Foundations
 
-Efficiency and control
+## Plain text formats are your friend
+	
+### Computers process them better
+	
+### Platform agnostic
+	
+### Display orientated files aren't your friend
+	
+### Markdown
 
- {#section-9 style="page-break-before:always; "}
+# Foundations
 
-##Foundations
+## Structuring files and folders
+	
+### Consistent and predictable data structure
+	
+### Semantic-data hybrid directory names
+	
+### Your own system is fine
+	
+### Links files and directories with names
 
-*Plain text formats are your friend*
+# You are the most likely person to forget what you once did!
 
-Computers process them better
+# Regular Expressions
 
-Platform agnostic
+### Match on types of character
 
-Display orientated files aren't your friend
+### Match patterns
 
-Markdown
+### Capture the parts that match your pattern
 
- {#section-10 style="page-break-before:always; "}
+# Regular Expressions
 
-##Foundations
+## `organi[sz]e`
 
-*Structuring files and folders*
+### organise (match)
+	
+### organize (match)
+	
+### reorganise (match part so will also find)
+	
+### reorganize (match part so will also find)
 
-Consistent and predictable data structure
+# Regular Expressions
 
-Semantic-data hybrid directory names
+### `[ABC]` matches A or B or C.
 
-Your own system is fine
+### `[A-Z]` matches any upper case letter.
 
-Links files and directories with names
+### `[A-Za-z0-9]` matches any upper or lower case letter or any digit.
 
-##You are the most likely person to forget what you once did!
+# Regular Expressions
 
- {#section-11 style="page-break-before:always; "}
+### `.` matches any character at all.
 
-##Regular Expressions
+### `\d` matches any single digit.
 
-Match on types of character
+### `\w` matches any part of word character.
 
-Match patterns
+### `\s` matches any space, tab, or newline.
 
-Capture the parts that match your pattern
+### `\b` matches a word boundary.
 
- {#section-12 style="page-break-before:always; "}
+### `^` asserts start of the line.
 
-##Regular Expressions
+### `$` asserts end of the line
 
-#organi[sz]e
+# Regular Expressions
 
-organise (match)
+## `^\[Oo\]rgani.e\b`
 
-organize (match)
+# Regular Expressions
 
-reorganise (match part so will also find)
+### `*` matches proceeding character any number of times including zero.
 
-reorganize (match part so will also find)
+### `+` matches proceeding character any number of times excluding zero.
 
- {#section-13 style="page-break-before:always; "}
+### `?` matches the proceeding character one or zero times.
 
-##Regular Expressions
+### `{VALUE,VALUE}` matches proceeding character a defined number of times.
 
-[ABC] matches A or B or C.
+### `|` simply means or.
 
-[A-Z] matches any upper case letter.
+# Regular Expressions
 
-[A-Za-z0-9] matches any upper or lower case letter or any digit.
+## `^[Oo]rgani.e\w\*`
 
- {#section-14 style="page-break-before:always; "}
+# Regular Expressions
 
-##Regular Expressions
+## `[Oo]rgani.e\w+$`
 
-. matches any character at all.
+# Regular Expressions
 
-\d matches any single digit.
+## `^[Oo]rgani.e\w?\b`
 
-\w matches any part of word character.
+# Regular Expressions
 
-\s matches any space, tab, or newline.
+## `^[Oo]rgani.e\w?$`
 
-\b matches a word boundary.
+# Regular Expressions
 
-^ asserts start of the line.
+## `\b[Oo]rgani.e\w{2}\b`
 
-$ asserts end of the line
+# Regular Expressions
 
- {#section-15 style="page-break-before:always; "}
+## `\b[Oo]rgani.e\b|\b[Oo]rgani.e\w{1}\b`
 
-##Regular Expressions
+# Regular Expressions
 
-#^\[Oo\]rgani.e\b
+## Teams of 4
 
- {#section-16 style="page-break-before:always; "}
+### Work through excerise
 
-##Regular Expressions
+### Split into two teams and write:
+	
+#### strings that need regex
 
-\* matches proceeding character any number of times including zero.
+#### regex that need outputs
 
-\+ matches proceeding character any number of times excluding zero.
+### Test each other!
 
-? matches the proceeding character one or zero times.
-
-{VALUE,VALUE} matches proceeding character a defined number of times.
-
-| simply means or.
-
- {#section-17 style="page-break-before:always; "}
-
-##Regular Expressions
-
-#^[Oo]rgani.e\w\*
-
- {#section-18 style="page-break-before:always; "}
-
-##Regular Expressions
-
-#[Oo]rgani.e\w+$
-
- {#section-19 style="page-break-before:always; "}
-
-##Regular Expressions
-
-#^[Oo]rgani.e\w?\b
-
- {#section-20 style="page-break-before:always; "}
-
-##Regular Expressions
-
-#^[Oo]rgani.e\w?$
-
- {#section-21 style="page-break-before:always; "}
-
-##Regular Expressions
-
-#\b[Oo]rgani.e\w{2}\b
-
- {#section-22 style="page-break-before:always; "}
-
-##Regular Expressions
-
-#\b[Oo]rgani.e\b|\b[Oo]rgani.e\w{1}\b
-
- {#section-23 style="page-break-before:always; "}
-
-##Regular Expressions
-
-Teams of 4
-
-Work through excerise
-
-Split into two teams and write:
-
-- strings that need regex
-
-- regex that need outputs
-
-Test each other!
-
-After the session: take the quiz!
+### After the session: take the quiz!
