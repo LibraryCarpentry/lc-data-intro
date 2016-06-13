@@ -1,3 +1,9 @@
+---
+layout: page
+title: "Instructors' Guide"
+permalink: /guide/
+---
+
 % Library Carpentry
 % Introduction to Data
 % This work is licensed under a Creative Commons Attribution 4.0 International [License](http://creativecommons.org/licenses/by/4.0/). Exceptions: logos, embeds to and from external sources and direct quotations
@@ -57,59 +63,59 @@
 # Foundations
 
 ## The Computer is Stupid
-	
+
 ### ERROR
 
 # Foundations
 
 ## Why automate?
-	
+
 ### Borrow, borrow, borrow
-	
+
 ### There is no correct language
-	
+
 ### Professional development
-	
+
 ### Knowing some code \~ evaluating software
-	
+
 ### Making time to do fun stuff!
-	
+
 #### Andromeda Yelton, "Coding for Librarians: Learning by Example", *Library Technology Reports* 51:3 (April 2015), [doi: 10.5860/ltr.51n3](http://dx.doi.org/10.5860/ltr.51n3)
 
 # Foundations
 
 ## Why automate?
-	
+
 Credit: [Andy Kirk](https://twitter.com/visualisingdata/statuses/621957383464599552?tw_i=621957383464599552&tw_e=media&tw_p=archive)
 
 # Foundations
 
 ## Keyboard shortcuts are your friend
-	
+
 ### Efficiency and control
 
 # Foundations
 
 ## Plain text formats are your friend
-	
+
 ### Computers process them better
-	
+
 ### Platform agnostic
-	
+
 ### Display orientated files aren't your friend
-	
+
 ### Markdown
 
 # Foundations
 
 ## Structuring files and folders
-	
+
 ### Consistent and predictable data structure
-	
+
 ### Semantic-data hybrid directory names
-	
+
 ### Your own system is fine
-	
+
 ### Links files and directories with names
 
 # You are the most likely person to forget what you once did!
@@ -127,11 +133,11 @@ Credit: [Andy Kirk](https://twitter.com/visualisingdata/statuses/621957383464599
 ## `organi[sz]e`
 
 ### organise (match)
-	
+
 ### organize (match)
-	
+
 ### reorganise (match part so will also find)
-	
+
 ### reorganize (match part so will also find)
 
 # Regular Expressions
@@ -205,7 +211,7 @@ Credit: [Andy Kirk](https://twitter.com/visualisingdata/statuses/621957383464599
 ### Work through excerise
 
 ### Split into two teams and write:
-	
+
 #### strings that need regex
 
 #### regex that need outputs
