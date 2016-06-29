@@ -1,17 +1,10 @@
 ---
 layout: lesson_homepage
 ---
-This lesson shows how to use the
-[Software Carpentry]({{ site.swc_site }}) and
-[Data Carpentry]({{ site.dc_site }}) lesson template.
-For guidelines on how to help improve our lessons and this template,
-please see [the contribution guidelines][contributing];
-for guidelines on how to set up your machine to preview changes locally,
-please see [the setup instructions](/setup/).
+This Library Carpentry lesson introduces librarians to working with data. At the conclusion of the lesson you will: understand terms, phrases, and concepts in software development and data science; identify and use best practice in data structures; use regular expressions in searches
 
 > ## Prerequisites
 >
-> Use the `.prereq` style to specify prerequisites.
-{: .prereq}
+> This lesson has no prerequisites. Ideally you will need a laptop and an internet connection, though this is not requried.
 
 [contributing]: {{ site.repo }}/blob/gh-pages/CONTRIBUTING.md
