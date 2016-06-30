@@ -3,7 +3,7 @@ title: "Introduction to Data"
 teaching: 15
 exercises: 0
 questions:
-- 
+- what do librarians gain from code?
 objectives:
 - understand terms, phrases, and concepts in software development and data science
 - identify and use best practice in data structures
