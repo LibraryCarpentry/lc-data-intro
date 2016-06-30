@@ -7,7 +7,7 @@ questions:
 objectives:
 - understand terms, phrases, and concepts in software development and data science
 keypoints:
-- 
+- it helps to share what you know and don't know about software development and data science jargon
 ---
 
 ## Jargon Busting (Group Task)
