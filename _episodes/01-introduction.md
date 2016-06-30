@@ -9,7 +9,7 @@ objectives:
 - identify and use best practice in data structures
 - use regular expressions in searches
 keypoints:
-- 
+- don't be scared to ask for help
 ---
 
 ## Data collection
