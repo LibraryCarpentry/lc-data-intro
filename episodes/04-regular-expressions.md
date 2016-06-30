@@ -1,13 +1,14 @@
 ---
-title: "Introduction to Data"
+title: "Regular Expressions"
 teaching: 20
 exercises: 25
 questions:
-- 
+- how can you imaging using regular expressions in your work?
 objectives:
 - use regular expressions in searches
 keypoints:
-- 
+- using regular expressions make you searches more powerful
+- regular expressions can be used in various software
 ---
 
 ## Regular Expressions
