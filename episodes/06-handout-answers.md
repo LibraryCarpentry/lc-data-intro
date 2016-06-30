@@ -9,7 +9,7 @@ objectives:
 - identify and use best practice in data structures
 - use regular expressions in searches
 keypoints:
-- answer sheet
+- regular expressions answer sheet
 ---
 
 # Library Carpentry Week One: Introduction to Data
