@@ -3,7 +3,7 @@ title: "Foundations"
 teaching: 30
 exercises: 15
 questions:
-- 
+- what best practice and generic skills underpin you encounters with software skills?
 objectives:
 - identify and use best practice in data structures
 keypoints:
