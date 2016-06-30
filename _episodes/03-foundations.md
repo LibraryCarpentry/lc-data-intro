@@ -1,5 +1,5 @@
 ---
-title: "Introduction to Data"
+title: "Foundations"
 teaching: 30
 exercises: 15
 questions:
