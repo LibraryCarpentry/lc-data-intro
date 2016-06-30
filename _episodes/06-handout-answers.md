@@ -3,7 +3,7 @@ title: "Introduction to Data - Handout Answers"
 teaching: 0
 exercises: 0
 questions:
-- if brackets are used to define a group, what would match the regular expression `(,\s[0-9]{1,4}){4},\s[0-9]{1,3}\.[0-9]`?
+- what does `Fr[ea]nc[eh]` match?
 objectives:
 - understand terms, phrases, and concepts in software development and data science
 - identify and use best practice in data structures
