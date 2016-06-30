@@ -3,11 +3,11 @@ title: "Introduction to Data - Handout Answers"
 teaching: 0
 exercises: 0
 questions:
-- 
+- What does `Fr[ea]nc[eh]` match?
 objectives:
-- 
+- to help you practice regular expressions
 keypoints:
-- 
+- answer sheet
 ---
 
 # Library Carpentry Week One: Introduction to Data
