@@ -42,7 +42,7 @@ Library Carpentry is authored and maintained by the [community](https://github.c
 
 Please cite as:
 
-Library Carpentry. Data Intro for Librarians. June 2016. http://data-lessons.github.io/library-shell/.
+Library Carpentry. Data Intro for Librarians. June 2016. http://data-lessons.github.io/library-data-intro/.
 
 ## License
 
