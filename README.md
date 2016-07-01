@@ -2,7 +2,7 @@
 
 ## Background
 
-Library Carpentry is a software skills training programme aimed at library and information professions. It builds on the work of [Software Carpentry][swc-site] and [Data Carpentry][dc-site].
+Library Carpentry is a software skills training programme aimed at library and information professions. It builds on the work of [Software Carpentry](http://software-carpentry.org/) and [Data Carpentry](http://www.datacarpentry.org/).
 
 These materials are based on the **Library Carpentry** materials initially developed and taught by [Dr James Baker](https://github.com/drjwbaker), [Owen Stephens](https://github.com/ostephens) and [Daniel van Strien](https://github.com/davanstrien) in 2015.
 [http://librarycarpentry.github.io/outline/](http://librarycarpentry.github.io/outline/). The original Library Carpentry contained four modules:
