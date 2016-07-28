@@ -5,7 +5,7 @@ This Library Carpentry lesson introduces librarians to working with data. At the
 
 > ## Prerequisites
 >
-> This lesson has no prerequisites. Ideally you will need a laptop and an internet connection, though this is not requried.
+> This lesson has no prerequisites. Ideally you will need a laptop and an internet connection, though this is not required.
 {: .prereq}
 
 [contributing]: {{ site.repo }}/blob/gh-pages/CONTRIBUTING.md
