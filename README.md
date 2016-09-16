@@ -1,5 +1,7 @@
 # Library Carpentry
 
+The Library Carpentry module '[Data Intro for Librarians](http://data-lessons.github.io/library-data-intro/)' is maintained by [Carmi Cronje](https://github.com/ccronje) and [James Baker](https://github.com/drjwbaker).
+
 ## Background
 
 Library Carpentry is a software skills training programme aimed at library and information professions. It builds on the work of [Software Carpentry](http://software-carpentry.org/) and [Data Carpentry](http://www.datacarpentry.org/).
