@@ -4,9 +4,10 @@ title: "Licenses"
 permalink: /license/
 ---
 
-*Library Carpentry builds on the work of [Software Carpentry](http://software-carpentry.org/) and [Data Carpentry](http://www.datacarpentry.org/). It uses the same license as these projects. This can be found below.*
-
-______
+*Library Carpentry builds on the work of [Software
+Carpentry]({{site.swc_site}}) and [Data
+Carpentry]({{site.dc_site}}). It uses the same license as these
+projects. This can be found below.*
 
 ## Instructional Material
 

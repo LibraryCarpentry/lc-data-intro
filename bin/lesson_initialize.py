@@ -1,7 +1,21 @@
-*Library Carpentry builds on the work of [Software Carpentry][swc-site] and [Data Carpentry][dc-site]. It uses the same contribution guidelines as these projects. This can be found below.*
+#!/usr/bin/env python
 
-----
+"""Initialize a newly-created repository."""
 
+
+from __future__ import print_function
+import sys
+import os
+
+ROOT_AUTHORS = '''\
+FIXME: list authors' names and email addresses.
+'''
+
+ROOT_CITATION = '''\
+FIXME: describe how to cite this lesson.
+'''
+
+ROOT_CONTRIBUTING_MD = '''\
 # Contributing
 
 [Software Carpentry][swc-site] and [Data Carpentry][dc-site] are open source projects,
@@ -50,8 +64,8 @@ and to meet some of our community members.
 ## Where to Contribute
 
 1.  If you wish to change this lesson,
-    please work in <https://github.com/data-lessons/library-data-intro>,
-    which can be viewed at <https://data-lessons.github.io/library-data-intro>.
+    please work in <https://github.com/swcarpentry/FIXME>,
+    which can be viewed at <https://swcarpentry.github.io/FIXME>.
 
 2.  If you wish to change the example lesson,
     please work in <https://github.com/swcarpentry/lesson-example>,
@@ -149,8 +163,207 @@ You can also [reach us by email][contact].
 [github-flow]: https://guides.github.com/introduction/flow/
 [github-join]: https://github.com/join
 [how-contribute]: https://egghead.io/series/how-to-contribute-to-an-open-source-project-on-github
-[issues]: https://github.com/data-lessons/library-data-intro/issues/
-[repo]: https://github.com/data-lessons/library-data-intro/
+[issues]: https://github.com/swcarpentry/FIXME/issues/
+[repo]: https://github.com/swcarpentry/FIXME/
 [swc-issues]: https://github.com/issues?q=user%3Aswcarpentry
 [swc-lessons]: http://software-carpentry.org/lessons/
 [swc-site]: http://software-carpentry.org/
+'''
+
+ROOT_CONFIG_YML = '''\
+#------------------------------------------------------------
+# Values for this lesson.
+#------------------------------------------------------------
+
+# Which carpentry is this ("swc" or "dc")?
+carpentry: "swc"
+
+# Overall title for pages.
+title: "Lesson Title"
+
+# Contact email address.
+email: lessons@software-carpentry.org
+
+#------------------------------------------------------------
+# Generic settings (should not need to change).
+#------------------------------------------------------------
+
+# What kind of thing is this ("workshop" or "lesson")?
+kind: "lesson"
+
+# Magic to make URLs resolve both locally and on GitHub.
+# See https://help.github.com/articles/repository-metadata-on-github-pages/.
+repository: <USERNAME>/<PROJECT>
+
+# Sites.
+amy_site: "https://amy.software-carpentry.org/workshops"
+dc_site: "http://datacarpentry.org"
+swc_github: "https://github.com/swcarpentry"
+swc_site: "https://software-carpentry.org"
+swc_pages: "https://swcarpentry.github.io"
+template_repo: "https://github.com/swcarpentry/styles"
+example_repo: "https://github.com/swcarpentry/lesson-example"
+example_site: "https://swcarpentry.github.com/lesson-example"
+workshop_repo: "https://github.com/swcarpentry/workshop-template"
+workshop_site: "https://swcarpentry.github.io/workshop-template"
+training_site: "https://swcarpentry.github.io/instructor-training"
+
+# Surveys.
+pre_survey: "https://www.surveymonkey.com/r/swc_pre_workshop_v1?workshop_id="
+post_survey: "https://www.surveymonkey.com/r/swc_post_workshop_v1?workshop_id="
+
+# Start time in minutes (0 to be clock-independent, 540 to show a start at 09:00 am).
+start_time: 0
+
+# Specify that things in the episodes collection should be output.
+collections:
+  episodes:
+    output: true
+    permalink: /:path/
+  extras:
+    output: true
+
+# Set the default layout for things in the episodes collection.
+defaults:
+  - values:
+      root: ..
+  - scope:
+      path: ""
+      type: episodes
+    values:
+      layout: episode
+
+# Files and directories that are not to be copied.
+exclude:
+  - Makefile
+  - bin
+
+# Turn off built-in syntax highlighting.
+highlighter: false
+'''
+
+ROOT_INDEX_MD = '''\
+---
+layout: lesson
+root: .
+---
+FIXME: home page introduction
+
+> ## Prerequisites
+>
+> FIXME
+{: .prereq}
+'''
+
+ROOT_REFERENCE_MD = '''\
+---
+layout: reference
+permalink: /reference/
+---
+
+## Glossary
+
+FIXME
+'''
+
+ROOT_SETUP_MD = '''\
+---
+layout: page
+title: Setup
+permalink: /setup/
+---
+FIXME
+'''
+
+EPISODES_INTRODUCTION_MD = '''\
+---
+title: "Introduction"
+teaching: 0
+exercises: 0
+questions:
+- "Key question"
+objectives:
+- "First objective."
+keypoints:
+- "First key point."
+---
+'''
+
+EXTRAS_ABOUT_MD = '''\
+---
+layout: page
+title: About
+permalink: /about/
+---
+{% include carpentries.html %}
+'''
+
+EXTRAS_DISCUSS_MD = '''\
+---
+layout: page
+title: Discussion
+permalink: /discuss/
+---
+FIXME
+'''
+
+EXTRAS_FIGURES_MD = '''\
+---
+layout: page
+title: Figures
+permalink: /figures/
+---
+{% include all_figures.html %}
+'''
+
+EXTRAS_GUIDE_MD = '''\
+---
+layout: page
+title: "Instructor Notes"
+permalink: /guide/
+---
+FIXME
+'''
+
+INCLUDES_ALL_FIGURES_HTML = '''\
+<!-- empty -->
+'''
+
+BOILERPLATE = (
+    ('AUTHORS', ROOT_AUTHORS),
+    ('CITATION', ROOT_CITATION),
+    ('CONTRIBUTING.md', ROOT_CONTRIBUTING_MD),
+    ('_config.yml', ROOT_CONFIG_YML),
+    ('index.md', ROOT_INDEX_MD),
+    ('reference.md', ROOT_REFERENCE_MD),
+    ('setup.md', ROOT_SETUP_MD),
+    ('_episodes/01-introduction.md', EPISODES_INTRODUCTION_MD),
+    ('_extras/about.md', EXTRAS_ABOUT_MD),
+    ('_extras/discuss.md', EXTRAS_DISCUSS_MD),
+    ('_extras/figures.md', EXTRAS_FIGURES_MD),
+    ('_extras/guide.md', EXTRAS_GUIDE_MD),
+    ('_includes/all_figures.html', INCLUDES_ALL_FIGURES_HTML)
+)
+
+
+def main():
+    """Check for collisions, then create."""
+
+    # Check.
+    errors = False
+    for (path, _) in BOILERPLATE:
+        if os.path.exists(path):
+            print('Warning: {0} already exists.'.format(path), file=sys.stderr)
+            errors = True
+    if errors:
+        print('**Exiting without creating files.**', file=sys.stderr)
+        sys.exit(1)
+
+    # Create.
+    for (path, content) in BOILERPLATE:
+        with open(path, 'w') as writer:
+            writer.write(content)
+
+
+if __name__ == '__main__':
+    main()
