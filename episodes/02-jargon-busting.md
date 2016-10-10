@@ -18,13 +18,13 @@ keypoints:
 - pens
 - sticky notes*
 
-###Purpose
+### Purpose
 
 - icebreaker
 - finding confidence level
 - expectation management
 
-###Task
+### Task
 
 **SLIDE**
 
