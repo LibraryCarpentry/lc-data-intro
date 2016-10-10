@@ -1,24 +1,20 @@
 ---
 layout: page
-title: "Instructors' Guide"
+title: "Instructor Notes"
 permalink: /guide/
 ---
-
-% Library Carpentry
-% Introduction to Data
-% This work is licensed under a Creative Commons Attribution 4.0 International [License](http://creativecommons.org/licenses/by/4.0/). Exceptions: logos, embeds to and from external sources and direct quotations
 
 # Where to go for help
 
 *There are many places!*
 
-### Stickers
+### Stickers
 
-### Helpers
+### Helpers
 
-### Sticky notes
+### Sticky notes
 
-### github.com/???
+### github.com/???
 
 # Week 1: Introduction to Data
 
