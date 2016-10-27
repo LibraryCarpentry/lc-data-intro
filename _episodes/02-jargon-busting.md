@@ -26,8 +26,6 @@ keypoints:
 
 ### Task
 
-**SLIDE**
-
 This group task is an opportunity for you to get help understanding terms, phrases, or ideas around code or software development that you've come across and perhaps feel you should know better.
 
 - Start by getting into groups of 4 or 5.
