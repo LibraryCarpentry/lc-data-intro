@@ -166,7 +166,7 @@ This logic is super useful when you have lots of files in a directory, when thos
 
 Pair up with the person next to you to work throug the following problems.
 
-> ## Using square brackers
+> ## Using square brackets
 > Can you guess what the regular expression `Fr[ea]nc[eh]` will match? 
 >
 > > ## Solution
