@@ -66,7 +66,7 @@ So, what is `^[Oo]rgani.e\b` going to match.
 > {: .solution}
 {: .challenge}
 
-Other useful special characters are **SLIDE**:
+Other useful special characters are:
 
 - `*` matches when the preceding character appears any number of times including zero
 - `+` matches when the preceding character appears any number of times excluding zero
@@ -74,16 +74,93 @@ Other useful special characters are **SLIDE**:
 - `{VALUE}` matches the preceding character the number of times define by VALUE; ranges can be specified with the syntax `{VALUE,VALUE}`
 - `|` means or.
 
-{**Questions**}: So, what are these going to match?
+So, what are these going to match?
 
-- **SLIDE** `^[Oo]rgani.e\w*`
-- **SLIDE** `[Oo]rgani.e\w+$`
-- **SLIDE** `^[Oo]rgani.e\w?\b`
-- **SLIDE** `^[Oo]rgani.e\w?$`
-- **SLIDE** `\b[Oo]rgani.e\w{2}\b`
-- **SLIDE** `\b[Oo]rgani.e\b|\b[Oo]rgani.e\w{1}\b`
+> ## ^[Oo]rgani.e\w*
+> Can you guess what the regular expression `^[Oo]rgani.e\w*` will match? 
+>
+> > ## Solution
+> > ~~~
+> > organise
+> > Organize
+> > organifer
+> > Organi2ed111
+> > ~~~
+> > Or, any other string that starts a line, begins with a letter `o` in lower or capital case, proceeds with `rgani`, has any character in the 7th position, follows with letter `e` and zero or more characters from the range `[A-Za-z0-9]`.
+> {: .solution}
+{: .challenge}
 
-**SLIDE** This logic is super useful when you have lots of files in a directory, when those files have logical file names, and when you want to isolate a selection of files. Or for looking at cells in spreadsheets for certain values. Or for extracting some data from a column of a spreadsheet to make  new columns. I could go on. The point is, it is super useful in many contexts. To embed this knowledge we won't - however - be using computers. Instead we'll use pen and paper. I want you to work in teams of 4 to work through the exercises in the handout. I have an answer sheet over here if you want to check where you've gone wrong. When you finish, I'd like you to split your team into two groups and write each other some tests. These should include a) strings you want the other team to write regex for and b) regular expressions you want the other team to work out what they would match. Then test each other on the answers. If you want to check your logic, use [regex101](https://regex101.com/), [myregexp](http://myregexp.com/) or [regexper.com](http://regexper.com/): the first two help you see what text your regular expression will match, the latter visualises the workflow of a regular expression.
+> ## [Oo]rgani.e\w+$
+> Can you guess what the regular expression `[Oo]rgani.e\w+$` will match? 
+>
+> > ## Solution
+> > ~~~
+> > organiser
+> > Organized
+> > organifer
+> > Organi2ed111
+> > ~~~
+> > Or, any other string that ends a line, begins with a letter `o` in lower or capital case, proceeds with `rgani`, has any character in the 7th position, follows with letter `e` and one or more characters from the range `[A-Za-z0-9]`.
+> {: .solution}
+{: .challenge}
+
+> ## ^[Oo]rgani.e\w?\b
+> Can you guess what the regular expression `^[Oo]rgani.e\w?\b` will match? 
+>
+> > ## Solution
+> > ~~~
+> > organise
+> > Organized
+> > organifer
+> > Organi2ek
+> > ~~~
+> > Or, any other string that starts a line, begins with a letter `o` in lower or capital case, proceeds with `rgani`, has any character in the 7th position, follows with letter `e`, and ends with zero or one characters from the range `[A-Za-z0-9]`.
+> {: .solution}
+{: .challenge}
+
+> ## ^[Oo]rgani.e\w?$
+> Can you guess what the regular expression `^[Oo]rgani.e\w?$` will match? 
+>
+> > ## Solution
+> > ~~~
+> > organise
+> > Organized
+> > organifer
+> > Organi2ek
+> > ~~~
+> > Or, any other string that starts and ends a line, begins with a letter `o` in lower or capital case, proceeds with `rgani`, has any character in the 7th position, follows with letter `e` and zero or one characters from the range `[A-Za-z0-9]`.
+> {: .solution}
+{: .challenge}
+
+> ## \b[Oo]rgani.e\w{2}\b
+> Can you guess what the regular expression `\b[Oo]rgani.e\w{2}\b` will match? 
+>
+> > ## Solution
+> > ~~~
+> > organisers
+> > Organizers
+> > organifers
+> > Organi2ek1
+> > ~~~
+> > Or, any other string that begins with a letter `o` in lower or capital case after a word boundary, proceeds with `rgani`, has any character in the 7th position, follows with letter `e`, and ends with two characters from the range `[A-Za-z0-9]`.
+> {: .solution}
+{: .challenge}
+
+> ## \b[Oo]rgani.e\b|\b[Oo]rgani.e\w{1}\b
+> Can you guess what the regular expression `\b[Oo]rgani.e\b|\b[Oo]rgani.e\w{1}\b` will match? 
+>
+> > ## Solution
+> > ~~~
+> > organise
+> > Organi1e
+> > Organizer
+> > organifed
+> > ~~~
+> > Or, any other string that begins with a letter `o` in lower or capital case after a word boundary, proceeds with `rgani`, has any character in the 7th position, and end with letter `e`, or any other string that begins with a letter `o` in lower or capital case after a word boundary, proceeds with `rgani`, has any character in the 7th position, follows with letter `e`, and ends with a single character from the range `[A-Za-z0-9]`.
+> {: .solution}
+{: .challenge}
+
+This logic is super useful when you have lots of files in a directory, when those files have logical file names, and when you want to isolate a selection of files. Or for looking at cells in spreadsheets for certain values. Or for extracting some data from a column of a spreadsheet to make  new columns. I could go on. The point is, it is super useful in many contexts. To embed this knowledge we won't - however - be using computers. Instead we'll use pen and paper. I want you to work in teams of 4 to work through the exercises in the handout. I have an answer sheet over here if you want to check where you've gone wrong. When you finish, I'd like you to split your team into two groups and write each other some tests. These should include a) strings you want the other team to write regex for and b) regular expressions you want the other team to work out what they would match. Then test each other on the answers. If you want to check your logic, use [regex101](https://regex101.com/), [myregexp](http://myregexp.com/) or [regexper.com](http://regexper.com/): the first two help you see what text your regular expression will match, the latter visualises the workflow of a regular expression.
 
 ### Exercise
 
