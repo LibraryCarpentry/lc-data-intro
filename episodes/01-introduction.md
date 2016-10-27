@@ -39,21 +39,17 @@ In order to kick start your exploration of software, this four module program wi
 - 3: Versioning data (with Git)
 - 4: Cleaning data (with [OpenRefine](http://openrefine.org/))
 
-### Where to go for help
-
-**SLIDE** 
+### Where to go for help 
 
 First, use your skill level stickers to identify people on your table who can help: you will all be following along from the same worksheets, so someone around you may have got past the point you are stuck at. 
 
 Second, there are helpers on hand to help if those around you can't. You should all have access to coloured sticky notes: a pink sticky note on your laptop indicates that you need help (it might also alert the attention of someone around you!). So, please use them. 
 
-Third, before each of the classes, you may be required to install software: all issues doing this should be reported to the Github issues page for the week, posting something there will alert someone to give you help in advance **bring up Github pages**. 
+Third, in advance of each of the classes, you may have been required to install software: all issues doing this should be reported to the Github issues page for the module, posting something there will alert someone to give you help in advance.
 
 Fourth, and finally, as much of the program is self-directed, we encourage you to finish up or repeat tasks after class time: if you run into issues, again report them to the relevant Github issues page.
 
 ### Final points of admin
-
-**SLIDE** 
 
 Most of the classes will involve following along from a worksheet. Much of the time you will be encouraged to go along at your own pace. For some of you this will feel like a lot of material, for others it might not feel like enough. Remember that the session is introductory. If you finish early, our end time is not a hard stop, so you may of course leave. 
 
@@ -62,8 +58,6 @@ Alternatively, you might want to use the time to search online for more informat
 Finally computers are stupid, can frustrate, and as you all have different machines it can be tricky to resolve problems. Please be patient, particularly if your issue is local. Stepping outside and taking a gulp of fresh air always helps.
 
 ### This week
-
-**SLIDE**
 
 - Jargon Busting (45 minutes)
 - Foundations (45 minutes)
