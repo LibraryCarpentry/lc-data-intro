@@ -3,7 +3,7 @@ title: "Regular Expressions"
 teaching: 20
 exercises: 25
 questions:
-- how can you imaging using regular expressions in your work?
+- how can you imagine using regular expressions in your work?
 objectives:
 - use regular expressions in searches
 keypoints:
