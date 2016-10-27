@@ -13,7 +13,7 @@ keypoints:
 
 ## Regular Expressions
 
-**SLIDE** One of the reason why I have stressed the value of consistent and predictable directory and filenaming conventions is that working in this way enables you to use the computer to select files based on the characteristics of their file name. So, for example, if you have a bunch of files where the first four digits are the year and you only want to do something with files from '2014', then you can. Or if you have 'journal' somewhere in a filename when you have data about journals, you can use the computer to select just those files then do something with them. Equally, using plain text formats means that you can go further and select files or elements of files based on characteristics of the data *within* files.
+One of the reason why I have stressed the value of consistent and predictable directory and filenaming conventions is that working in this way enables you to use the computer to select files based on the characteristics of their file name. So, for example, if you have a bunch of files where the first four digits are the year and you only want to do something with files from '2014', then you can. Or if you have 'journal' somewhere in a filename when you have data about journals, you can use the computer to select just those files then do something with them. Equally, using plain text formats means that you can go further and select files or elements of files based on characteristics of the data *within* files.
 
 A powerful means of doing this selecting based on file characteristics is to use regular expressions, often abbreviated to regex. A regular expression is a sequence of characters that define a search pattern, mainly for use in pattern matching with strings, or string matching, i.e. "find and replace"-like operations. Regular expressions are typically surrounded by `/` characters, though we will (mostly) ignore those for ease of comprehension. Regular expressions will let you:
 
@@ -23,19 +23,17 @@ A powerful means of doing this selecting based on file characteristics is to use
 
 As most computational software has regular expression functionality built in and as many computational tasks in libraries are built around complex matching, it is good place for Library Carpentry to start in earnest.
 
-**SLIDE** A very simple use of a regular expression would be to locate the same word spelled two different ways. For example the regular expression `organi[sz]e` matches both "organise" and "organize".
-
 A very simple use of a regular expression would be to locate the same word spelled two different ways. For example the regular expression `organi[sz]e` matches both "organise" and "organize".
 
-But it would also find `reorganise`. So there are a bunch of special syntax that help us be more precise.
+But it would also match `reorganise`, `reorganize`, `organises`, `organizes`, `organised`, `organized`, et cetera, because we've not specified the beginning or end of our string. So there are a bunch of special syntax that help us be more precise.
 
-The first we've seen: square brackets can be used to define a list or range of characters to be found. So: **SLIDE**
+The first we've seen: square brackets can be used to define a list or range of characters to be found. So:
 
 - `[ABC]` matches A or B or C
 - `[A-Z]` matches any upper case letter
 - `[A-Za-z0-9]` matches any upper or lower case letter or any digit (note: this is case-sensitive)
 
-Then there are: **SLIDE**
+Then there are:
 
 - `.` matches any character
 - `\d` matches any single digit
@@ -50,7 +48,23 @@ Then there are: **SLIDE**
 	- the regular expression `foobar\b` will match `foobar` and find `666foobar`
 	- the regular expression `\bfoobar\b` will find `foobar`
 
-**SLIDE** {**Question**}: So, what is `^[Oo]rgani.e\b` going to match.
+So, what is `^[Oo]rgani.e\b` going to match.
+
+> ## Using special characters in regular expression matches
+> Can you guess what the regular expression `^[Oo]rgani.e\b` will match? 
+>
+> > ## Solution
+> > ~~~
+> > organise
+> > organize
+> > Organise
+> > Organize
+> > organife
+> > Organike
+> > ~~~
+> > Or, any other string that starts a line, begins with a letter `o` in lower or capital case, proceeds with `rgani`, has any character in the 7th position, and ends with the letter `e`.
+> {: .solution}
+{: .challenge}
 
 Other useful special characters are **SLIDE**:
 
