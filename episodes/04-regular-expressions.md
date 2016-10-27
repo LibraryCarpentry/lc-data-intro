@@ -164,9 +164,21 @@ This logic is super useful when you have lots of files in a directory, when thos
 
 ### Exercise
 
-What does `Fr[ea]nc[eh]` match?
+Pair up with the person next to you to work throug the following problems.
 
-- this matches `France`, `French`, `Frence`, and `Franch`. It would find words where there were characters either side of these so `Francer`, `foobarFrench`, or `Franch911`.
+> ## Using square brackers
+> Can you guess what the regular expression `Fr[ea]nc[eh]` will match? 
+>
+> > ## Solution
+> > ~~~
+> > French
+> > France
+> > Frence
+> > Franch
+> > ~~~
+> > This will also find words where there are characters either side of the solutions above, such as `Francer`, `foobarFrench`, and `Franch911`.
+> {: .solution}
+{: .challenge}
 
 What does `Fr[ea]nc[eh]$` match?
 
