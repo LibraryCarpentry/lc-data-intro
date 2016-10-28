@@ -160,7 +160,7 @@ So, what are these going to match?
 > {: .solution}
 {: .challenge}
 
-This logic is super useful when you have lots of files in a directory, when those files have logical file names, and when you want to isolate a selection of files. Or for looking at cells in spreadsheets for certain values. Or for extracting some data from a column of a spreadsheet to make  new columns. I could go on. The point is, it is super useful in many contexts. To embed this knowledge we won't - however - be using computers. Instead we'll use pen and paper. I want you to work in teams of 4 to work through the exercises in the handout. I have an answer sheet over here if you want to check where you've gone wrong. When you finish, I'd like you to split your team into two groups and write each other some tests. These should include a) strings you want the other team to write regex for and b) regular expressions you want the other team to work out what they would match. Then test each other on the answers. If you want to check your logic, use [regex101](https://regex101.com/), [myregexp](http://myregexp.com/) or [regexper.com](http://regexper.com/): the first two help you see what text your regular expression will match, the latter visualises the workflow of a regular expression.
+This logic is super useful when you have lots of files in a directory, when those files have logical file names, and when you want to isolate a selection of files. Or for looking at cells in spreadsheets for certain values. Or for extracting some data from a column of a spreadsheet to make  new columns. I could go on. The point is, it is super useful in many contexts. To embed this knowledge we won't - however - be using computers. Instead we'll use pen and paper. I want you to work in teams of 4 to work through the exercises in the handout. I have an answer sheet over here if you want to check where you've gone wrong. When you finish, I'd like you to split your team into two groups and write each other some tests. These should include a) strings you want the other team to write regex for and b) regular expressions you want the other team to work out what they would match. Then test each other on the answers. If you want to check your logic, use [regex101](https://regex101.com/), [myregexp](http://myregexp.com/), or [regex pal](http://www.regexpal.com/) [regexper.com](http://regexper.com/): the first three help you see what text your regular expression will match, the latter visualises the workflow of a regular expression.
 
 ### Exercise
 
@@ -208,7 +208,7 @@ Pair up with the person next to you to work throug the following problems.
 > ## Case insensitivity
 > How do you match the whole words `colour` and `color` (case insensitive)? 
 >
-> > ## Solution
+> > ## Solutions
 > > ~~~
 > > \b[Cc]olou?r\b|\bCOLOU?R\b
 > > /colou?r/i
@@ -228,7 +228,7 @@ Pair up with the person next to you to work throug the following problems.
 > {: .solution}
 {: .challenge}
 
-> ## Matching non-lingustic patterns
+> ## Matching non-linguistic patterns
 > How would you find a string that ends with 4 letters preceded by at least one zero? 
 >
 > > ## Solution
@@ -278,13 +278,9 @@ Pair up with the person next to you to work throug the following problems.
 > > ~~~
 > > .* : .*, \d{4}
 > > ~~~
-> > Note this will also find strings such as `31-01-198` at the end of a line, so you may wish to check your data and revise the expression to exclude false positives. Depending on your data, you may chose to add word bounding at the start of the expression.
+> > Without word boundaries you will find that this matches any text you put before `British` or `Manchester`. Nevertheless, the regular expression does a good job on the first look up and may be need to be refined on a second depending on your data.
 > {: .solution}
 {: .challenge}
-
-How would you match publication formats such as `British Library : London, 2015` and `Manchester University Press: Manchester, 1999`?
-
-- Without word boundaries uou will find that this matches any text you put before `British` or `Manchester`. Nevertheless, the regular expression does a good job on the first look up and may be need to be refined on a second depending on your data.
 
 ## References
 
