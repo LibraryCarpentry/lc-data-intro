@@ -40,8 +40,8 @@ Then there are:
 - `\w` matches any part of word character (equivalent to `[A-Za-z0-9]`)
 - `\s` matches any space, tab, or newline
 - `\` NB: this is also used to escape the following character when that character is a special character. So, for example, a regular expression that found `.com` would be `\.com` because `.` is a special character that matches any character.
-- `^` asserts the position at the start of the line. So what you put after it will only match the first characters of a line or contents of a cell.
-- `$` asserts the position at the end of the line. So what you put after it will only match the last character of a line of contents of a cell.
+- `^` asserts the position at the start of the line. So what you put after it will only match if they are the first characters of a line.
+- `$` asserts the position at the end of the line. So what you put before it will only match if they are the last characters of a line.
 - `\b` adds a word boundary. Putting this either side of a stops the regular expression matching longer variants of words. So:
 	- the regular expression `foobar` will match `foobar` and find `666foobar`, `foobar777`, `8thfoobar8th` et cetera
 	- the regular expression `\bfoobar` will match `foobar` and find `foobar777`
@@ -276,7 +276,7 @@ Pair up with the person next to you to work throug the following problems.
 >
 > > ## Solution
 > > ~~~
-> > .* : .*, \d{4}
+> > .* ?: .*, \d{4}
 > > ~~~
 > > Without word boundaries you will find that this matches any text you put before `British` or `Manchester`. Nevertheless, the regular expression does a good job on the first look up and may be need to be refined on a second depending on your data.
 > {: .solution}
