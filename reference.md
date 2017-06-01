@@ -21,4 +21,4 @@ permalink: /reference/
 - `{VALUE}` matches the preceding character the number of times define by VALUE; ranges can be specified with the syntax `{VALUE,VALUE}`
 - `|` means or
 - Check your regex with: regex101 [https://regex101.com/](https://regex101.com/), rexegper [http://regexper.com/](http://regexper.com/), or myregexp [http://myregexp.com/]([http://myregexp.com/])
-- Test yourself with: Regex Crossword https://regexcrossword.com/ or our The Multiple Choice Quiz [http://data-lessons.github.io/library-data-intro/05-handout-questions/](http://data-lessons.github.io/library-data-intro/05-handout-questions/)
+- Test yourself with: Regex Crossword https://regexcrossword.com/ or our The Multiple Choice Quiz [http://data-lessons.github.io/library-data-intro/05-quiz/](http://data-lessons.github.io/library-data-intro/05-quiz/)
