@@ -7,7 +7,7 @@ questions:
 objectives:
 - use regular expressions in searches
 keypoints:
-- [] define a list or range of characters to be found
+- define a list or range of characters to be found
 ---
 
 ## Regular Expressions
