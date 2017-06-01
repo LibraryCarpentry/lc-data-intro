@@ -12,17 +12,7 @@ keypoints:
 - regular expressions reference guide
 ---
 
-# Library Carpentry Week One: Introduction to Data
-
-## Schedule
-
-- Introduction (15 minutes)
-- Jargon Busting (45 minutes)
-- Foundations (45 minutes)
-- Regular Expressions (45 minutes)
-- Quiz (30 minutes)
-
-## Regular Expressions
+# Regular Expressions
 
 - `[]` define a list or range of characters to be found
 - `.` matches any character at all
@@ -38,44 +28,16 @@ keypoints:
 - `{VALUE}` matches the preceding character the number of times define by VALUE; ranges can be specified with the syntax `{VALUE,VALUE}`
 - `|` simply means or
 
-Check your regex with:
+## Check your regex with:
 - regex101 [https://regex101.com/](https://regex101.com/)
 - rexegper [http://regexper.com/](http://regexper.com/)
 - myregexp [http://myregexp.com/]([http://myregexp.com/])
 
-Test yourself with:
+## Test yourself with:
 - Regex Crossword https://regexcrossword.com/
 - The Multiple Choice Quiz (below)
 
-### Exercise
-
-What does `Fr[ea]nc[eh]` match?
-
-What does `Fr[ea]nc[eh]$` match?
-
-What would match the strings `French` and `France` only that appear at the beginning of a line?
-
-How do you match the whole words `colour` and `color` (case insensitive)?
-
-How would you find the whole-word `headrest` and or the 2-gram `head rest` but not `head  rest` (that is, with two spaces between `head` and `rest`?
-
-How would you find a 4 letter word that ends a string and is preceded by at least one zero?
-
-How do you match any 4 digit string anywhere?
-
-How would you match the date format `dd-MM-yyyy`?
-
-How would you match the date format `dd-MM-yyyy` or `dd-MM-yy` at the end of a string only?
-
-How would you match publication formats such as `British Library : London, 2015` and `Manchester University Press: Manchester, 1999`?
-
-## Next Week
-
-### Installation (to be completed before the session)
-
-Windows users, see the section entitled 'Installing Git Bash' in the Programming Historian lesson [*Introduction to the Bash Command Line*](http://programminghistorian.org/lessons/intro-to-bash). OS X and Linux users, simply make sure you know how to find your 'Terminal'.
-
-## Multiple Choice Quiz
+# Multiple Choice Quiz
 
 This multiple choice quiz is designed to embed the regex knowledge you learned during this module. We recommend you work through it someone after class (within a week or so). Answers are on the answer sheet.
 
@@ -150,13 +112,3 @@ Q12. If brackets are used to define a group, what would match the regular expres
 - A) , 135, 1155, 915, 513, 18.8
 - B) , 135, 11557, 915, 513, 18.8
 - C) , 135, 1155, 915, 513, 188
-
-## References
-
-James Baker, "Preserving Your Research Data," *Programming Historian* (30 April 2014), [http://programminghistorian.org/lessons/preserving-your-research-data.html](http://programminghistorian.org/lessons/preserving-your-research-data.html). The sub-sections 'Plain text formats are your friend' and 'Naming files sensible things is good for you and for your computers' are reworked from this lesson.
-
-Owen Stephens, "Working with Data using OpenRefine", *Overdue Ideas" (19 November 2014), [http://www.meanboyfriend.com/overdue_ideas/2014/11/working-with-data-using-openrefine/](http://www.meanboyfriend.com/overdue_ideas/2014/11/working-with-data-using-openrefine/). The section on 'Regular Expressions' is reworked from this lesson developed by Owen Stephens on behalf of the British Library.
-
-Andromeda Yelton, "Coding for Librarians: Learning by Example", *Library Technology Reports* 51:3 (April 2015), doi: [10.5860/ltr.51n3](http://dx.doi.org/10.5860/ltr.51n3)
-
-Fiona Tweedie, "Why Code?", *The Research Bazaar* (October 2014), [http://melbourne.resbaz.edu.au/post/95320810834/why-code](http://melbourne.resbaz.edu.au/post/95320810834/why-code)
