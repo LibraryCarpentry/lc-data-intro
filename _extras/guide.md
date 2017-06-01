@@ -9,11 +9,11 @@ ____
 
 Librarians like handouts. To make a handout for the [Regular Expressions episode](http://data-lessons.github.io/library-data-intro/04-regular-expressions/) do the following:
 
-- download the reference.md page for this lesson from https://raw.githubusercontent.com/data-lessons/library-data-intro/gh-pages/reference.md (right click, save page as)
-- open the reference.md in a text editor and remove the header (the first five lines)
+- download the reference.md page for this lesson from https://raw.githubusercontent.com/data-lessons/library-data-intro/gh-pages/reference.md (right click, save page as). 
+- open the reference.md in a text editor and remove the header (the first five lines). Note for Windows users: if '.txt' has been added to the filename, resave without the '.txt'. 
 - you now have a markdown file ready to convert to .docx or .pdf for printing. Now either:
-  - download and install [pandoc], open the shell, and from the directory the markdown file is in run `pandoc reference.md -f markdown -t docx -s -o reference.md`
-  - or head to a webservice like [Dillinger](http://dillinger.io/), paste your markdown in the left hand columns, and use the 'Export As' dropdown to create a pdf document.
+  - *either* head to a webservice like [Dillinger](http://dillinger.io/), paste your markdown in the left hand columns, and use the 'Export As' dropdown to create a pdf document.
+  - *or* download and install [pandoc], open the shell, and from the directory the markdown file is in run `pandoc reference.md -f markdown -t docx -s -o reference.md`
 
 ____
 # Potential Slides for Instructor
