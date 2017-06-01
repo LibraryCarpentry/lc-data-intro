@@ -1,5 +1,5 @@
 ---
-title: "Introduction to Data - Handout and Quiz"
+title: "Introduction to Data - Multiple Choice Quiz"
 teaching: 0
 exercises: 30
 questions:
