@@ -4,7 +4,23 @@ title: "Instructor Notes"
 permalink: /guide/
 ---
 
-# Where to go for help
+____
+# Making a handout
+
+Librarians like handouts. To make a handout for the [Regular Expressions episode](http://data-lessons.github.io/library-data-intro/04-regular-expressions/) do the following:
+
+- downdload the reference page from https://raw.githubusercontent.com/data-lessons/library-data-intro/gh-pages/reference.md (right click, save page as)
+- open the file in a text editor and remove the header (the first five lines)
+- you now have a markdown file ready to convert to .docx or .pdf for printing. Now either:
+  - download and install [pandoc], open the shell, and from the directory the markdown file is in run `pandoc reference.md -f markdown -t docx -s -o reference.md`
+  - or head to a webservice like [Dillinger](http://dillinger.io/), paste your markdown in the left hand columns, and use the 'Export As' dropdown to create a pdf document.
+
+____
+# Potential Slides for Instructor
+
+If you want, use the below as a basis for slides
+
+## Where go to for help
 
 *There are many places!*
 
@@ -16,19 +32,7 @@ permalink: /guide/
 
 ### github.com/???
 
-# Week 1: Introduction to Data
-
-## Introduction
-
 ## Jargon Busting
-
-## Foundations
-
-## Regular Expressions
-
-## Handout & Quiz
-
-# Jargon Busting
 
 ### Teams of 5 or 6
 
@@ -44,79 +48,79 @@ permalink: /guide/
 
 ### Report back
 
-# Foundations
+## Foundations
 
-## The Computer is Stupid
+### The Computer is Stupid
 
-## Why automate
+### Why automate
 
-## Keyboard shortcuts are your friend
+### Keyboard shortcuts are your friend
 
-## Plain text formats are your friend
+### Plain text formats are your friend
 
-## Structuring files and folders
+### Structuring files and folders
 
-# Foundations
+## Foundations
 
-## The Computer is Stupid
+### The Computer is Stupid
 
-### ERROR
+#### ERROR
 
-# Foundations
+## Foundations
 
-## Why automate?
+### Why automate?
 
-### Borrow, borrow, borrow
+#### Borrow, borrow, borrow
 
-### There is no correct language
+#### There is no correct language
 
-### Professional development
+#### Professional development
 
-### Knowing some code \~ evaluating software
+#### Knowing some code \~ evaluating software
 
-### Making time to do fun stuff!
+#### Making time to do fun stuff!
 
 #### Andromeda Yelton, "Coding for Librarians: Learning by Example", *Library Technology Reports* 51:3 (April 2015), [doi: 10.5860/ltr.51n3](http://dx.doi.org/10.5860/ltr.51n3)
 
-# Foundations
+## Foundations
 
-## Why automate?
+### Why automate?
 
 Credit: [Andy Kirk](https://twitter.com/visualisingdata/statuses/621957383464599552?tw_i=621957383464599552&tw_e=media&tw_p=archive)
 
-# Foundations
+## Foundations
 
-## Keyboard shortcuts are your friend
+### Keyboard shortcuts are your friend
 
 ### Efficiency and control
 
-# Foundations
+## Foundations
 
-## Plain text formats are your friend
+### Plain text formats are your friend
 
-### Computers process them better
+#### Computers process them better
 
-### Platform agnostic
+#### Platform agnostic
 
-### Display orientated files aren't your friend
+#### Display orientated files aren't your friend
 
-### Markdown
+#### Markdown
 
-# Foundations
+## Foundations
 
-## Structuring files and folders
+### Structuring files and folders
 
-### Consistent and predictable data structure
+#### Consistent and predictable data structure
 
-### Semantic-data hybrid directory names
+#### Semantic-data hybrid directory names
 
-### Your own system is fine
+#### Your own system is fine
 
-### Links files and directories with names
+#### Links files and directories with names
 
-# You are the most likely person to forget what you once did!
+## You are the most likely person to forget what you once did!
 
-# Regular Expressions
+## Regular Expressions
 
 ### Match on types of character
 
@@ -124,19 +128,19 @@ Credit: [Andy Kirk](https://twitter.com/visualisingdata/statuses/621957383464599
 
 ### Capture the parts that match your pattern
 
-# Regular Expressions
+## Regular Expressions
 
-## `organi[sz]e`
+### `organi[sz]e`
 
-### organise (match)
+#### organise (match)
 
-### organize (match)
+#### organize (match)
 
-### reorganise (match part so will also find)
+#### reorganise (match part so will also find)
 
-### reorganize (match part so will also find)
+#### reorganize (match part so will also find)
 
-# Regular Expressions
+## Regular Expressions
 
 ### `[ABC]` matches A or B or C.
 
@@ -144,7 +148,7 @@ Credit: [Andy Kirk](https://twitter.com/visualisingdata/statuses/621957383464599
 
 ### `[A-Za-z0-9]` matches any upper or lower case letter or any digit.
 
-# Regular Expressions
+## Regular Expressions
 
 ### `.` matches any character at all.
 
@@ -160,11 +164,11 @@ Credit: [Andy Kirk](https://twitter.com/visualisingdata/statuses/621957383464599
 
 ### `$` asserts end of the line
 
-# Regular Expressions
+## Regular Expressions
 
-## `^\[Oo\]rgani.e\b`
+### `^\[Oo\]rgani.e\b`
 
-# Regular Expressions
+## Regular Expressions
 
 ### `*` matches proceeding character any number of times including zero.
 
@@ -176,42 +180,26 @@ Credit: [Andy Kirk](https://twitter.com/visualisingdata/statuses/621957383464599
 
 ### `|` simply means or.
 
-# Regular Expressions
+## Regular Expressions
 
-## `^[Oo]rgani.e\w\*`
+### `^[Oo]rgani.e\w\*`
 
-# Regular Expressions
+## Regular Expressions
 
-## `[Oo]rgani.e\w+$`
+### `[Oo]rgani.e\w+$`
 
-# Regular Expressions
+## Regular Expressions
 
-## `^[Oo]rgani.e\w?\b`
+### `^[Oo]rgani.e\w?\b`
 
-# Regular Expressions
+## Regular Expressions
 
-## `^[Oo]rgani.e\w?$`
+### `^[Oo]rgani.e\w?$`
 
-# Regular Expressions
+## Regular Expressions
 
-## `\b[Oo]rgani.e\w{2}\b`
+### `\b[Oo]rgani.e\w{2}\b`
 
-# Regular Expressions
+## Regular Expressions
 
-## `\b[Oo]rgani.e\b|\b[Oo]rgani.e\w{1}\b`
-
-# Regular Expressions
-
-## Teams of 4
-
-### Work through excerise
-
-### Split into two teams and write:
-
-#### strings that need regex
-
-#### regex that need outputs
-
-### Test each other!
-
-### After the session: take the quiz!
+### `\b[Oo]rgani.e\b|\b[Oo]rgani.e\w{1}\b`
