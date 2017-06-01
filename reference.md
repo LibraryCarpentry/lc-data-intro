@@ -4,7 +4,7 @@ title: Reference
 permalink: /reference/
 ---
 
-# Regular Expressions cheat cheet
+# Regular Expressions Cheat Sheet
 
 - `[]` defines a range of characters
 - `.` matches any character
