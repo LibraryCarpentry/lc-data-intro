@@ -32,13 +32,6 @@ Welcome to Library Carpentry! This series of introductory workshops on software 
 
 The rationale for Library Carpentry is twofold. First, as Andromeda Yelton argues in her excellent recent [ALA Library Technology Report](http://journals.ala.org/ltr/issue/view/506) 'Coding for Librarians: learning by example', code is a means for librarians to take control of practice and to empower themselves and their organisation to meet user needs in flexible ways. Second, librarians play a crucial role in cultivating world class research. And in most research areas today world class research relies on the use of software. Librarians with software skills are then well placed to continue that cultivation of world class research.
 
-In order to kick start your exploration of software, this four module program will cover the following: **SLIDE**
-
-- 1: Basics - jargon busting, data structures, and the use of regular expressions
-- 2: Controlling data using the command line (in the Unix Shell)
-- 3: Versioning data (with Git)
-- 4: Cleaning data (with [OpenRefine](http://openrefine.org/))
-
 ### Where to go for help 
 
 First, use your skill level stickers to identify people on your table who can help: you will all be following along from the same worksheets, so someone around you may have got past the point you are stuck at. 
