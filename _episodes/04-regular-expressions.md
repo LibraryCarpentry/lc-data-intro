@@ -3,11 +3,11 @@ title: "Regular Expressions"
 teaching: 20
 exercises: 25
 questions:
-- how can you imagine using regular expressions in your work?
+- How can you imagine using regular expressions in your work?
 objectives:
-- use regular expressions in searches
+- Use regular expressions in searches
 keypoints:
-- regular expressions are powerful tools for pattern matching
+- Regular expressions are powerful tools for pattern matching
 ---
 
 ## Regular Expressions
