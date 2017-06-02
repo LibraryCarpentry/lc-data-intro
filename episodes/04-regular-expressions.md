@@ -67,9 +67,9 @@ So, what is `^[Oo]rgani.e\b` going to match.
 
 Other useful special characters are:
 
-- `*` matches when the preceding character appears any number of times including zero
-- `+` matches when the preceding character appears any number of times excluding zero
-- `?` matches when the preceding character appears one or zero times
+- `*` matches the preceding element zero or more times. For example, ab*c matches "ac", "abc", "abbbc", etc.
+- `+` matches the preceding element one or more times. For example, ab*c matches "abc", "abbbc" but not "ac".
+- `?` matches when the preceding character appears zero or one time.
 - `{VALUE}` matches the preceding character the number of times define by VALUE; ranges can be specified with the syntax `{VALUE,VALUE}`
 - `|` means or.
 
