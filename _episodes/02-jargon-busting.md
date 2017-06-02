@@ -3,13 +3,13 @@ title: "Jargon Busting"
 teaching: 15
 exercises: 30
 questions:
-- what terms, phrases, or ideas around code or software development have you come across and perhaps feel you should know better?
+- What terms, phrases, or ideas around code or software development have you come across and perhaps feel you should know better?
 objectives:
-- explain terms, phrases, and concepts associated with terms, phrases, or ideas around code or software development in libraries
-- compare knowledge of these terms, phrases, and concepts
+- Explain terms, phrases, and concepts associated with terms, phrases, or ideas around code or software development in libraries
+- Compare knowledge of these terms, phrases, and concepts
 - differentiate between these terms, phrases, and concepts
 keypoints:
-- it helps to share what you know and don't know about software development and data science jargon
+- It helps to share what you know and don't know about software development and data science jargon
 ---
 
 ## Jargon Busting

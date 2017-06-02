@@ -3,12 +3,12 @@ title: "Introduction to Library Carpentry"
 teaching: 15
 exercises: 0
 questions:
-- what do librarians gain from code?
+- What do librarians gain from code?
 objectives:
-- explain why software skills are valuable to librarians
-- know where to go for help during Library Carpentry
+- Explain why software skills are valuable to librarians
+- Know where to go for help during Library Carpentry
 keypoints:
-- don't be scared to ask for help
+- Don't be scared to ask for help
 ---
 
 ## Overview

@@ -3,11 +3,11 @@ title: Introduction to Data - Multiple Choice Quiz (answers)"
 teaching: 0
 exercises: 0
 questions:
-- what does `Fr[ea]nc[eh]` match?
+- What does `Fr[ea]nc[eh]` match?
 objectives:
-- test knowledge of use of regular expressions in searches
+- Test knowledge of use of regular expressions in searches
 keypoints:
-- regular expressions answer sheet
+- Regular expressions answer sheet
 ---
 
 # Library Carpentry Week One: Introduction to Data
