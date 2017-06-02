@@ -41,7 +41,7 @@ Then there are:
 - `\` NB: this is also used to escape the following character when that character is a special character. So, for example, a regular expression that found `.com` would be `\.com` because `.` is a special character that matches any character.
 - `^` asserts the position at the start of the line. So what you put after it will only match if they are the first characters of a line.
 - `$` asserts the position at the end of the line. So what you put before it will only match if they are the last characters of a line.
-- `\b` adds a word boundary. Putting this either side of a stops the regular expression matching longer variants of words. So:
+- `\b` adds a word boundary. Putting this either side of a word stops the regular expression matching longer variants of words. So:
 	- the regular expression `foobar` will match `foobar` and find `666foobar`, `foobar777`, `8thfoobar8th` et cetera
 	- the regular expression `\bfoobar` will match `foobar` and find `foobar777`
 	- the regular expression `foobar\b` will match `foobar` and find `666foobar`
