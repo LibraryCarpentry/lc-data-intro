@@ -5,9 +5,7 @@ exercises: 0
 questions:
 - what does `Fr[ea]nc[eh]` match?
 objectives:
-- understand terms, phrases, and concepts in software development and data science
-- identify and use best practice in data structures
-- use regular expressions in searches
+- test knowledge of use of regular expressions in searches
 keypoints:
 - regular expressions answer sheet
 ---
