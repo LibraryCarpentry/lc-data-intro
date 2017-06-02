@@ -3,15 +3,15 @@ title: "Foundations"
 teaching: 30
 exercises: 15
 questions:
-- what best practice and generic skills underpin you encounters with software skills?
+- What best practice and generic skills underpin you encounters with software skills?
 objectives:
-- use best practice in using software and data
-- recognize need for best practice
+- Use best practice in using software and data
+- Recognize need for best practice
 keypoints:
-- data structures should be consistent and predictable
-- consider using semantic elements or data identifiers to data directories
-- fit and adapt your data structure to your work
-- apply naming conventions to directories and file names to identify them, to create associations between data elements, and to assist with the long term readability and comprehension of your data structures
+- Data structures should be consistent and predictable
+- Consider using semantic elements or data identifiers to data directories
+- Fit and adapt your data structure to your work
+- Apply naming conventions to directories and file names to identify them, to create associations between data elements, and to assist with the long term readability and comprehension of your data structures
 ---
 
 ## Foundations
