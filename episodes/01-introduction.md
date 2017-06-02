@@ -21,12 +21,12 @@ The rationale for Library Carpentry is twofold. First, as Andromeda Yelton argue
 
 ### Where to go for help 
 
-First, identify people on your table who can help: you will all be working from the same material, so someone around you may have got mastered the point you are stuck at. 
+First, identify people on your table who can help: you will all be working from the same material, so someone around you may have mastered the point you are stuck at.
 
 Second, there are helpers on hand to help if those around you can't. You should all have access to coloured sticky notes: attaching a red sticky note to your laptop indicates that you need help (it might also alert the attention of someone around you!). So, please use them. 
 
 Third, each part of Library Carpentry may require you to install software or download data. Breaks are a good time to ask for help.
 
-Fourth, we encourage you to finish up or repeat tasks after class time: if you run into any problem, please report them on the relevant Github issues page (see the bottom of each lesson page for a link).
+Fourth, we encourage you to finish up or repeat tasks after class time: if you run into any problems, please report them on the relevant Github issues page (see the bottom of each lesson page for a link).
 
-Most Library Carpentry lessons will require you to follow along whilst your instructor demonstrates a software tool or approach. Sometimes you will fall behind. If you do raise your red stick note and as a helper if we can slow the pace. Your issue may be specific to your computer. Computers are stupid, can frustrate, and as you all have different machines it can be tricky to resolve problems. Please be patient, particularly if your issue is local. Stepping outside and taking a gulp of fresh air always helps.
+Most Library Carpentry lessons will require you to follow along whilst your instructor demonstrates a software tool or approach. Sometimes you will fall behind. If you do, raise your red sticky note and ask a helper if we can slow the pace. Your issue may be specific to your computer. Computers are stupid, can frustrate, and as you all have different machines it can be tricky to resolve problems. Please be patient, particularly if your issue is local. Stepping outside and taking a gulp of fresh air always helps.
