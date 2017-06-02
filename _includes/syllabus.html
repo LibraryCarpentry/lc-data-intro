@@ -18,7 +18,7 @@
     {% if multiday %}<td class="col-md-1"></td>{% endif %}
     <td class="{% if multiday %}col-md-1{% else %}col-md-2{% endif %}"></td>
     <td class="col-md-3"><a href="{{ page.root }}/setup">Setup</a></td>
-    <td class="col-md-7">There are no setup requirements for this lesson</td>
+    <td class="col-md-7">This lesson does not require any special setup</td>
   </tr>
   {% for episode in site.episodes %}
     {% if episode.start %} {% comment %} Starting a new day? {% endcomment %}
