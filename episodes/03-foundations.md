@@ -5,7 +5,8 @@ exercises: 15
 questions:
 - what best practice and generic skills underpin you encounters with software skills?
 objectives:
-- identify and use best practice in data structures
+- use best practice in using software and data
+- recognize need for best practice
 keypoints:
 - data structures should be consistent and predictable
 - consider using semantic elements or data identifiers to data directories
@@ -16,8 +17,6 @@ keypoints:
 ## Foundations
 
 Before we crack on with using the computational tools at our disposal, I want to spend some time on some foundation level stuff - a combination of best practice and generic skills that frame what you'll encounter across Library Carpentry.
-
-**Trainer Note**: we recommend using this section as an opportunity to discuss foundational skills that you think are relevant.
 
 ### The Computer is Stupid
 
@@ -72,7 +71,7 @@ A similar style is used by news agencies such as a *The Guardian* newspaper:
 -   `ROOT/SUB_ROOT/YYYY/MMM/DD/words-describing-content-separated-by-hyphens`
 -   <http://www.theguardian.com/uk-news/2014/feb/20/rebekah-brooks-rupert-murdoch-phone-hacking-trial>
 
-In archival catalogues, URLs structured by a single data element are often used. The NLA's TROVE structures its online archive using the format:
+In data repositories, URLs structured by a single data element are often used. The NLA's TROVE structures its online archive using the format:
 
 -   `ROOT/record-type/REF`
 -   <http://trove.nla.gov.au/work/6315568>
