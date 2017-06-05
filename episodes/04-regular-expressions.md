@@ -8,7 +8,6 @@ objectives:
 - Use regular expressions in searches
 keypoints:
 - Regular expressions are powerful tools for pattern matching
-- `[]` defines a range of characters
 ---
 
 ## Regular Expressions
