@@ -15,8 +15,8 @@ permalink: /reference/
 - `^` asserts the position at the start of the line. So what you put after it will only match if they are the first characters of a line.
 - `$` asserts the position at the end of the line. So what you put before it will only match if they are the last characters of a line.
 - `\b` adds a word boundary. Putting this either side of a stops the regular expression matching longer variants of words. 
-- `*` matches the preceding element zero or more times. For example, ab*c matches "ac", "abc", "abbbc", etc.- `+` matches when the preceding character appears any number of times excluding zero
-- `+` matches the preceding element one or more times. For example, ab*c matches "abc", "abbbc" but not "ac".
+- `*` matches the preceding element zero or more times. For example, `ab*c` matches "ac", "abc", "abbbc", etc.
+- `+` matches the preceding element one or more times. For example, `ab+c` matches "abc", "abbbc" but not "ac".
 - `?` matches when the preceding character appears zero or one time.
 - `{VALUE}` matches the preceding character the number of times define by VALUE; ranges can be specified with the syntax `{VALUE,VALUE}`
 - `|` means or
