@@ -8,6 +8,7 @@ objectives:
 - Use regular expressions in searches
 keypoints:
 - Regular expressions are powerful tools for pattern matching
+- "`[]` defines a range of characters"
 ---
 
 ## Regular Expressions
@@ -50,7 +51,7 @@ Then there are:
 So, what is `^[Oo]rgani.e\b` going to match.
 
 > ## Using special characters in regular expression matches
-> Can you guess what the regular expression `^[Oo]rgani.e\b` will match? 
+> Can you guess what the regular expression `^[Oo]rgani.e\b` will match?
 >
 > > ## Solution
 > > ~~~
@@ -76,7 +77,7 @@ Other useful special characters are:
 So, what are these going to match?
 
 > ## ^[Oo]rgani.e\w*
-> Can you guess what the regular expression `^[Oo]rgani.e\w*` will match? 
+> Can you guess what the regular expression `^[Oo]rgani.e\w*` will match?
 >
 > > ## Solution
 > > ~~~
@@ -90,7 +91,7 @@ So, what are these going to match?
 {: .challenge}
 
 > ## [Oo]rgani.e\w+$
-> Can you guess what the regular expression `[Oo]rgani.e\w+$` will match? 
+> Can you guess what the regular expression `[Oo]rgani.e\w+$` will match?
 >
 > > ## Solution
 > > ~~~
@@ -104,7 +105,7 @@ So, what are these going to match?
 {: .challenge}
 
 > ## ^[Oo]rgani.e\w?\b
-> Can you guess what the regular expression `^[Oo]rgani.e\w?\b` will match? 
+> Can you guess what the regular expression `^[Oo]rgani.e\w?\b` will match?
 >
 > > ## Solution
 > > ~~~
@@ -118,7 +119,7 @@ So, what are these going to match?
 {: .challenge}
 
 > ## ^[Oo]rgani.e\w?$
-> Can you guess what the regular expression `^[Oo]rgani.e\w?$` will match? 
+> Can you guess what the regular expression `^[Oo]rgani.e\w?$` will match?
 >
 > > ## Solution
 > > ~~~
@@ -132,7 +133,7 @@ So, what are these going to match?
 {: .challenge}
 
 > ## \b[Oo]rgani.e\w{2}\b
-> Can you guess what the regular expression `\b[Oo]rgani.e\w{2}\b` will match? 
+> Can you guess what the regular expression `\b[Oo]rgani.e\w{2}\b` will match?
 >
 > > ## Solution
 > > ~~~
@@ -146,7 +147,7 @@ So, what are these going to match?
 {: .challenge}
 
 > ## \b[Oo]rgani.e\b|\b[Oo]rgani.e\w{1}\b
-> Can you guess what the regular expression `\b[Oo]rgani.e\b|\b[Oo]rgani.e\w{1}\b` will match? 
+> Can you guess what the regular expression `\b[Oo]rgani.e\b|\b[Oo]rgani.e\w{1}\b` will match?
 >
 > > ## Solution
 > > ~~~
@@ -166,7 +167,7 @@ This logic is super useful when you have lots of files in a directory, when thos
 Pair up with the person next to you to work throug the following problems.
 
 > ## Using square brackets
-> Can you guess what the regular expression `Fr[ea]nc[eh]` will match? 
+> Can you guess what the regular expression `Fr[ea]nc[eh]` will match?
 >
 > > ## Solution
 > > ~~~
@@ -180,7 +181,7 @@ Pair up with the person next to you to work throug the following problems.
 {: .challenge}
 
 > ## Using dollar signs
-> Can you guess what the regular expression `Fr[ea]nc[eh]$` will match? 
+> Can you guess what the regular expression `Fr[ea]nc[eh]$` will match?
 >
 > > ## Solution
 > > ~~~
@@ -205,7 +206,7 @@ Pair up with the person next to you to work throug the following problems.
 {: .challenge}
 
 > ## Case insensitivity
-> How do you match the whole words `colour` and `color` (case insensitive)? 
+> How do you match the whole words `colour` and `color` (case insensitive)?
 >
 > > ## Solutions
 > > ~~~
@@ -217,7 +218,7 @@ Pair up with the person next to you to work throug the following problems.
 {: .challenge}
 
 > ## Word boundaries
-> How would you find the whole-word `headrest` and or the 2-gram `head rest` but not `head  rest` (that is, with two spaces between `head` and `rest`? 
+> How would you find the whole-word `headrest` and or the 2-gram `head rest` but not `head  rest` (that is, with two spaces between `head` and `rest`?
 >
 > > ## Solution
 > > ~~~
@@ -228,7 +229,7 @@ Pair up with the person next to you to work throug the following problems.
 {: .challenge}
 
 > ## Matching non-linguistic patterns
-> How would you find a string that ends with 4 letters preceded by at least one zero? 
+> How would you find a string that ends with 4 letters preceded by at least one zero?
 >
 > > ## Solution
 > > ~~~
@@ -238,7 +239,7 @@ Pair up with the person next to you to work throug the following problems.
 {: .challenge}
 
 > ## Matching digits
-> How do you match any 4 digit string anywhere? 
+> How do you match any 4 digit string anywhere?
 >
 > > ## Solution
 > > ~~~
@@ -249,7 +250,7 @@ Pair up with the person next to you to work throug the following problems.
 {: .challenge}
 
 > ## Matching dates
-> How would you match the date format `dd-MM-yyyy`? 
+> How would you match the date format `dd-MM-yyyy`?
 >
 > > ## Solution
 > > ~~~
@@ -260,7 +261,7 @@ Pair up with the person next to you to work throug the following problems.
 {: .challenge}
 
 > ## Matching multiple date formats
-> How would you match the date format `dd-MM-yyyy` or `dd-MM-yy` at the end of a string only? 
+> How would you match the date format `dd-MM-yyyy` or `dd-MM-yy` at the end of a string only?
 >
 > > ## Solution
 > > ~~~
