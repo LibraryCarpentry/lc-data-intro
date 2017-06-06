@@ -8,6 +8,7 @@ objectives:
 - Use regular expressions in searches
 keypoints:
 - Regular expressions are powerful tools for pattern matching
+- "`\\d` matches any single digit."
 ---
 
 ## Regular Expressions
