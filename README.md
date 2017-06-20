@@ -12,7 +12,7 @@ Library Carpentry is in the commons and for the commons. It is not tied to any i
 
 There are many ways of contributing to Library Carpentry:
 
-- Join our [Gitter discussion forum]({{ site.contact }}).
+- Join our [Gitter discussion forum](https://gitter.im/LibraryCarpentry/).
 - Follow updates on [Twitter](https://twitter.com/LibCarpentry).
 - Make a suggestion or correct an error by [raising an Issue](https://github.com/data-lessons/library-data-intro/issues).
 
