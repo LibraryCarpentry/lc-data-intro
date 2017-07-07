@@ -11,14 +11,7 @@ ____
 ## Making a handout
 
 Librarians like handouts. To make a handout for this lesson, adapt/print from [http://data-lessons.github.io/library-data-intro/reference/](http://data-lessons.github.io/library-data-intro/reference/).
-  
-____
-## General
 
-Two sets of sticky notes (ideally one red and one blue) are required to run a Library Carpentry workshop. Learners should be encouraged to put a red sticky note on the back of their laptop (raised like a flag) if they need help, and to put the blue sticky note on the back of their laptop if they don't need help.
-
-At each break, ask learners to provide feedback on their learning experience since the last break. They should do this by writing one thing that didn't go well on their red sticky note and and one thing that did go well on their white sticky note. Collect these sticky notes, keep them organised so you know which section of the lesson their pertain to, and collate them after the workshop. Matters arising should be raised as Github issues for the relevant lesson.
-  
 ____
 ## 02-jargon-busting.md
 
@@ -42,3 +35,10 @@ _____
 ## 04-regular-expressions.md 05-quiz.md 06-quiz-answers.md
 
 You may find it useful to use slides to work through episode four (see below for potential slides). Before starting the exercise, encourage learners to work with pen and paper, explain that with regex there are sometimes multiple answers to the same question (that is, some regex is perfect and some does the job given the likely data structures we use) and point them towards places to test their regex: for example regex101 [https://regex101.com/](https://regex101.com/), rexegper [http://regexper.com/](http://regexper.com/), myregexp [http://myregexp.com/]([http://myregexp.com/]), or whichever service you prefer. Also point them towards the quiz (episode five and six) as something they may move onto if they they finish the exercises early or look at after the workshop.
+  
+____
+# General notes on Data Intro
+
+Two sets of sticky notes (ideally one red and one blue) are required to run a Library Carpentry workshop. Learners should be encouraged to put a red sticky note on the back of their laptop (raised like a flag) if they need help, and to put the blue sticky note on the back of their laptop if they don't need help.
+
+At each break, ask learners to provide feedback on their learning experience since the last break. They should do this by writing one thing that didn't go well on their red sticky note and and one thing that did go well on their white sticky note. Collect these sticky notes, keep them organised so you know which section of the lesson their pertain to, and collate them after the workshop. Matters arising should be raised as Github issues for the relevant lesson.
