@@ -72,7 +72,7 @@ Other useful special characters are:
 - `*` matches the preceding element zero or more times. For example, ab*c matches "ac", "abc", "abbbc", etc.
 - `+` matches the preceding element one or more times. For example, ab+c matches "abc", "abbbc" but not "ac".
 - `?` matches when the preceding character appears zero or one time.
-- `{VALUE}` matches the preceding character the number of times define by VALUE; ranges can be specified with the syntax `{VALUE,VALUE}`
+- `{VALUE}` matches the preceding character the number of times defined by VALUE; ranges can be specified with the syntax `{VALUE,VALUE}`
 - `|` means or.
 
 So, what are these going to match?
