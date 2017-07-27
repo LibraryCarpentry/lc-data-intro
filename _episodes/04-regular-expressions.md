@@ -26,7 +26,7 @@ As most computational software has regular expression functionality built in and
 
 A very simple use of a regular expression would be to locate the same word spelled two different ways. For example the regular expression `organi[sz]e` matches both "organise" and "organize".
 
-But it would also match `reorganise`, `reorganize`, `organises`, `organizes`, `organised`, `organized`, et cetera, because we've not specified the beginning or end of our string. So there are a bunch of special syntax that help us be more precise.
+But it would also match `reorganise`, `reorganize`, `organises`, `organizes`, `organised`, `organized`, et cetera, because we have not specified the beginning or end of our string. So we need to use special syntax to help us be more precise.
 
 The first we've seen: square brackets can be used to define a list or range of characters to be found. So:
 
@@ -72,7 +72,7 @@ Other useful special characters are:
 - `*` matches the preceding element zero or more times. For example, ab*c matches "ac", "abc", "abbbc", etc.
 - `+` matches the preceding element one or more times. For example, ab+c matches "abc", "abbbc" but not "ac".
 - `?` matches when the preceding character appears zero or one time.
-- `{VALUE}` matches the preceding character the number of times defined by VALUE; ranges can be specified with the syntax `{VALUE,VALUE}`
+- `{VALUE}` matches the preceding character the number of times defined by VALUE; ranges, say, 1-6, can be specified with the syntax `{VALUE,VALUE}`, e.g. \d{1-9} will match any number between one and nine digits in length.
 - `|` means or.
 
 So, what are these going to match?
