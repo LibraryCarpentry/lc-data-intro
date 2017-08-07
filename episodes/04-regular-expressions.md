@@ -40,6 +40,7 @@ Then there are:
 - `\d` matches any single digit
 - `\w` matches any part of word character (equivalent to `[A-Za-z0-9]`)
 - `\s` matches any space, tab, or newline
+- `\i` renders expression case insensitive (equivalent to `[A-Za-z]`)
 - `\` NB: this is also used to escape the following character when that character is a special character. So, for example, a regular expression that found `.com` would be `\.com` because `.` is a special character that matches any character.
 - `^` asserts the position at the start of the line. So what you put after it will only match if they are the first characters of a line.
 - `$` asserts the position at the end of the line. So what you put before it will only match if they are the last characters of a line.
