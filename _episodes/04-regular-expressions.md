@@ -40,7 +40,6 @@ Then there are:
 - `\d` matches any single digit
 - `\w` matches any part of word character (equivalent to `[A-Za-z0-9]`)
 - `\s` matches any space, tab, or newline
-- `\i` renders expression case insensitive (equivalent to `[A-Za-z]`)
 - `\` NB: this is also used to escape the following character when that character is a special character. So, for example, a regular expression that found `.com` would be `\.com` because `.` is a special character that matches any character.
 - `^` asserts the position at the start of the line. So what you put after it will only match if they are the first characters of a line.
 - `$` asserts the position at the end of the line. So what you put before it will only match if they are the last characters of a line.
@@ -50,7 +49,7 @@ Then there are:
 	- the regular expression `foobar\b` will match `foobar` and find `666foobar`
 	- the regular expression `\bfoobar\b` will find `foobar`
 
-So, what is `^[Oo]rgani.e\b` going to match.
+So, what is `^[Oo]rgani.e\b` going to match?
 
 > ## Using special characters in regular expression matches
 > Can you guess what the regular expression `^[Oo]rgani.e\b` will match?
@@ -75,6 +74,7 @@ Other useful special characters are:
 - `?` matches when the preceding character appears zero or one time.
 - `{VALUE}` matches the preceding character the number of times defined by VALUE; ranges, say, 1-6, can be specified with the syntax `{VALUE,VALUE}`, e.g. `\d{1,9}` will match any number between one and nine digits in length.
 - `|` means or.
+- `/i` renders expression case insensitive (equivalent to `[A-Za-z]`)
 
 So, what are these going to match?
 
