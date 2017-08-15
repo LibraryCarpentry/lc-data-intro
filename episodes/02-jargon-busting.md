@@ -16,7 +16,7 @@ keypoints:
 
 ### Task
 
-This group task is an opportunity for you to get help understanding terms, phrases, or ideas around code or software development in libraries that you've come across and perhaps feel you should know better.
+This group task is an opportunity for you to get help understanding terms, phrases, or ideas around code or software development in libraries that you might have come across and perhaps feel you should know better. This is a safe place to ask these kinds of questions, and to get a firmer grasp on the concepts we might be discussing later. 
 
 - Start by getting into pairs.
 - Talk for 3 minutes (your instructor will be timing you!) on any terms, phrases, or ideas around code or software development in libraries that you've come across and perhaps feel you should know better.
