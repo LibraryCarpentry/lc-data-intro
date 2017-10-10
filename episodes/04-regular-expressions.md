@@ -238,7 +238,7 @@ Pair up with the person next to you to work through the following problems.
 >
 > > ## Solution
 > > ~~~
-> > 0+[a-z]{4}\b
+> > 0+[A-Za-z]{4}\b
 > > ~~~
 > {: .solution}
 {: .challenge}
