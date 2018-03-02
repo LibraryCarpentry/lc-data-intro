@@ -1,7 +1,7 @@
 ---
 title: "Foundations"
-teaching: 30
-exercises: 15
+teaching: 45
+exercises: 0
 questions:
 - What best practice and generic skills underpin you encounters with software skills?
 objectives:
