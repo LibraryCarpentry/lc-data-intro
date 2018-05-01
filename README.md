@@ -1,6 +1,6 @@
 # Library Carpentry
 
-The Library Carpentry module '[Data Intro for Librarians](http://data-lessons.github.io/library-data-intro/)' is maintained by [Carmi Cronje](https://github.com/ccronje) and [James Baker](https://github.com/drjwbaker).
+The Library Carpentry module '[Data Intro for Librarians](https://librarycarpentry.github.io/lc-data-intro/)' is maintained by [Carmi Cronje](https://github.com/ccronje) and [James Baker](https://github.com/drjwbaker).
 
 ## Background
 
@@ -14,7 +14,7 @@ There are many ways of contributing to Library Carpentry:
 
 - Join our [Gitter discussion forum](https://gitter.im/LibraryCarpentry/).
 - Follow updates on [Twitter](https://twitter.com/LibCarpentry).
-- Make a suggestion or correct an error by [raising an Issue](https://github.com/data-lessons/library-data-intro/issues).
+- Make a suggestion or correct an error by [raising an Issue](https://github.com/LibraryCarpentry/lc-data-intro/issues).
 
 ## Code of Conduct
 
@@ -22,10 +22,10 @@ All participants should agree to abide by the [Software Carpentry Code of Conduc
 
 ## Authors
 
-Library Carpentry is authored and maintained by the [community](https://github.com/data-lessons/library-data-intro/network/members).
+Library Carpentry is authored and maintained by the [community](https://github.com/orgs/LibraryCarpentry/people).
 
 ## Citation
 
 Please cite as:
 
-Library Carpentry. Data Intro for Librarians. June 2016. http://data-lessons.github.io/library-data-intro/.
+Library Carpentry. Data Intro for Librarians. June 2016. https://librarycarpentry.github.io/lc-data-intro/.
