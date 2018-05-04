@@ -12,7 +12,7 @@ keypoints:
 
 # Multiple Choice Quiz
 
-This multiple choice quiz is designed to embed the regex knowledge you learned during this module. We recommend you work through it someone after class (within a week or so). Answers are on the answer sheet.
+This multiple choice quiz is designed to embed the regex knowledge you learned during this module. We recommend you work through it sometime after class (within a week or so). Answers are on the answer sheet.
 
 Q1. What is the special character that matches zero or more characters
 
