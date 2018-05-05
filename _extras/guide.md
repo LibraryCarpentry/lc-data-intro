@@ -10,7 +10,7 @@ ____
 ____
 ## Making a handout
 
-Librarians like handouts. To make a handout for this lesson, adapt/print from [http://data-lessons.github.io/library-data-intro/reference/](http://data-lessons.github.io/library-data-intro/reference/).
+Librarians like handouts. To make a handout for this lesson, adapt/print from [https://librarycarpentry.github.io/lc-data-intro/reference/](https://librarycarpentry.github.io/lc-data-intro/reference/).
 
 ____
 ## 02-jargon-busting.md
