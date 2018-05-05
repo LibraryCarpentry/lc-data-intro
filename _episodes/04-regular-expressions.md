@@ -9,7 +9,7 @@ objectives:
 keypoints:
 - Regular expressions are powerful tools for pattern matching
 - "Check your regex with: regex101 [https://regex101.com/](https://regex101.com/), rexegper [http://regexper.com/](http://regexper.com/), or myregexp [http://myregexp.com/]([http://myregexp.com/])."
-- "Test yourself with: Regex Crossword [https://regexcrossword.com/](https://regexcrossword.com/) or our The Multiple Choice Quiz [http://data-lessons.github.io/library-data-intro/05-quiz/](http://data-lessons.github.io/library-data-intro/05-quiz/)."
+- "Test yourself with: Regex Crossword [https://regexcrossword.com/](https://regexcrossword.com/) or our The Multiple Choice Quiz [https://librarycarpentry.github.io/lc-data-intro/05-quiz/](https://librarycarpentry.github.io/lc-data-intro/05-quiz/)."
 ---
 
 ## Regular Expressions
