@@ -22,7 +22,7 @@ Before we crack on with using the computational tools at our disposal, let's spe
 
 ### The computer is stupid
 
-This does not mean that the computer isn't useful. Given a repetitive task, an enumerative task, or a task that relies on memory, it can produce results faster, more accurately, and less grudgingly than a person might. A computer only does what you tell it to. If you get an error message, it is often not your fault! In most cases the computer has failed to interpret what you mean because it can only work with what it knows. 
+It is true: The computer is stupid. However, the computer is also useful. Given a repetitive task, an enumerative task, or a task that relies on memory, it can produce results faster, more accurately, and less grudgingly than a person might. A computer only does what you tell it to. If you get an error message, it is often not your fault! In most cases the computer has failed to interpret what you mean because it can only work with what it knows. 
 
 ### Why Take an automated or computational approach
 
