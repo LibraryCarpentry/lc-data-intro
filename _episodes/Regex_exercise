@@ -1,0 +1,103 @@
+Exercise
+
+Open a browser and go to the website https://regex101.com/
+
+Open the swCoC.md file, copy it, and paste it into the test string box.
+
+Type 'community' into the regular expression box. 
+
+you get 6 full matches of the word "community"
+
+Type 'community ' (with a space). You get three matches. Why not six?
+
+The string 'community-led' matches the first search, but drops out of this result because the space does not match the character '-'. If you want to match 'community-led' by adding another regex character, what would it be? Answer: . (period)
+
+Change the string to communi
+
+you get 13 full matches of several words. Why?
+
+solution:
+Because the string 'communi' is present in all of those words.
+
+Change the string to [Cc]ommuni
+
+You get 14 matches. Why?
+
+There is the word Community with a capital C.
+
+Change the string to ^[Cc]ommuni. You get no matches. Why?
+
+There is no matching string present at the start of a line.
+
+Find all of the words starting with Comm or comm that are plural.
+
+Answer: [Cc]omm\w+s
+
+How would you find the email addresses, if any, in this document?
+
+1. Start with a character you know should be in the string. In an email, there should be an "@"
+
+2. the string before the "@" could contain any kind of word character (/w?), digit (/d?) or (|) character (./?), matching the preceding character 1 or many times:
+
+[\w?|\d?|.?]+@
+
+3. The same with the first part of the address:
+
+[\w?|\d?|.?]+@[\w?|\d?|.?]+
+
+4. And we know there will be a period, which, since it is also the symbol for a character, has to be preceded by an escape, which is the backslash:
+
+[\w?|\d?|.?]+@[\w?|\d?|.?]+\.
+
+5. Finally, we want to find a series of word characters (/w?) or digits (/d?) two to three characters long ({2,4})
+
+[\w?|\d?|.?]+@[\w?|\d?|.?]+\.[\w?|\d?]{2,4}
+
+
+Does this CoC provide a phone number to call?
+
+What to consider:
+1. It may or may not have a country code, perhaps starting with a "+"
+2. It will have an area code, potentially enclosed in parens
+3. It may have the sections all separated with a "-"
+
+How would we write a regex to capture any of these possibilities?
+
+Start with what we know is most likely, three digits, a dash, and four digits.
+
+\d{1,3}-\d{1,4}
+
+Add the potential for an area code with a dash
+
+\d{3}-\d{3}-\d{4}
+
+What if the phone number has the area code in parens with a space between it and the rest of the number.
+
+\(?\d{3}\)?-?\d{3}-\d{4}
+    \(? = opening paren that needs an escape (\) that may appear 0 or 1 time (?)
+    \d{3} = 3 digits
+    \)? = closing paren that needs an escape (\) that may appear 0 or 1 time (?)
+    -? = a dash that may appear 0 or 1 time (?)
+In this case, you have created an expression that meets both conditions: parens that may appear, and/or a dash that may appear.
+
+But what if there is a space between the closing paren and the rest of the number?
+
+\(?\d{3}\)?-?\s?\d{3}-\d{4}
+
+Adding the /s? to the expression means a space may appear. The addition of this fulfills all of the conditions....
+
+but wait! What if you want to capture the country code?
+
+Country codes are preceded by a "+" and can have up to three digits. We also have to consider that there may or may not be a space between the country code and anything appearing next.
+
+\+\d{1,3}\s?\(?\d{3}\)?-?\s?\d{3}-\d{4}
+
+ 
+
+    
+
+
+
+
+
+
