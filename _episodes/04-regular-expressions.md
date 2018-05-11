@@ -14,9 +14,9 @@ keypoints:
 
 ## Regular Expressions
 
-One of the reasons we stress the value of consistent and predictable directory and filenaming conventions is that working in this way enables you to use the computer to select files based on the characteristics of their file names. So, for example, if you have a bunch of files where the first four digits are the year and you only want to do something with files from '2017', then you can. Or if you have 'journal' somewhere in a filename when you have data about journals, you can use the computer to select just those files, then do something with them. Equally, using plain text formats means that you can go further and select files or elements of files based on characteristics of the data *within* those files.
+One of the reasons we stress the value of consistent and predictable directory and filenaming conventions is that working in this way enables you to use the computer to select files based on the characteristics of their file names. For example, if you have a bunch of files where the first four digits are the year and you only want to do something with files from '2017', then you can. Or if you have 'journal' somewhere in a filename when you have data about journals, you can use the computer to select just those files. Equally, using plain text formats means that you can go further and select files or elements of files based on characteristics of the data *within* those files.
 
-A powerful means of doing this selecting based on file characteristics is to use regular expressions, often abbreviated to *regex*. A regular expression is a sequence of characters that define a search pattern, mainly for use in pattern matching with strings, or string matching, i.e. "find and replace"-like operations. For those who have not met this term before, a string is a contiguous sequence of symbols or values, for example, a word, a date, a set of numbers, such as a phone numnber, or an alphanumeric value such as a repository identifier.
+A powerful means of selecting based on file characteristics is to use regular expressions, often abbreviated to *regex*. A regular expression is a sequence of characters that define a search pattern, mainly for use in pattern matching with strings, or string matching, i.e. "find and replace"-like operations. For those who have not met this term before, a string is a contiguous sequence of symbols or values, for example, a word, a date, a set of numbers, such as a phone numnber, or an alphanumeric value such as a repository identifier.
 
 Regular expressions are typically surrounded by `/` characters, though we will (mostly) ignore those for ease of comprehension. Regular expressions will let you:
 
@@ -24,13 +24,9 @@ Regular expressions are typically surrounded by `/` characters, though we will (
 - Match patterns that repeat any number of times
 - Capture the parts of the original string that match your pattern
 
-As most computational software has regular expression functionality built in and as many computational tasks in libraries are built around complex matching, it is good place for Library Carpentry to start in earnest.
+A very simple use of a regular expression would be to locate the same word spelled two different ways. For example the regular expression `organi[sz]e` matches both "organise" and "organize". But it would also match `reorganise`, `reorganize`, `organises`, `organizes`, `organised`, `organized`, et cetera, because we have not specified the beginning or end of our string. So we need to use special syntax to help us be more precise.
 
-A very simple use of a regular expression would be to locate the same word spelled two different ways. For example the regular expression `organi[sz]e` matches both "organise" and "organize".
-
-But it would also match `reorganise`, `reorganize`, `organises`, `organizes`, `organised`, `organized`, et cetera, because we have not specified the beginning or end of our string. So we need to use special syntax to help us be more precise.
-
-The first we've seen: square brackets can be used to define a list or range of characters to be found. So:
+Square brackets can be used to define a list or range of characters to be found. So:
 
 - `[ABC]` matches A or B or C
 - `[A-Z]` matches any upper case letter
@@ -165,11 +161,16 @@ So, what are these going to match?
 > {: .solution}
 {: .challenge}
 
-This logic is useful when you have lots of files in a directory, when those files have logical file names, and when you want to isolate a selection of files. Or it can be used for looking at cells in spreadsheets for certain values, or for extracting some data from a column of a spreadsheet to make  new columns. I could go on. The point is, it is useful in many contexts. To embed this knowledge we won't - however - be using computers. Instead we'll use pen and paper. Work in teams of 4-6 on the exercises below. When you think you have the right answer, check it against the solution. When you finish, I'd like you to split your team into two groups and write each other some tests. These should include a) strings you want the other team to write regex for and b) regular expressions you want the other team to work out what they would match. Then test each other on the answers. If you want to check your logic, use [regex101](https://regex101.com/), [myregexp](http://myregexp.com/), or [regex pal](http://www.regexpal.com/) [regexper.com](http://regexper.com/): the first three help you see what text your regular expression will match, the latter visualises the workflow of a regular expression.
+This logic is useful when you have lots of files in a directory, when those files have logical file names, and when you want to isolate a selection of files. It can a be used for looking at cells in spreadsheets for certain values, or for extracting some data from a column of a spreadsheet to make  new columns. I could go on. The point is, it is useful in many contexts. To embed this knowledge we won't - however - be using computers. Instead we'll use pen and paper. 
+
 
 ### Exercise
 
-Pair up with the person next to you to work through the following problems.
+Work in teams of 4-6 on the exercises below. When you think you have the right answer, check it against the solution. 
+
+When you finish, split your team into two groups and write each other some tests. These should include a) strings you want the other team to write regex for and b) regular expressions you want the other team to work out what they would match. 
+
+Then test each other on the answers. If you want to check your logic, use [regex101](https://regex101.com/), [myregexp](http://myregexp.com/), or [regex pal](http://www.regexpal.com/) [regexper.com](http://regexper.com/): the first three help you see what text your regular expression will match, the latter visualises the workflow of a regular expression.
 
 > ## Using square brackets
 > Can you guess what the regular expression `Fr[ea]nc[eh]` will match?
