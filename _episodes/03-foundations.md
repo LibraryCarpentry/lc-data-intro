@@ -24,18 +24,18 @@ Before we crack on with using the computational tools at our disposal, let's spe
 
 It is true: The computer is stupid. However, the computer is also useful. Given a repetitive task, an enumerative task, or a task that relies on memory, it can produce results faster, more accurately, and less grudgingly than a person might. A computer only does what you tell it to. If you get an error message, it is often not your fault! In most cases the computer has failed to interpret what you mean because it can only work with what it knows. 
 
-### Why Take an automated or computational approach
+### Why take an automated or computational approach?
 
-Otherwise known as the 'why not do it manually?' question. To start with, we do not need to take an "anti-manual" stance. We all do plenty of things manually that a machine could do in an automated way because either a) we do not know how to automate the task or b) we may be unlikely to repeat the task, and can estimate that automating it would take longer. However once you know you'll need to repeat a task, you have a compelling reason to consider automating it.
-
-Andromeda Yelton, a US based librarian, closely involved in the Code4Lib movement, put together an excellent American Library Association Library Technology Report called ["Coding for Librarians: Learning by Example."](https://thatandromeda.github.io/ltr/). In it, Andromeda describes scenarios where library professionals developed and shared code that made a difference to their work, to the work of their colleagues, and to the work of their library.
+Otherwise known as the 'why not do it manually?' question. There are plenty of times when manual work is the easiest, fastest and most efficient approach. Here are two conditions that should make you consider using automation: 
+ - You know how to automate the task
+ - You think this is a task you will do over and over again
 
 Main lessons:
 
 - **Borrow, Borrow, and Borrow again**. This is a mainstay of programming and a practice common to all skill levels, from professional programmers to people like us hacking around in libraries;
 - **The correct language to learn is the one that works in your local context**. There truly isn't a best language, just languages with different strengths and weaknesses, all of which incorporate the same fundamental principles;
-- **Consider the role of programming in professional development**. That is both yours and of those you manage;
-- **Knowing (even a little) code helps you evaluate projects that use code**. Programming can seem alien. Knowing some code makes you better at judging the quality of software development or planning activities that include software development
+- **Consider the role of programming in professional development**. Computational skills improve your efficiency and effectivness. Stay alert to skills you want to learn, and be aware of what skills you can make sure your staff learn, as well. 
+- **Knowing (even a little) code helps you evaluate projects that use code**. Programming can seem alien. Knowing some code makes you better at judging the quality of software development or planning activities that include software development.
 - **Automate to make the time to do something else!** Taking the time to gather together even the most simple programming skills can save time to do more interesting stuff! (even if often that more interesting stuff is learning more programming skills ...)
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Just added two annotations to <a href="https://twitter.com/nthelitz">@nthelitz</a> graphic about the geek/non-geek <a href="http://t.co/KpsRYW8zD2">pic.twitter.com/KpsRYW8zD2</a></p>&mdash; Andy Kirk (@visualisingdata) <a href="https://twitter.com/visualisingdata/status/621957383464599552">July 17, 2015</a></blockquote>
@@ -98,3 +98,7 @@ In practice, the structure of a good archive might look something like this:
 All this should help you remember something you were working on when you come back to it later (call it real world preservation).
 
 The crucial bit for our purposes, however, is the file naming convention you choose. The name of a file is important to ensuring it and its contents are easy to identify. 'Data.xslx' doesn't fulfil this purpose. A title that describes the data does. And adding dating convention to the file name, associating derived data with base data through file names, and using directory structures to aid comprehension strengthens those connections.
+
+## For further reading
+
+Andromeda Yelton, a US-based librarian, closely involved in the Code4Lib movement, put together an excellent American Library Association Library Technology Report called ["Coding for Librarians: Learning by Example."](https://thatandromeda.github.io/ltr/). In it, Yelton describes scenarios in which library professionals developed and shared code that made a difference to their work, to the work of their colleagues, and to the work of their library.
