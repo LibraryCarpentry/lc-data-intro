@@ -287,6 +287,231 @@ Pair up with the person next to you to work through the following problems.
 > {: .solution}
 {: .challenge}
 
+### Exercise Using Regex101.com
+
+For this exercise, open a browser and go to [https://regex101.com](https://regex101.com). 
+
+Open the [swCoC.md file](https://github.com/LibraryCarpentry/lc-data-intro/tree/gh-pages/data/swCoC.md), copy it, and paste it into the test string box.
+
+For a quick test to see if it's working, type the string `community` into the regular expression box. 
+
+If you look in the box on the right of the screen, you see that the expression matches six instances of the string 'community' (the instances are also highlighted within the text)
+
+> ## Taking spaces into consideration
+> Type `community `. You get three matches. Why not six?
+> > ## Solution
+> >
+> > The string 'community-led' matches the first search, but drops out of this result because the space does not match the character `-`. 
+> >
+> {: .solution}
+{: .challenge}
+
+> ## Taking any character into consideration
+> If you want to match 'community-led' by adding another regex character to the expression `community`, what would it be?
+> > ## Solution
+> >
+> > It would be the `.` 
+> >
+> {: .solution}
+{: .challenge}
+
+> ## Exploring effect of expressions matching different words
+> Change the expression to `communi` you get 13 full matches of several words. Why?
+> > ## Solution
+> >
+> > Because the string 'communi' is present in all of those words, including `communi`cation and `communi`ty. Because the expression does not have a word boundary, this expression would also match in`communi`cado, were it present in this text. If you want to test this, type `incommunicado` into the text somewhere and see if it is found.
+> >
+> {: .solution}
+{: .challenge}
+
+> ## Taking capitalization into consideration
+> Type the expression `[Cc]ommuni`. You get 14 matches. Why?
+> > ## Solution
+> >
+> > The word Community is present in the text with a capital `C` and with a lowercase `c` 14 times.
+> >
+> {: .solution}
+{: .challenge}
+
+> ## Regex characters that indication location
+> Type the expression ^[Cc]ommuni. You get no matches. Why?
+> > ## Solution
+> >
+> > There is no matching string present at the start of a line. Look at the text and replace the string after the `^` with something that matches a word at the start of a line. Does it find a match?
+> >
+> {: .solution}
+{: .challenge}
+
+> ## Finding plurals
+> Find all of the words starting with Comm or comm that are plural.
+> > ## Solution
+> > ~~~
+> > [Cc]omm\w+s
+> > ~~~
+> > `[Cc]` finds capital and lowercase `c`
+> >
+> > `omm` is straightforward character matches
+> >
+> > `\w+` matches the preceding element (a word character) one or more times
+> >
+> > `s` is a straightforward character match
+> >
+> {: .solution}
+{: .challenge}
+
+### Exercise finding Email addresses, Using regex101.com
+
+For this exercise, open a browser and go to [https://regex101.com](https://regex101.com). 
+
+Open the [swCoC.md file](https://github.com/LibraryCarpentry/lc-data-intro/tree/gh-pages/data/swCoC.md), copy it, and paste it into the test string box.
+
+> ## Start with what you know
+> What character do you know is held in common with all email addresses?
+> > ## Solution
+> >
+> > The '@' character.
+> >
+> {: .solution}
+{: .challenge}
+
+> ## Add to what you know
+> The string before the "@" could contain any kind of word character, special character or digit in any combination and length. How would you express this in regex? Hint: often addresses will have a dash (`-`) in them, and the dash is not included in the character expression (`.`). How do you capture this in the expression?
+> > ## Solution
+> > ~~~
+> > [\w|.|\d|-]+@
+> > ~~~
+> > `\w` matches any word character 
+> >
+> > `|` is the 'or' boolean
+> >
+> > `\d` matches any digit
+> >
+> > `\.` matches any character
+> >
+> > `-` straightforward match, since it is not captured with `\.`
+> >
+> > `[]` the brackets enclose the boolean string that 'OR' the digits, word characters, characters and dash.
+> >
+> > `+` matches any word character OR digit OR character OR `-` repeated 1 or more times
+> >
+> {: .solution}
+{: .challenge}
+
+> ## Finish the expression
+> The string after the "@" could contain any kind of word character, special character or digit in any combination and length as well as the dash. In addition, we know that it will end with two or three characters after a period (`.`) What expression would capture this. Hint: the `.` is also a regex expression, so you'll have to use the escape `\` to express a literal period. Note: for the string after the period, I did not try to match a character, since those rarely appear in the .xx or .xxx at the end of an email address.
+> > ## Solution
+> > ~~~
+> > [\w|\d|.|-]+\.[\w|\d]{2,4}
+> > ~~~
+> > See the previous exercise for the explanation of the expression up to the `+`
+> >
+> > `\.` matches the literal periond ('.') not the regex expression `.`
+> >
+> > `\w` matches any word
+> >
+> > `\d` matches any digit
+> >
+> > `{2,4}` limits the number of word characters and/or digits to a two or three-character string.
+> >
+> > `[]` the brackets enclose the boolean string that 'OR' the digits, word characters, characters and dash.
+> >
+> > `+` matches any word character OR digit OR character OR `-` repeated 1 or more times
+> >
+> {: .solution}
+{: .challenge}
+
+### Exercise finding Email addresses, Using regex101.com
+
+Does this Code of Conduct contain a phone number?
+
+What to consider:
+1. It may or may not have a country code, perhaps starting with a "+"
+2. It will have an area code, potentially enclosed in parens
+3. It may have the sections all separated with a "-"
+
+> ## Start with what you know: find strings of digits
+> Start with what we know, which is the most basic format of a phone number: three digits, a dash, and four digits. How would we write a regex expression that matches this?
+> > ## Solution
+> > ~~~
+> > \d{3}-\d{4}
+> > ~~~
+> > `\d` matches digits
+> >
+> > `{3}` matches 3 digits
+> > 
+> > `-` matches the character '-'
+> >
+> > `\d` matches any digit
+> >
+> > `{4}` matches 4 digits.
+> > 
+> >This expression should find three matches in the document.
+> {: .solution}
+{: .challenge}
+
+> ## Match a string that includes an area code with a dash
+> Start with what we know, which is the most basic format of a phone number: three digits, a dash, and four digits. How would we write a regex expression that matches this?
+> > ## Solution
+> > ~~~
+> > \d{3}-\d{3}-\d{4}
+> > ~~~
+> > `\d` matches digits
+> >
+> > `{3}` matches 3 digits
+> > 
+> > `-` matches the character '-'
+> >
+> > `\d` matches any digit
+> >
+> > `{4}` matches 4 digits.
+> >
+> >This expression should find one match in the document
+> {: .solution}
+{: .challenge}
+
+> ## Match a string that includes an area code within parenthesis separated from the rest of the phone number with a space or without a space
+> Start with what we know, which is the most basic format of a phone number: three digits, a dash, and four digits. How would we expand the expression to include a phone number with an area code in parenthesis, separated from the phone number, with or without a space.
+> > ## Solution
+> > ~~~
+> >\(\d{3}\)\s?\d{3}-\d{4}
+> > ~~~
+> > `\(` escape character with the parenthesis as straightforward character match
+> >
+> > `\d` matches digits
+> >
+> > `{3}` matches 3 digits
+> > 
+> > `\)` escape character with the parenthesis as a straightforward character match
+> >
+> > `\s?` matches zero or one spaces
+> > 
+> > See the previous exercise for the explanation of the rest of the expression.
+> > 
+> > This expression should find two matches in the document.
+> {: .solution}
+{: .challenge}
+
+> ## Match a phone number containing a country code.
+> Country codes are preceded by a "+" and can have up to three digits. We also have to consider that there may or may not be a space between the country code and anything appearing next.
+> > ## Solution
+> > ~~~
+> >\+\d{1,3}\s?\(\d{3}\)\s?\d{3}-\d{4}
+> > ~~~
+> > `\+` escape character with the plus sign as straightforward character match
+> >
+> > `\d` matches digits
+> >
+> > `{1,3}` matches 1 to 3 digits
+> >
+> > `\s?` matches zero or one spaces
+> > 
+> > See the previous exercise for the explanation of the rest of the expression.
+> > 
+> > This expression should find one match in the document.
+> {: .solution}
+{: .challenge}
+
+
 ## References
 
 James Baker , "Preserving Your Research Data," *Programming Historian* (30 April 2014), [http://programminghistorian.org/lessons/preserving-your-research-data.html](http://programminghistorian.org/lessons/preserving-your-research-data.html). The sub-sections 'Plain text formats are your friend' and 'Naming files sensible things is good for you and for your computers' are reworked from this lesson.
