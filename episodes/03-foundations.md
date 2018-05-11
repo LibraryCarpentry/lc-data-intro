@@ -45,7 +45,15 @@ Why Automate?: see [Geeks and repetitive tasks image](https://pbs.twimg.com/medi
 
 ### Keyboard shortcuts are your friend
 
-Though we will get more computational over the course of the programme, we can start our adventure into programming - as many of you will have already - with very simple things like keyboard shortcuts. We all have our favourites, that are labour saving but also allow us to use this stupid machine in the best possible way. Alongside the very basic ones (ctrl+s for save; ctrl+c for copy; ctrl+x for cut; ctrl+v for paste), one favourite in a Windows or Linux machine is alt+tab, a keyboard shortcut that switches between programs. {**Trainer note**: ask other helpers what their favourites are}. You can do all the lessons in Library Carpentry without keyboard shortcuts, but note that they'll likely come up a lot.
+Though we will get more computational over the course of the programme, we can start our adventure into programming - as many of you will have already - with very simple things like keyboard shortcuts. We all have our favourites, that are labour saving but also allow us to use this stupid machine in the best possible way. {**Trainer note**: ask other helpers what their favourites are}. You can do all the lessons in Library Carpentry without keyboard shortcuts, but note that they'll likely come up a lot.
+
+Action | Windows | Mac | + keystroke
+--- | --- | --- | --- |
+Save | Ctrl | Cmd | + s
+Copy | Ctrl | Cmd | + c
+Cut | Ctrl | Cmd | + x
+Paste | Ctrl | Cmd | + v
+Switch Applications | Ctrl | Cmd | Tab | 
 
 ### Plain text formats are your friend
 
