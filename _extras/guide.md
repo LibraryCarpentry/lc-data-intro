@@ -31,6 +31,8 @@ The material in this episode is intended as a guide. Instructors are recommended
 
 The purpose of the section is to situate a Library Carpentry workshop in a wider landscape of practice and to demonstrate the value of commonsense approaches to software and data.
 
+Ask other helpers what their favourite keyboard shortcuts.
+
 _____
 ## 04-regular-expressions.md 05-quiz.md 06-quiz-answers.md
 
