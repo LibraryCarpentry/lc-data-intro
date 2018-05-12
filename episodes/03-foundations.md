@@ -59,21 +59,21 @@ Switch Applications | Ctrl | Cmd | Tab |
 
 Why? Because computers can process them!
 
-If you want computers to be able to process your stuff, try to get in the habit where possible of using platform-agnostic formats such as .txt for notes and .csv (comma-separated values) or .tsv (tab-separated values) for tabular data. TSV and CSV files are both spreadsheet formats. These plain text formats are preferable to the proprietary formats (e.g., Microsoft Word)  because they can be opened by many software packages and have a strong chance of remaining viewable and editable in the future. Most standard office suites include the option to save files in .txt, .csv and .tsv formats, meaning you can continue to work with familiar software and save your files in the more perennial formats. Compared to .doc or .xls, these formats have the additional benefit of containing only machine-readable elements. 
+If you want computers to be able to process your stuff, try to get in the habit where possible of using platform-agnostic formats such as .txt for notes and .csv (comma-separated values) or .tsv (tab-separated values) for tabular data. TSV and CSV files are both spreadsheet formats. These plain text formats are preferable to the proprietary formats (e.g., Microsoft Word)  because they can be opened by many software packages and have a strong chance of remaining viewable and editable in the future. Most standard office suites include the option to save files in .txt, .csv, and .tsv formats, meaning you can continue to work with familiar software and save your files in the more perennial formats. Compared to .doc or .xls, these formats have the additional benefit of containing only machine-readable elements. 
 
-When working with files for automation or computational purposes, it is more important to focus on meaningful transmission of data as opposed to fancy formatting. Whilst using bold, italics, and colouring to signify headings or to make a visual connection between data elements is common practice, these display-orientated annotations are not (easily) machine-readable and hence can neither be queried and searched nor are appropriate for large quantities of information. One rule of thumb is if you can't find it by CTRL+F/cmd-F it isn't machine readable. Preferable are simple notation schemes such as using a double-asterisk or three hashes to represent a data feature: for example, we could use three question marks to indicate something that needs follow up, chosen because `???` can easily be found with a CTRL+F/cmd-F search.
+When working with files for automation or computational purposes, it is more important to focus on meaningful transmission of data as opposed to fancy formatting. Whilst using bold, italics, and colouring to signify headings or to make a visual connection between data elements is common practice, these display-orientated annotations are not (easily) machine-readable and hence can neither be queried and searched nor are appropriate for large quantities of information. One rule of thumb is if you can't find it by ctrl+f/cmd-f it isn't machine readable. Preferable are simple notation schemes such as using a double-asterisk or three hashes to represent a data feature: for example, we could use three question marks to indicate something that needs follow up, chosen because `???` can easily be found with a ctrl+f/cmd+f search.
 
-`???` is also a good choice because it doesn't clash with existing schemes or systems of notation. Though it is likely that notation schemes will emerge from existing individual practice, existing schemes are available to represent formatting such as headers, line breaks, and so on. One such scheme is Markdown, a lightweight markup language. Markdown files, named as .md, are machine readable, human readable, and used in many contexts - for example, GitHub renders text via Markdown. An excellent [Markdown cheat sheet is available on GitHub](https://github.com/adam-p/markdown-here) for those who wish to follow – or adapt – this existing schema. Notepad++ http://notepad-plus-plus.org/ is recommended for Windows users as a tool to write Markdown text in, though it is by no means essential for working with .md files. Mac or Unix users may find Komodo Edit, Text Wrangler, Kate, or Atom helpful. Combined with [pandoc](http://pandoc.org/), a Markdown file can be exported to PDF, HTML, a formatted Word document, LaTeX or other formats, so it is a great way to create machine-readable, easily searchable documents that can be repurposed in many ways. It is a universal document converter.
+### Use machine readable plain text notation for formatting
+There are some simple notation schemes that are also plain text and machine readable, but can be used to render simple formatting. One such scheme is called Markdown, a lightweight markup language. A markup language is a a metadata language that uses notation to distinguish between the content and the formatting of the content. Markdown files, which use the file extension .md, are machine readable, human readable, and used in many contexts - for example, GitHub renders text via Markdown. An excellent [Markdown cheat sheet is available on GitHub](https://github.com/adam-p/markdown-here) for those who wish to follow – or adapt – this existing schema. 
+
+### Applications for writing and reading plain text files
+For Windows users, Notepad++ http://notepad-plus-plus.org/ is recommended. Mac or Unix users may find Komodo Edit, Text Wrangler, Kate, or Atom helpful. Combined with [pandoc](http://pandoc.org/), a Markdown file can be exported to PDF, HTML, a formatted Word document, LaTeX or other formats, so it is a great way to create machine-readable, easily searchable documents that can be repurposed in many ways. 
 
 ### Naming files sensible things is good for you and for your computers
 
-Working with data is made easier by structuring your stuff in a consistent and predictable manner.
+Working with data is made easier by structuring your files in a consistent and predictable manner. Without structured information, our lives would be much poorer. As library and archive people, we know this. But let's linger on this a little longer because for working with data it is especially important.
 
-Why?
-
-Without structured information, our lives would be much poorer. As library and archive people we know this. But let's linger on this a little longer because for working with data it is especially important.
-
-Examining URLs is a good way of thinking about why structuring research data in a consistent and predictable manner might be useful in your work. Good URLs represent with clarity the content of the page they identify, either by containing semantic elements or by using a single data element found across a set or majority of pages.
+Examining URLs is a good way of thinking about why structuring data in a consistent and predictable manner might be useful in your work. Good URLs represent with clarity the content of the page they identify, either by containing semantic elements or by using a single data element found across a set or majority of pages.
 
 A typical example of the former are the URLs used by news websites or blogging services. WordPress URLs follow the format:
 
@@ -85,12 +85,12 @@ A similar style is used by news agencies such as a *The Guardian* newspaper:
 -   `ROOT/SUB_ROOT/YYYY/MMM/DD/words-describing-content-separated-by-hyphens`
 -   <http://www.theguardian.com/uk-news/2014/feb/20/rebekah-brooks-rupert-murdoch-phone-hacking-trial>
 
-In data repositories, URLs structured by a single data element are often used. The NLA's TROVE structures its online archive using the format:
+In data repositories, URLs structured by a single data element are often used. The National Library of Australia's TROVE uses this format:
 
 -   `ROOT/record-type/REF`
 -   <http://trove.nla.gov.au/work/6315568>
 
-And the Old Bailey Online uses the format:
+The Old Bailey Online uses the format:
 
 -   `ROOT/browse.jsp?ref=REF`
 -   <http://www.oldbaileyonline.org/browse.jsp?ref=OA16780417>
