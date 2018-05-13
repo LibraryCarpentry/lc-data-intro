@@ -7,25 +7,28 @@ questions:
 objectives:
 - Use regular expressions in searches
 keypoints:
-- Regular expressions are powerful tools for pattern matching
+- Regular expressions is a language for pattern matching
 - "Check your regex with: regex101 [https://regex101.com/](https://regex101.com/), rexegper [http://regexper.com/](http://regexper.com/), or myregexp [http://myregexp.com/]([http://myregexp.com/])."
 - "Test yourself with: Regex Crossword [https://regexcrossword.com/](https://regexcrossword.com/) or our The Multiple Choice Quiz [https://librarycarpentry.github.io/lc-data-intro/05-quiz/](https://librarycarpentry.github.io/lc-data-intro/05-quiz/)."
 ---
 
-## Regular Expressions
+## Regular expressions
 
-One of the reasons we stress the value of consistent and predictable directory and filenaming conventions is that working in this way enables you to use the computer to select files based on the characteristics of their file names. For example, if you have a bunch of files where the first four digits are the year and you only want to do something with files from '2017', then you can. Or if you have 'journal' somewhere in a filename when you have data about journals, you can use the computer to select just those files. Equally, using plain text formats means that you can go further and select files or elements of files based on characteristics of the data *within* those files.
+Regular expressions is a concept and an implementation used in many different programming environments for sophisticated pattern matching. It is an incredibly powerful tool that can amplify your capacity to find, manage, and transform data and files. 
 
-A powerful means of selecting based on file characteristics is to use regular expressions, often abbreviated to *regex*. A regular expression is a sequence of characters that define a search pattern, mainly for use in pattern matching with strings, or string matching, i.e. "find and replace"-like operations. For those who have not met this term before, a string is a contiguous sequence of symbols or values, for example, a word, a date, a set of numbers, such as a phone numnber, or an alphanumeric value such as a repository identifier.
+Regular expressions, often abbreviated to *regex*, is a method of using a sequence of characters to define a search to match strings, i.e. "find and replace"-like operations. In computation, a 'string' is a contiguous sequence of symbols or values. For example, a word, a date, a set of numbers (e.g., a phone number), or an alphanumeric value (e.g., an identifier). In library searches, we are most familiar with a small part of regular expressions known as the "wild card character," but there are many more features to the complete regular expressions syntax. Regular expressions will let you:
 
-Regular expressions are typically surrounded by `/` characters, though we will (mostly) ignore those for ease of comprehension. Regular expressions will let you:
-
-- Match on types of character (e.g. 'upper case letters', 'digits', 'spaces', etc.)
+- Match on types of characters (e.g. 'upper case letters', 'digits', 'spaces', etc.)
 - Match patterns that repeat any number of times
 - Capture the parts of the original string that match your pattern
 
-A very simple use of a regular expression would be to locate the same word spelled two different ways. For example the regular expression `organi[sz]e` matches both "organise" and "organize". But it would also match `reorganise`, `reorganize`, `organises`, `organizes`, `organised`, `organized`, et cetera, because we have not specified the beginning or end of our string. So we need to use special syntax to help us be more precise.
+Regular expressions relies on the use of literal characters and metacharacters. A metacharacter is any ASCII character that has a special meaning. By using metacharacters and possibly literal characters, you can construct a regex for finding strings or files your that match a pattern rather than a specific string. For example, say your organization wants to change the way they display telephone numbers on their website by removing the parentheses around the area code. Rather than search for each specific phone number (that could take forever and be prone to error) or searching for every open parenthesis character (could also take forever and return many false-positives), you could search for the pattern of a phone number. 
 
+Since regular expressions defines some ASCII characters has "metacharacters" that have more than their literal meaning, it is also important to be able to "escape" these metacharacters to use them for their normal, literal meaning. For example, the period (\.) means "match any character", but if you want to match a period (\.) then you will need to use a "\" in front of it to signal to the regular expression processor that you want to use the period as a plain old period and not a metacharacter. That notation is called "escaping" the special character. The concept of "escaping" special characters is shared across a variety of computational settings, including markdown and HTML.  
+
+A very simple use of a regular expression would be to locate the same word spelled two different ways. For example the regular expression `organi[sz]e` matches both "organise" and "organize". But it would also match `reorganise`, `reorganize`, `organises`, `organizes`, `organised`, `organized`, etc.
+
+### Learning common regex metacharacters
 Square brackets can be used to define a list or range of characters to be found. So:
 
 - `[ABC]` matches A or B or C
@@ -39,14 +42,14 @@ Then there are:
 - `\d` matches any single digit
 - `\w` matches any part of word character (equivalent to `[A-Za-z0-9]`)
 - `\s` matches any space, tab, or newline
-- `\` NB: this is also used to escape the following character when that character is a special character. So, for example, a regular expression that found `.com` would be `\.com` because `.` is a special character that matches any character.
+- `\` used to escape the following character when that character is a special character. So, for example, a regular expression that found `.com` would be `\.com` because `.` is a special character that matches any character.
 - `^` asserts the position at the start of the line. So what you put after the caret will only match if they are the first characters of a line. The caret is also known as a circumflex.
 - `$` asserts the position at the end of the line. So what you put before it will only match if they are the last characters of a line.
 - `\b` adds a word boundary. Putting this either side of a word stops the regular expression matching longer variants of words. So:
 	- the regular expression `foobar` will match `foobar` and find `666foobar`, `foobar777`, `8thfoobar8th` et cetera
 	- the regular expression `\bfoobar` will match `foobar` and find `foobar777`
 	- the regular expression `foobar\b` will match `foobar` and find `666foobar`
-	- the regular expression `\bfoobar\b` will find `foobar`
+	- the regular expression `\bfoobar\b` will find `foobar` but not `666foobar` or `foobar777`
 
 So, what is `^[Oo]rgani.e\b` going to match?
 
@@ -511,6 +514,8 @@ What to consider:
 > > This expression should find one match in the document.
 > {: .solution}
 {: .challenge}
+
+One of the reasons we stress the value of consistent and predictable directory and filenaming conventions is that working in this way enables you to use the computer to select files based on the characteristics of their file names. For example, if you have a bunch of files where the first four digits are the year and you only want to do something with files from '2017', then you can. Or if you have 'journal' somewhere in a filename when you have data about journals, you can use the computer to select just those files. Equally, using plain text formats means that you can go further and select files or elements of files based on characteristics of the data *within* those files.
 
 
 ## References
