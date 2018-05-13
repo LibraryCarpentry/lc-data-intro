@@ -295,7 +295,7 @@ Then test each other on the answers. If you want to check your logic, use [regex
 
 For this exercise, open a browser and go to [https://regex101.com](https://regex101.com). 
 
-Open the [swCoC.md file](https://github.com/LibraryCarpentry/lc-data-intro/tree/gh-pages/data/swCoC.md), copy it, and paste it into the test string box.
+Open the [swcCoC.md file](https://github.com/LibraryCarpentry/lc-data-intro/tree/gh-pages/data/swcCoC.md), copy it, and paste it into the test string box.
 
 For a quick test to see if it's working, type the string `community` into the regular expression box. 
 
@@ -367,7 +367,7 @@ If you look in the box on the right of the screen, you see that the expression m
 
 For this exercise, open a browser and go to [https://regex101.com](https://regex101.com). 
 
-Open the [swCoC.md file](https://github.com/LibraryCarpentry/lc-data-intro/tree/gh-pages/data/swCoC.md), copy it, and paste it into the test string box.
+Open the [swcCoC.md file](https://github.com/LibraryCarpentry/lc-data-intro/tree/gh-pages/data/swcCoC.md), copy it, and paste it into the test string box.
 
 > ## Start with what you know
 > What character do you know is held in common with all email addresses?
