@@ -22,7 +22,7 @@ Regular expressions, often abbreviated to *regex*, is a method of using a sequen
 - Match patterns that repeat any number of times
 - Capture the parts of the original string that match your pattern
 
-Regular expressions relies on the use of literal characters and metacharacters. A metacharacter is any ASCII character that has a special meaning. By using metacharacters and possibly literal characters, you can construct a regex for finding strings or files your that match a pattern rather than a specific string. For example, say your organization wants to change the way they display telephone numbers on their website by removing the parentheses around the area code. Rather than search for each specific phone number (that could take forever and be prone to error) or searching for every open parenthesis character (could also take forever and return many false-positives), you could search for the pattern of a phone number. 
+Regular expressions relies on the use of literal characters and metacharacters. A metacharacter is any ASCII character that has a special meaning. By using metacharacters and possibly literal characters, you can construct a regex for finding strings or files that match a pattern rather than a specific string. For example, say your organization wants to change the way they display telephone numbers on their website by removing the parentheses around the area code. Rather than search for each specific phone number (that could take forever and be prone to error) or searching for every open parenthesis character (could also take forever and return many false-positives), you could search for the pattern of a phone number. 
 
 Since regular expressions defines some ASCII characters has "metacharacters" that have more than their literal meaning, it is also important to be able to "escape" these metacharacters to use them for their normal, literal meaning. For example, the period (\.) means "match any character", but if you want to match a period (\.) then you will need to use a "\" in front of it to signal to the regular expression processor that you want to use the period as a plain old period and not a metacharacter. That notation is called "escaping" the special character. The concept of "escaping" special characters is shared across a variety of computational settings, including markdown and HTML.  
 
@@ -350,7 +350,7 @@ If you look in the box on the right of the screen, you see that the expression m
 > Find all of the words starting with Comm or comm that are plural.
 > > ## Solution
 > > ~~~
-> > [Cc]omm\w+s
+> > [Cc]omm\w+s\b
 > > ~~~
 > > `[Cc]` finds capital and lowercase `c`
 > >
@@ -359,6 +359,8 @@ If you look in the box on the right of the screen, you see that the expression m
 > > `\w+` matches the preceding element (a word character) one or more times
 > >
 > > `s` is a straightforward character match
+> >
+> > `\b` ensures the 's' is located at the end of the word.
 > >
 > {: .solution}
 {: .challenge}
@@ -405,7 +407,7 @@ Open the [swcCoC.md file](https://github.com/LibraryCarpentry/lc-data-intro/tree
 > The string after the "@" could contain any kind of word character, special character or digit in any combination and length as well as the dash. In addition, we know that it will end with two or three characters after a period (`.`) What expression would capture this. Hint: the `.` is also a regex expression, so you'll have to use the escape `\` to express a literal period. Note: for the string after the period, I did not try to match a character, since those rarely appear in the .xx or .xxx at the end of an email address.
 > > ## Solution
 > > ~~~
-> > [\w|\d|.|-]+\.[\w|\d]{2,4}
+> > [\w|\d|.|-]+\.[\w|\d]{2,3}
 > > ~~~
 > > See the previous exercise for the explanation of the expression up to the `+`
 > >
@@ -424,7 +426,7 @@ Open the [swcCoC.md file](https://github.com/LibraryCarpentry/lc-data-intro/tree
 > {: .solution}
 {: .challenge}
 
-### Exercise finding Email addresses, Using regex101.com
+### Exercise finding phone numbers, Using regex101.com
 
 Does this Code of Conduct contain a phone number?
 
@@ -454,7 +456,7 @@ What to consider:
 {: .challenge}
 
 > ## Match a string that includes an area code with a dash
-> Start with what we know, which is the most basic format of a phone number: three digits, a dash, and four digits. How would we write a regex expression that matches this?
+> Start with what we know, which is the most basic format of a phone number: three digits, a dash, and four digits. How would we expand the expression to include an area code (three digits and a dash)?
 > > ## Solution
 > > ~~~
 > > \d{3}-\d{3}-\d{4}
@@ -477,7 +479,7 @@ What to consider:
 > Start with what we know, which is the most basic format of a phone number: three digits, a dash, and four digits. How would we expand the expression to include a phone number with an area code in parenthesis, separated from the phone number, with or without a space.
 > > ## Solution
 > > ~~~
-> >\(\d{3}\)\s?\d{3}-\d{4}
+> >\(\d{3}\) ?\d{3}-\d{4}
 > > ~~~
 > > `\(` escape character with the parenthesis as straightforward character match
 > >
@@ -487,7 +489,7 @@ What to consider:
 > > 
 > > `\)` escape character with the parenthesis as a straightforward character match
 > >
-> > `\s?` matches zero or one spaces
+> > ` ?` matches zero or one spaces
 > > 
 > > See the previous exercise for the explanation of the rest of the expression.
 > > 
@@ -499,7 +501,7 @@ What to consider:
 > Country codes are preceded by a "+" and can have up to three digits. We also have to consider that there may or may not be a space between the country code and anything appearing next.
 > > ## Solution
 > > ~~~
-> >\+\d{1,3}\s?\(\d{3}\)\s?\d{3}-\d{4}
+> >\+\d{1,3} ?\(\d{3}\)\s?\d{3}-\d{4}
 > > ~~~
 > > `\+` escape character with the plus sign as straightforward character match
 > >
@@ -507,7 +509,7 @@ What to consider:
 > >
 > > `{1,3}` matches 1 to 3 digits
 > >
-> > `\s?` matches zero or one spaces
+> > ` ?` matches zero or one spaces
 > > 
 > > See the previous exercise for the explanation of the rest of the expression.
 > > 
