@@ -27,7 +27,7 @@ Periodically during the sessions we will collect anonymous feedback that will go
 
 ### Where to go for help 
 
-Begin by dentifying people on your table who can help: you will all be working from the same material, so someone around you may have mastered the point you are stuck at.
+Begin by identifying people on your table who can help: you will all be working from the same material, so someone around you may have mastered the point you are stuck at.
 
 There are helpers on hand to help if those around you can't. You should all have access to coloured sticky notes: attaching a red sticky note to your laptop indicates that you need help (it might also alert the attention of someone around you!). So, please use them. Most Library Carpentry lessons will require you to follow along whilst your instructor demonstrates a software tool or approach. Sometimes you will fall behind. If you do, raise your red sticky note and ask a helper if we can slow the pace.
 
