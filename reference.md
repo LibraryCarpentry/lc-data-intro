@@ -1,7 +1,7 @@
 ---
 layout: reference
-title: Reference
-permalink: /reference/
+root: .
+
 ---
 
 ## Data Intro Cheat Sheet
