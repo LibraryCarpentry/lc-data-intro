@@ -4,7 +4,8 @@ title: Setup
 root: .
 ---
 
-This lesson does not require any special setup.
+### This lesson does not require any special setup.
+
 --------
 
 
