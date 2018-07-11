@@ -337,7 +337,7 @@ If you look in the box on the right of the screen, you see that the expression m
 > {: .solution}
 {: .challenge}
 
-> ## Regex characters that indication location
+> ## Regex characters that indicate location
 > Type the expression ^[Cc]ommuni. You get no matches. Why?
 > > ## Solution
 > >
