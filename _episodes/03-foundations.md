@@ -53,7 +53,7 @@ Save | Ctrl | Cmd | + S
 Copy | Ctrl | Cmd | + C
 Cut | Ctrl | Cmd | + X
 Paste | Ctrl | Cmd | + V
-Switch Applications | Ctrl | Cmd | Tab | 
+Switch Applications | Alt | Cmd | Tab | 
 
 ### Plain text formats are your friend
 
