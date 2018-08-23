@@ -54,7 +54,7 @@ Then there are:
 So, what is `^[Oo]rgani.e\b` going to match?
 
 > ## Using special characters in regular expression matches
-> Can you guess what the regular expression `^[Oo]rgani.e\b` will match?
+> What will the regular expression `^[Oo]rgani.e\b` match?
 >
 > > ## Solution
 > > ~~~
@@ -81,7 +81,7 @@ Other useful special characters are:
 So, what are these going to match?
 
 > ## ^[Oo]rgani.e\w*
-> Can you guess what the regular expression `^[Oo]rgani.e\w*` will match?
+> What will the regular expression `^[Oo]rgani.e\w*` match?
 >
 > > ## Solution
 > > ~~~
@@ -95,7 +95,7 @@ So, what are these going to match?
 {: .challenge}
 
 > ## [Oo]rgani.e\w+$
-> Can you guess what the regular expression `[Oo]rgani.e\w+$` will match?
+> What will the regular expression `[Oo]rgani.e\w+$` match?
 >
 > > ## Solution
 > > ~~~
@@ -109,7 +109,7 @@ So, what are these going to match?
 {: .challenge}
 
 > ## ^[Oo]rgani.e\w?\b
-> Can you guess what the regular expression `^[Oo]rgani.e\w?\b` will match?
+> What will the regular expression `^[Oo]rgani.e\w?\b` match?
 >
 > > ## Solution
 > > ~~~
@@ -123,7 +123,7 @@ So, what are these going to match?
 {: .challenge}
 
 > ## ^[Oo]rgani.e\w?$
-> Can you guess what the regular expression `^[Oo]rgani.e\w?$` will match?
+> What will the regular expression `^[Oo]rgani.e\w?$` match?
 >
 > > ## Solution
 > > ~~~
@@ -137,7 +137,7 @@ So, what are these going to match?
 {: .challenge}
 
 > ## \b[Oo]rgani.e\w{2}\b
-> Can you guess what the regular expression `\b[Oo]rgani.e\w{2}\b` will match?
+> What will the regular expression `\b[Oo]rgani.e\w{2}\b` match?
 >
 > > ## Solution
 > > ~~~
@@ -151,7 +151,7 @@ So, what are these going to match?
 {: .challenge}
 
 > ## \b[Oo]rgani.e\b|\b[Oo]rgani.e\w{1}\b
-> Can you guess what the regular expression `\b[Oo]rgani.e\b|\b[Oo]rgani.e\w{1}\b` will match?
+> What will the regular expression `\b[Oo]rgani.e\b|\b[Oo]rgani.e\w{1}\b` match?
 >
 > > ## Solution
 > > ~~~
@@ -176,7 +176,7 @@ When you finish, split your team into two groups and write each other some tests
 Then test each other on the answers. If you want to check your logic, use [regex101](https://regex101.com/), [myregexp](http://myregexp.com/), or [regex pal](http://www.regexpal.com/) [regexper.com](http://regexper.com/): the first three help you see what text your regular expression will match, the latter visualises the workflow of a regular expression.
 
 > ## Using square brackets
-> Can you guess what the regular expression `Fr[ea]nc[eh]` will match?
+> What will the regular expression `Fr[ea]nc[eh]` match?
 >
 > > ## Solution
 > > ~~~
@@ -190,7 +190,7 @@ Then test each other on the answers. If you want to check your logic, use [regex
 {: .challenge}
 
 > ## Using dollar signs
-> Can you guess what the regular expression `Fr[ea]nc[eh]$` will match?
+> What will the regular expression `Fr[ea]nc[eh]$` match?
 >
 > > ## Solution
 > > ~~~
@@ -204,7 +204,7 @@ Then test each other on the answers. If you want to check your logic, use [regex
 {: .challenge}
 
 > ## Introducing options
-> What would match the strings `French` and `France` only that appear at the beginning of a line?
+> What would match the strings `French` and `France` that appear at the beginning of a line?
 >
 > > ## Solution
 > > ~~~
