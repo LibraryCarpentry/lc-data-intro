@@ -38,10 +38,11 @@ Main lessons:
 - **Knowing (even a little) code helps you evaluate projects that use code**. Programming can seem alien. Knowing some code makes you better at judging the quality of software development or planning activities that include software development.
 - **Automate to make the time to do something else!** Taking the time to gather together even the most simple programming skills can save time to do more interesting stuff! (even if often that more interesting stuff is learning more programming skills ...)
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Just added two annotations to <a href="https://twitter.com/nthelitz">@nthelitz</a> graphic about the geek/non-geek <a href="http://t.co/KpsRYW8zD2">pic.twitter.com/KpsRYW8zD2</a></p>&mdash; Andy Kirk (@visualisingdata) <a href="https://twitter.com/visualisingdata/status/621957383464599552">July 17, 2015</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+**Why automate?**
 
-Why Automate?: see [Geeks and repetitive tasks image](https://pbs.twimg.com/media/CKGi8bpW8AQPzOr.png).
+![Is it worth the time](../assets/img/is_it_worth_the_time.png)
+
+'Is it worth the time?' by Randall Munroe available at [https://xkcd.com/1205/](https://xkcd.com/1205/) under a Creative Commons Attribution-NonCommercial 2.5 License.
 
 ### Keyboard shortcuts are your friend
 
