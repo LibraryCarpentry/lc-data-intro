@@ -384,13 +384,9 @@ Open the [swcCoC.md file](https://github.com/LibraryCarpentry/lc-data-intro/tree
 > The string before the "@" could contain any kind of word character, special character or digit in any combination and length. How would you express this in regex? Hint: often addresses will have a dash (`-`) in them, and the dash is not included in the word character expression (`\w`). How do you capture this in the expression?
 > > ## Solution
 > > ~~~
-> > [\w|.|\d|-]+@
+> > [\w.-]+@
 > > ~~~
-> > `\w` matches any word character 
-> >
-> > `|` is the 'or' boolean
-> >
-> > `\d` matches any digit
+> > `\w` matches any word character (including digits and underscore)
 > >
 > > `\.` matches any character
 > >
@@ -407,15 +403,13 @@ Open the [swcCoC.md file](https://github.com/LibraryCarpentry/lc-data-intro/tree
 > The string after the "@" could contain any kind of word character, special character or digit in any combination and length as well as the dash. In addition, we know that it will end with two or three characters after a period (`.`) What expression would capture this. Hint: the `.` is also a regex expression, so you'll have to use the escape `\` to express a literal period. Note: for the string after the period, I did not try to match a character, since those rarely appear in the .xx or .xxx at the end of an email address.
 > > ## Solution
 > > ~~~
-> > [\w|\d|.|-]+\.[\w|\d]{2,3}
+> > [\w.-]+\.[\w]{2,3}
 > > ~~~
 > > See the previous exercise for the explanation of the expression up to the `+`
 > >
 > > `\.` matches the literal periond ('.') not the regex expression `.`
 > >
-> > `\w` matches any word
-> >
-> > `\d` matches any digit
+> > `\w` matches any word (including digits and underscore)
 > >
 > > `{2,4}` limits the number of word characters and/or digits to a two or three-character string.
 > >
