@@ -8,8 +8,8 @@ objectives:
 - Use regular expressions in searches
 keypoints:
 - Regular expressions are a language for pattern matching
-- "Check your regex with: regex101 [https://regex101.com/](https://regex101.com/), rexegper [http://regexper.com/](http://regexper.com/), or myregexp [http://myregexp.com/]([http://myregexp.com/])."
-- "Test yourself with: Regex Crossword [https://regexcrossword.com/](https://regexcrossword.com/) or our The Multiple Choice Quiz [https://librarycarpentry.github.io/lc-data-intro/05-quiz/](https://librarycarpentry.github.io/lc-data-intro/05-quiz/)."
+- "Test regular expressions interactively with [regex101.com](https://regex101.com/) or [RegExr.com](http://www.regexr.com/), and visualise them with [regexper.com](https://regexper.com/)."
+- "Test yourself with: [RegexCrossword.com/](https://regexcrossword.com/) or [our The Multiple Choice Quiz ](https://librarycarpentry.github.io/lc-data-intro/05-quiz/)."
 ---
 
 ## Regular expressions
