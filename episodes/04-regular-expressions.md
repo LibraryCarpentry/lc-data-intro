@@ -9,7 +9,7 @@ objectives:
 keypoints:
 - Regular expressions are a language for pattern matching
 - "Test regular expressions interactively with [regex101.com](https://regex101.com/) or [RegExr.com](http://www.regexr.com/), and visualise them with [regexper.com](https://regexper.com/)."
-- "Test yourself with: [RegexCrossword.com/](https://regexcrossword.com/) or [our The Multiple Choice Quiz ](https://librarycarpentry.github.io/lc-data-intro/05-quiz/)."
+- "Test yourself with: [RegexCrossword.com/](https://regexcrossword.com/) or [our Multiple Choice Quiz](https://librarycarpentry.github.io/lc-data-intro/05-quiz/)."
 ---
 
 ## Regular expressions
