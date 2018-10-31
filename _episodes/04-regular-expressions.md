@@ -33,8 +33,8 @@ Square brackets can be used to define a list or range of characters to be found.
 
 - `[ABC]` matches A or B or C
 - `[A-Z]` matches any upper case letter
-- `[A-Za-z]` matches any upper or lower case letter (note: this is case-sensitive)
-- `[A-Za-z0-9]` matches any upper or lower case letter or any digit (note: this is case-sensitive)
+- `[A-Za-z]` matches any upper or lower case letter
+- `[A-Za-z0-9]` matches any upper or lower case letter or any digit
 
 Then there are:
 
