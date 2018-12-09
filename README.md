@@ -1,6 +1,6 @@
 # Library Carpentry
 
-The Library Carpentry module '[Data Intro for Librarians](https://librarycarpentry.github.io/lc-data-intro/)' is maintained by [Carmi Cronje](https://github.com/ccronje) and [James Baker](https://github.com/drjwbaker).
+The Library Carpentry module '[Data Intro for Librarians](https://librarycarpentry.github.io/lc-data-intro/)' is maintained by [Carmi Cronje](https://github.com/ccronje), [Paul Pival](https://github.com/ppival), *[Shari Laster](https://github.com/sharilaster)*, [Anton Angelo](https://github.com/antonangelo), and [James Baker](https://github.com/drjwbaker).
 
 ## Background
 
