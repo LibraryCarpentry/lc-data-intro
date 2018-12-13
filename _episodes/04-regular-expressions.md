@@ -338,7 +338,7 @@ If you look in the box on the right of the screen, you see that the expression m
 {: .challenge}
 
 > ## Regex characters that indicate location
-> Type the expression ^[Cc]ommuni. You get no matches. Why?
+> Type the expression `^[Cc]ommuni`. You get no matches. Why?
 > > ## Solution
 > >
 > > There is no matching string present at the start of a line. Look at the text and replace the string after the `^` with something that matches a word at the start of a line. Does it find a match?
