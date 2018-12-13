@@ -34,7 +34,7 @@ Main lessons:
 
 - **Borrow, borrow, and borrow again**. This is a mainstay of programming and a practice common to all skill levels, from professional programmers to people like us hacking around in libraries;
 - **The correct language to learn is the one that works in your local context**. There truly isn't a best language, just languages with different strengths and weaknesses, all of which incorporate the same fundamental principles;
-- **Consider the role of programming in professional development**. Computational skills improve your efficiency and effectivness. Stay alert to skills you want to learn, and be aware of what skills you can make sure your staff learn, as well. 
+- **Consider the role of programming in professional development**. Computational skills improve your efficiency and effectiveness. Stay alert to skills you want to learn, and be aware of what skills you can make sure your staff learn, as well. 
 - **Knowing (even a little) code helps you evaluate projects that use code**. Programming can seem alien. Knowing some code makes you better at judging the quality of software development or planning activities that include software development.
 - **Automate to make the time to do something else!** Taking the time to gather together even the most simple programming skills can save time to do more interesting stuff! (even if often that more interesting stuff is learning more programming skills ...)
 
