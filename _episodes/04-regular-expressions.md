@@ -388,11 +388,11 @@ Open the [swcCoC.md file](https://github.com/LibraryCarpentry/lc-data-intro/tree
 > > ~~~
 > > `\w` matches any word character (including digits and underscore)
 > >
-> > `\.` matches any character
+> > `.` matches a literal period (when used in between square brackets, `.` doesn't mean "any character", it literally means ".")
 > >
 > > `-` straightforward match, since it is not captured with `\.`
 > >
-> > `[]` the brackets enclose the boolean string that 'OR' the digits, word characters, characters and dash.
+> > `[]` the brackets enclose the boolean string that 'OR' the word characters, dot, and dash.
 > >
 > > `+` matches any word character OR digit OR character OR `-` repeated 1 or more times
 > >
