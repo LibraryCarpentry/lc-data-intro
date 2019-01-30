@@ -386,7 +386,7 @@ Open the [swcCoC.md file](https://github.com/LibraryCarpentry/lc-data-intro/tree
 {: .challenge}
 
 > ## Add to what you know
-> The string before the "@" could contain any kind of word character, special character or digit in any combination and length. How would you express this in regex? Hint: often addresses will have a dash (`-`) in them, and the dash is not included in the word character expression (`\w`). How do you capture this in the expression?
+> The string before the “@” could contain any kind of word character, special character or digit in any combination and length. How would you express this in regex? Hint: often addresses will have a dash (-) or dot (.) in them, and neither of these are included in the word character expression (\w). How do you capture this in the expression?
 > > ## Solution
 > > ~~~
 > > [\w.-]+@
@@ -395,7 +395,7 @@ Open the [swcCoC.md file](https://github.com/LibraryCarpentry/lc-data-intro/tree
 > >
 > > `.` matches a literal period (when used in between square brackets, `.` doesn't mean "any character", it literally means ".")
 > >
-> > `-` straightforward match, since it is not captured with `\.`
+> > `-` matches a dash
 > >
 > > `[]` the brackets enclose the boolean string that 'OR' the word characters, dot, and dash.
 > >
