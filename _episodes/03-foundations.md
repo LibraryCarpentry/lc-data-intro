@@ -46,7 +46,7 @@ Main lessons:
 
 ### Keyboard shortcuts are your friend
 
-Though we will get more computational over the course of the programme, we can start our adventure into programming - as many of you will have already - with very simple things like keyboard shortcuts. We all have our favourites, that are labour saving but also allow us to use this stupid machine in the best possible way. You can do all the lessons in Library Carpentry without keyboard shortcuts, but note that they'll likely come up a lot.
+Though we will get more computational over the course of the programme, we can start our adventure into programming - as many of you will have already - with very simple things like keyboard shortcuts. We all have our favourites that are labour saving but also allow us to use this stupid machine in the best possible way. You can do all the lessons in Library Carpentry without keyboard shortcuts, but note that they'll likely come up a lot.
 
 Action | Windows | Mac | + Keystroke
 --- | --- | --- | --- |
