@@ -20,9 +20,9 @@ keypoints:
 
 Before we crack on with using the computational tools at our disposal, let's spend some time building a foundation that will help frame what you'll encounter in Library Carpentry. This lesson covers a few principles and behaviors that are useful to know when beginning to develop computational approaches to your work. 
 
-### The computer is stupid
+### The computer is a machine
 
-It is true: The computer is stupid. However, the computer is also useful. Given a repetitive task, an enumerative task, or a task that relies on memory, it can produce results faster, more accurately, and less grudgingly than a person might. A computer only does what you tell it to. If you get an error message, it is often not your fault! In most cases the computer has failed to interpret what you mean because it can only work with what it knows. 
+People interpret. Machines don't. Given a repetitive task, an enumerative task, or a task that relies on memory, a computer can produce results faster, more accurately, and less grudgingly than a person might. But a computer only does what you tell it to. If you get an error message, it is often not your fault! In most cases the computer has failed to interpret what you mean because it can only work with what it knows.
 
 ### Why take an automated or computational approach?
 
