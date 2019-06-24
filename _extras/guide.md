@@ -24,7 +24,7 @@ The purpose of this task is threefold. First, it is an icebreaker. Second, it he
 
 It is important to note that no one is an expert in everything and the instructor will need help with describing certain terms. The instructor is encouraged to invite workshop attendees, instructors, and helpers to join in describing terms, phrases, or ideas as well.
 
-When collating feedback on the main board/pad (if none are available, consider using the workshop Etherpad), one strategy is to organise the board from sad (on the left) to happy (on the right), then to locate the terms, phrases, or ideas offered by learners on that spectrum. This performs three functions. First, it opens space to discuss which terms, phrases, or ideas people find or perceive to be easy to understand and what they find or perceive to be hard to understand. Second, it helps identify expertise in the room that learners may turn to for questions during breaks. Third, the instructor can return to the board/pad at the end of the workshop to judge whether learners are more or less confident with some of the terms, phrases, or ideas identified at the outset.
+When collating feedback on the main board/pad (if none are available, consider using the workshop collaborative document), one strategy is to organise the board from sad (on the left) to happy (on the right), then to locate the terms, phrases, or ideas offered by learners on that spectrum. This performs three functions. First, it opens space to discuss which terms, phrases, or ideas people find or perceive to be easy to understand and what they find or perceive to be hard to understand. Second, it helps identify expertise in the room that learners may turn to for questions during breaks. Third, the instructor can return to the board/pad at the end of the workshop to judge whether learners are more or less confident with some of the terms, phrases, or ideas identified at the outset.
 
 ____
 ## Foundations
@@ -43,7 +43,7 @@ Some tips as you learn...
 - Knowing a little bit about programing helps you talk to IT/researchers 
 - Can it free up your time? Something you do repeatedly?
 
-Keyboard shortcuts are your friend. Sometimes using a shortcut vs programming is the best approach. Shortcuts allow you to save time in some cases. Using the Etherpad, the instructor can ask workshop attendees to list their favorite shortcuts and/or shortcuts that are not widely known.
+Keyboard shortcuts are your friend. Sometimes using a shortcut vs programming is the best approach. Shortcuts allow you to save time in some cases. Using the workshop collaborative document, the instructor can ask workshop attendees to list their favorite shortcuts and/or shortcuts that are not widely known.
 
 Most of Library, Data, and Software Carpentry lessons are based on open source tools with the exception of MATLAB. This is also the case with open formats vs proprietary formats. The instructor can use this as an opportunity to quiz the workshop attendees what is an open format/source tool vs proprietary and to list examples (e.g. PDF, DOC).
 
