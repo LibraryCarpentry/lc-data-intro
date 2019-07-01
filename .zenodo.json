@@ -1,0 +1,137 @@
+{
+  "contributors": [
+    {
+      "type": "Editor",
+      "name": "Carmi Cronje",
+      "orcid": "0000-0003-2736-6267"
+    },
+    {
+      "type": "Editor",
+      "name": "Paul Pival",
+      "orcid": "0000-0002-1685-0590"
+    },
+    {
+      "type": "Editor",
+      "name": "Shari Laster",
+      "orcid": "0000-0001-9099-1474"
+    },
+    {
+      "type": "Editor",
+      "name": "Anton Angelo",
+      "orcid": "0000-0002-2265-1299"
+    }
+  ],
+  "creators": [
+    {
+      "name": "James Baker",
+      "orcid": "0000-0002-2682-6922"
+    },
+    {
+      "name": "Christopher Erdmann",
+      "orcid": "0000-0003-2554-180X"
+    },
+    {
+      "name": "Tim Dennis",
+      "orcid": "0000-0001-6632-3812"
+    },
+    {
+      "name": "Elizabeth Lisa McAulay"
+    },
+    {
+      "name": "Shari Laster"
+    },
+    {
+      "name": "François Michonneau",
+      "orcid": "0000-0002-9092-966X"
+    },
+    {
+      "name": "Kunal Marwaha",
+      "orcid": "0000-0001-9084-6971"
+    },
+    {
+      "name": "Paul R. Pival"
+    },
+    {
+      "name": "Katrin Leinweber",
+      "orcid": "0000-0001-5135-5758"
+    },
+    {
+      "name": "Alex Volkov"
+    },
+    {
+      "name": "Dan Michael O. Heggø"
+    },
+    {
+      "name": "fdsayre"
+    },
+    {
+      "name": "lsult"
+    },
+    {
+      "name": "Saskia Scheltjens"
+    },
+    {
+      "name": "yvonnemery"
+    },
+    {
+      "name": "Alexander Mendes"
+    },
+    {
+      "name": "Angus Taggart"
+    },
+    {
+      "name": "Belinda Weaver"
+    },
+    {
+      "name": "BertrandCaron"
+    },
+    {
+      "name": "Bianca Peterson",
+      "orcid": "0000-0001-6927-9159"
+    },
+    {
+      "name": "Christopher Edsall"
+    },
+    {
+      "name": "Chuck McAndrew"
+    },
+    {
+      "name": "Dan Michael Heggø",
+      "orcid": "0000-0002-6189-5958"
+    },
+    {
+      "name": "Felix Hemme",
+      "orcid": "0000-0001-7754-782X"
+    },
+    {
+      "name": "Janice Chan"
+    },
+    {
+      "name": "Jeffrey Oliver",
+      "orcid": "0000-0003-2160-1086"
+    },
+    {
+      "name": "Jeremy Guillette"
+    },
+    {
+      "name": "Jodi Schneider"
+    },
+    {
+      "name": "Jonah Duckles",
+      "orcid": "0000-0002-8985-3119"
+    },
+    {
+      "name": "Katherine Koziar",
+      "orcid": "0000-0003-0505-7973"
+    },
+    {
+      "name": "PH03N1X007"
+    },
+    {
+      "name": "remerjohnson"
+    }
+  ],
+  "license": {
+    "id": "CC-BY-4.0"
+  }
+}
