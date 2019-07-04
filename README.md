@@ -1,3 +1,7 @@
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3264946.svg)](https://doi.org/10.5281/zenodo.3264946)
+
+
 # Maintainers for Library Carpentry: Introduction to Data
  
 - [Shari Laster](https://github.com/sharilaster) (Lead)
