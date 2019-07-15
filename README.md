@@ -1,11 +1,9 @@
-
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3264946.svg)](https://doi.org/10.5281/zenodo.3264946)
-
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3264946.svg)](https://doi.org/10.5281/zenodo.3264946)  
 
 # Maintainers for Library Carpentry: Introduction to Data
  
 - [Shari Laster](https://github.com/sharilaster) (Lead)
-- [Paul Pival](https://github.com/ppival)
+- [Paul R. Pival](https://github.com/ppival)
 - [Anton Angelo](https://github.com/antonangelo)
 - [James Baker](https://github.com/drjwbaker)
 - [Carmi Cronje](https://github.com/ccronje)
@@ -35,7 +33,7 @@ Library Carpentry is authored and maintained through issues, commits, and pull r
 
 ## Citation
 
-Library Carpentry: Introduction to Data. June 2016. https://librarycarpentry.org/lc-data-intro/.
+Shari Laster (Ed.), Paul R. Pival (Ed.), Anton Angelo (Ed.), James Baker (Ed.), Carmi Crone (Ed.), Christopher Erdmann, Tim Dennis, Elizabeth Lisa McAulay, François Michonneau, … remerjohnson. (2019, July). LibraryCarpentry/lc-data-intro: Library Carpentry: Introduction to Data, June 2019 (Version v2019.06.1). Zenodo. http://doi.org/10.5281/zenodo.3264946
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3264946.svg)](https://doi.org/10.5281/zenodo.3264946)
 
