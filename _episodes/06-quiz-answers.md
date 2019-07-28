@@ -22,7 +22,7 @@ What does `Fr[ea]nc[eh]$` match?
 
 What would match the strings `French` and `France` only that appear at the beginning of a line?
 
-- `^France|^French` This would also find strings with other characters coming after after `French`, such as `Frenchness` or `France's economy`.
+- `^France|^French` This would also find strings with other characters coming after `French`, such as `Frenchness` or `France's economy`.
 
 How do you match the whole words `colour` and `color` (case insensitive)?
 
