@@ -14,15 +14,15 @@ keypoints:
 
 What does `Fr[ea]nc[eh]` match?
 
-- this matches `France`, `French`, `Frence`, and `Franch`. It would find words where there were characters either side of these so `Francer`, `foobarFrench`, or `Franch911`.
+- this matches `France`, `French`, in addition to the misspellings `Frence`, and `Franch`. It would also find strings where there were characters to either side of the pattern such as `France's`, `in French`, or `French-fried`.
 
 What does `Fr[ea]nc[eh]$` match?
 
-- this matches `France`, `French`, `Frence`, and `Franch` at the end of a line. It would find words where there were characters before these so `foobarFrench`.
+- this matches `France`, `French`, `Frence`, and `Franch` _only_ at the end of a line. It would also match strings with other characters appearing _before_ the pattern, such as `in French` or `Sino-French`.
 
 What would match the strings `French` and `France` only that appear at the beginning of a line?
 
-- `^France|^French` This would also find words where there were characters after `French` such as `Frenchness`.
+- `^France|^French` This would also find strings with other characters coming after `French`, such as `Frenchness` or `France's economy`.
 
 How do you match the whole words `colour` and `color` (case insensitive)?
 

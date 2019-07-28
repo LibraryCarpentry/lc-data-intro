@@ -26,17 +26,17 @@ Q2. Which of the following matches any space, tab, or newline?
 - B) `\b`
 - C) `$`
 
-Q3. How do you match the string `Foobar` appearing at the beginning of a line?
+Q3. How do you match the string `Confident` appearing at the beginning of a line?
 
-- A) `$Foobar`
-- B) `^Foobar`
-- C) `#Foobar`
+- A) `$Confident`
+- B) `^Confident`
+- C) `#Confident`
 
-Q4. How do you match the word `Foobar` appearing at the beginning of a line?
+Q4. How do you match the word `Confidential` appearing at the beginning of a line?
 
-- A) `^Foobar\d`
-- B) `^Foobar\b`
-- C) `^Foobar\w`
+- A) `^Confidential\d`
+- B) `^Confidential\b`
+- C) `^Confidential\w`
 
 Q5. What does the regular expression `[a-z]` match?
 
