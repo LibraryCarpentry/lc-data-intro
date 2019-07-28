@@ -54,7 +54,7 @@ Then there are:
 	- the regular expression `mark` will match not only `mark` but also find `marking`, `market`, `unremarkable`, and so on
 	- the regular expression `\bword` will match `word`, `wordless`, and `wordlessly`
 	- the regular expression `comb\b` will match `comb` and `honeycomb` but not `combine`
-	- the regular expression `\brespect\b` will match `respect` but not `respectable` or `disrespetful`
+	- the regular expression `\brespect\b` will match `respect` but not `respectable` or `disrespectful`
 
 So, what is `^[Oo]rgani.e\b` going to match?
 
@@ -204,7 +204,7 @@ Then test each other on the answers. If you want to check your logic use [regex1
 > > Frence
 > > Franch
 > > ~~~
-> > This will also find strings at the end of a line. It will find words where there were characters before these, for example `in French` or `faux-French`.
+> > This will match the pattern only when it appears at the end of a line. It will also find strings with other characters coming _before_ the pattern, for example, `in French` or `faux-French`.
 > {: .solution}
 {: .challenge}
 

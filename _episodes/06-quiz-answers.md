@@ -18,11 +18,11 @@ What does `Fr[ea]nc[eh]` match?
 
 What does `Fr[ea]nc[eh]$` match?
 
-- this matches `France`, `French`, `Frence`, and `Franch` _only_ at the end of a line. It would also match strings where there were characters before these such as `in French` or `Sino-French`.
+- this matches `France`, `French`, `Frence`, and `Franch` _only_ at the end of a line. It would also match strings with other characters appearing _before_ the pattern, such as `in French` or `Sino-French`.
 
 What would match the strings `French` and `France` only that appear at the beginning of a line?
 
-- `^France|^French` This would also find words where there were characters after `French` such as `Frenchness`.
+- `^France|^French` This would also find strings with other characters coming after after `French`, such as `Frenchness` or `France's economy`.
 
 How do you match the whole words `colour` and `color` (case insensitive)?
 
