@@ -48,8 +48,8 @@ Then there are:
 - `\w` matches any part of word character (equivalent to `[A-Za-z0-9]`)
 - `\s` matches any space, tab, or newline
 - `\` used to escape the following character when that character is a special character. So, for example, a regular expression that found `.com` would be `\.com` because `.` is a special character that matches any character.
-- `^` an "anchor" which asserts the position at the start of the line. So what you put after the caret will only match if they are the first characters of a line. The caret is also known as a circumflex.
-- `$` an "anchor" which asserts the position at the end of the line. So what you put before it will only match if they are the last characters of a line.
+- `^` is an "anchor" which asserts the position at the start of the line. So what you put after the caret will only match if they are the first characters of a line. The caret is also known as a circumflex.
+- `$` is an "anchor" which asserts the position at the end of the line. So what you put before it will only match if they are the last characters of a line.
 - `\b` asserts that the pattern must match at a word boundary. Putting this either side of a word stops the regular expression matching longer variants of words. So:
 	- the regular expression `mark` will match not only `mark` but also find `marking`, `market`, `unremarkable`, and so on
 	- the regular expression `\bword` will match `word`, `wordless`, and `wordlessly`
