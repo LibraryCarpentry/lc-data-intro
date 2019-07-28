@@ -14,11 +14,11 @@ keypoints:
 
 What does `Fr[ea]nc[eh]` match?
 
-- this matches `France`, `French`, `Frence`, and `Franch`. It would find words where there were characters either side of these so `Francer`, `foobarFrench`, or `Franch911`.
+- this matches `France`, `French`, in addition to the misspellings `Frence`, and `Franch`. It would also find strings where there were characters to either side of the pattern such as `France's`, `in French`, or `French-fried`.
 
 What does `Fr[ea]nc[eh]$` match?
 
-- this matches `France`, `French`, `Frence`, and `Franch` at the end of a line. It would find words where there were characters before these so `foobarFrench`.
+- this matches `France`, `French`, `Frence`, and `Franch` _only_ at the end of a line. It would also match strings where there were characters before these such as `in French` or `Sino-French`.
 
 What would match the strings `French` and `France` only that appear at the beginning of a line?
 
