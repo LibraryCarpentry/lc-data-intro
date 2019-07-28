@@ -190,7 +190,7 @@ Then test each other on the answers. If you want to check your logic use [regex1
 > > Frence
 > > Franch
 > > ~~~
-> > Note that without an "anchor" such as `^` or `\b`, this will also find strings where there are characters to either side of the regular expression, such as `in French`, `France's`, `French-fried`, and even misspellings such as `Franch` or `Frence`.
+> > Note that the way this regular expression is constructed, it will match misspellings such as `Franch` and `Frence`. Lacking an "anchor" such as `^` or `\b`, this will also find strings where there are characters to either side of the regular expression, such as `in French`, `France's`, `French-fried`.
 > {: .solution}
 {: .challenge}
 
