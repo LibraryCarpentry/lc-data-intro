@@ -232,7 +232,7 @@ Then test each other on the answers. If you want to check your logic use [regex1
 {: .challenge}
 
 > ## Word boundaries
-> How would you find the whole word `headrest` and or `head rest` but not `head  rest` (that is, with two spaces between `head` and `rest`?
+> How would you find the whole word `headrest` and or `head rest` but not <code>head&nbsp;&nbsp;rest</code> (that is, with two spaces between `head` and `rest`?
 >
 > > ## Solution
 > > ~~~
