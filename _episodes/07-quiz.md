@@ -1,7 +1,7 @@
 ---
 title: "Multiple Choice Quiz“
 teaching: 0
-exercises: 110
+exercises: 60
 questions:
 - How do you find and match strings with regular expressions?
 objectives:
