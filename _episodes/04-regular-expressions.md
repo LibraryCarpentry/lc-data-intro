@@ -24,7 +24,7 @@ A regular expression, often abbreviated to *regex*, is a method of using a seque
 
 Regular expressions rely on the use of literal characters and metacharacters. A metacharacter is any ASCII character that has a special meaning. By using metacharacters and possibly literal characters, you can construct a regex for finding strings or files that match a pattern rather than a specific string. For example, say your organization wants to change the way they display telephone numbers on their website by removing the parentheses around the area code. Rather than search for each specific phone number (that could take forever and be prone to error) or searching for every open parenthesis character (could also take forever and return many false-positives), you could search for the pattern of a phone number. 
 
-Since regular expressions defines some ASCII characters as "metacharacters" that have more than their literal meaning, it is also important to be able to "escape" these metacharacters to use them for their normal, literal meaning. For example, the period (\.) means "match any character", but if you want to match a period (\.) then you will need to use a "\" in front of it to signal to the regular expression processor that you want to use the period as a plain old period and not a metacharacter. That notation is called "escaping" the special character. The concept of "escaping" special characters is shared across a variety of computational settings, including markdown and HTML.
+Since regular expressions defines some ASCII characters as "metacharacters" that have more than their literal meaning, it is also important to be able to "escape" these metacharacters to use them for their normal, literal meaning. For example, the period `.` means "match any character", but if you want to match a period then you will need to use a `\` in front of it to signal to the regular expression processor that you want to use the period as a plain old period and not a metacharacter. That notation is called "escaping" the special character. The concept of "escaping" special characters is shared across a variety of computational settings, including markdown and HTML.
 
 
 > ## Regex Engines and interoperability
@@ -48,13 +48,13 @@ Then there are:
 - `\w` matches any part of word character (equivalent to `[A-Za-z0-9]`)
 - `\s` matches any space, tab, or newline
 - `\` used to escape the following character when that character is a special character. So, for example, a regular expression that found `.com` would be `\.com` because `.` is a special character that matches any character.
-- `^` asserts the position at the start of the line. So what you put after the caret will only match if they are the first characters of a line. The caret is also known as a circumflex.
-- `$` asserts the position at the end of the line. So what you put before it will only match if they are the last characters of a line.
-- `\b` adds a word boundary. Putting this either side of a word stops the regular expression matching longer variants of words. So:
-	- the regular expression `foobar` will match `foobar` and find `666foobar`, `foobar777`, `8thfoobar8th` et cetera
-	- the regular expression `\bfoobar` will match `foobar` and find `foobar777`
-	- the regular expression `foobar\b` will match `foobar` and find `666foobar`
-	- the regular expression `\bfoobar\b` will find `foobar` but not `666foobar` or `foobar777`
+- `^` is an "anchor" which asserts the position at the start of the line. So what you put after the caret will only match if they are the first characters of a line. The caret is also known as a circumflex.
+- `$` is an "anchor" which asserts the position at the end of the line. So what you put before it will only match if they are the last characters of a line.
+- `\b` asserts that the pattern must match at a word boundary. Putting this either side of a word stops the regular expression matching longer variants of words. So:
+	- the regular expression `mark` will match not only `mark` but also find `marking`, `market`, `unremarkable`, and so on
+	- the regular expression `\bword` will match `word`, `wordless`, and `wordlessly`
+	- the regular expression `comb\b` will match `comb` and `honeycomb` but not `combine`
+	- the regular expression `\brespect\b` will match `respect` but not `respectable` or `disrespectful`
 
 So, what is `^[Oo]rgani.e\b` going to match?
 
@@ -190,7 +190,7 @@ Then test each other on the answers. If you want to check your logic use [regex1
 > > Frence
 > > Franch
 > > ~~~
-> > This will also find words where there are characters either side of the solutions above, such as `Francer`, `foobarFrench`, and `Franch911`.
+> > Note that the way this regular expression is constructed, it will match misspellings such as `Franch` and `Frence`. Lacking an "anchor" such as `^` or `\b`, this will also find strings where there are characters to either side of the regular expression, such as `in French`, `France's`, `French-fried`.
 > {: .solution}
 {: .challenge}
 
@@ -204,7 +204,7 @@ Then test each other on the answers. If you want to check your logic use [regex1
 > > Frence
 > > Franch
 > > ~~~
-> > This will also find strings at the end of a line. It will find words where there were characters before these, for example `foobarFrench`.
+> > This will match the pattern only when it appears at the end of a line. It will also find strings with other characters coming _before_ the pattern, for example, `in French` or `faux-French`.
 > {: .solution}
 {: .challenge}
 
@@ -232,7 +232,7 @@ Then test each other on the answers. If you want to check your logic use [regex1
 {: .challenge}
 
 > ## Word boundaries
-> How would you find the whole word `headrest` and or `head rest` but not `head  rest` (that is, with two spaces between `head` and `rest`?
+> How would you find the whole word `headrest` and or `head rest` but not <code>head&nbsp;&nbsp;rest</code> (that is, with two spaces between `head` and `rest`?
 >
 > > ## Solution
 > > ~~~
