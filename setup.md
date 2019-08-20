@@ -1,7 +1,11 @@
 ---
 layout: page
 title: Setup
-permalink: /setup/
+root: .
 ---
-This lesson does not require any special setup.
+
+### This lesson does not require any special setup.
+
 --------
+
+
