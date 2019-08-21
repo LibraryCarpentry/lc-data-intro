@@ -1,5 +1,5 @@
 ---
-title: "Multiple Choice Quiz“
+title: Multiple Choice Quiz
 teaching: 0
 exercises: 60
 questions:
