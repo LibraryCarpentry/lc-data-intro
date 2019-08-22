@@ -5,7 +5,7 @@ exercises: 60
 questions:
 - How do you find and match strings with regular expressions?
 objectives:
-- Test knowledge of use of regular expressions
+- Test knowledge of use of regular expressions.
 keypoints:
 - Regular expressions answers
 ---
@@ -131,7 +131,7 @@ This multiple choice quiz is designed to embed the regex knowledge you learned d
 > {: .solution}
 {: .challenge}
 
-> ## Q10. What do we put after a character to match strings where that character appears 2 to 4 times in sequence?
+> ## Q10. What do we put after a character to match strings where that character appears two to four times in sequence?
 > 
 > A) `{2,4}`
 > B) `{2-4}`
