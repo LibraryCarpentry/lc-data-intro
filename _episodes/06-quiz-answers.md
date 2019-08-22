@@ -5,7 +5,7 @@ exercises: 0
 questions:
 - What does `Fr[ea]nc[eh]` match?
 objectives:
-- Test knowledge of use of regular expressions in searches
+- Test knowledge of use of regular expressions in searches.
 keypoints:
 - Regular expressions answer sheet
 ---
@@ -36,9 +36,9 @@ How would you find a 4-letter word that ends a string and is preceded by at leas
 
 - `0+[a-z]{4}\b`
 
-How do you match any 4-digit string anywhere?
+How do you match any four-digit string anywhere?
 
-- `\d{4}`. Note this will match 4 digit strings only but will find them within longer strings of numbers.
+- `\d{4}`. Note this will match four-digit strings only but will find them within longer strings of numbers.
 
 How would you match the date format `dd-MM-yyyy`?
 
