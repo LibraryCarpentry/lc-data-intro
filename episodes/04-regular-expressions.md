@@ -7,7 +7,7 @@ questions:
 objectives:
 - Use regular expressions in searches
 keypoints:
-- Regular expressions are a language for pattern matching
+- Regular expressions are a language for pattern matching.
 - "Test regular expressions interactively with [regex101.com](https://regex101.com/) or [RegExr.com](http://www.regexr.com/), and visualise them with [regexper.com](https://regexper.com/)."
 - "Test yourself with: [RegexCrossword.com/](https://regexcrossword.com/) or [our Multiple Choice Quiz](https://librarycarpentry.github.io/lc-data-intro/05-quiz/)."
 ---
@@ -18,17 +18,17 @@ Regular expressions are a concept and an implementation used in many different p
 
 A regular expression, often abbreviated to *regex*, is a method of using a sequence of characters to define a search to match strings, i.e. "find and replace"-like operations. In computation, a 'string' is a contiguous sequence of symbols or values. For example, a word, a date, a set of numbers (e.g., a phone number), or an alphanumeric value (e.g., an identifier). In library searches, we are most familiar with a small part of regular expressions known as the "wild card character," but there are many more features to the complete regular expressions syntax. Regular expressions will let you:
 
-- Match on types of characters (e.g. 'upper case letters', 'digits', 'spaces', etc.)
-- Match patterns that repeat any number of times
-- Capture the parts of the original string that match your pattern
+- Match on types of characters (e.g. 'upper case letters', 'digits', 'spaces', etc.).
+- Match patterns that repeat any number of times.
+- Capture the parts of the original string that match your pattern.
 
-Regular expressions rely on the use of literal characters and metacharacters. A metacharacter is any ASCII character that has a special meaning. By using metacharacters and possibly literal characters, you can construct a regex for finding strings or files that match a pattern rather than a specific string. For example, say your organization wants to change the way they display telephone numbers on their website by removing the parentheses around the area code. Rather than search for each specific phone number (that could take forever and be prone to error) or searching for every open parenthesis character (could also take forever and return many false-positives), you could search for the pattern of a phone number. 
+Regular expressions rely on the use of literal characters and metacharacters. A metacharacter is any American Standard Code for Information Interchange (ASCII) character that has a special meaning. By using metacharacters and possibly literal characters, you can construct a regex for finding strings or files that match a pattern rather than a specific string. For example, say your organization wants to change the way they display telephone numbers on their website by removing the parentheses around the area code. Rather than search for each specific phone number (that could take forever and be prone to error) or searching for every open parenthesis character (could also take forever and return many false-positives), you could search for the pattern of a phone number. 
 
-Since regular expressions defines some ASCII characters as "metacharacters" that have more than their literal meaning, it is also important to be able to "escape" these metacharacters to use them for their normal, literal meaning. For example, the period `.` means "match any character", but if you want to match a period then you will need to use a `\` in front of it to signal to the regular expression processor that you want to use the period as a plain old period and not a metacharacter. That notation is called "escaping" the special character. The concept of "escaping" special characters is shared across a variety of computational settings, including markdown and HTML.
+Since regular expressions defines some ASCII characters as "metacharacters" that have more than their literal meaning, it is also important to be able to "escape" these metacharacters to use them for their normal, literal meaning. For example, the period `.` means "match any character", but if you want to match a period then you will need to use a `\` in front of it to signal to the regular expression processor that you want to use the period as a plain old period and not a metacharacter. That notation is called "escaping" the special character. The concept of "escaping" special characters is shared across a variety of computational settings, including markdown and Hypertext Markup Language (HTML).
 
 
 > ## Regex Engines and interoperability
->  Most regular expression implementations employ comparable syntaxes and metacharacters (generally influenced by the regex syntax of a programming language called Perl), and they behave similarly for most pattern-matching in this lesson. But there are differences, often subtle, in each, so it's always a good practice to read application or language's documentation whenever available, especially when you start using more advanced regex features. Some programs, notably many UNIX command line programs (for more on UNIX see our '[Shell Lesson](https://librarycarpentry.org/lc-shell/)'), use an older regex standard (called 'POSIX regular expressions') which is less feature-rich and uses different metacharacters than Perl-influenced implementations. For the purposes of our lesson, you don't need to worry too much about all this, but if you want to follow up on this see [this detailed engine comparison](https://gist.github.com/CMCDragonkai/6c933f4a7d713ef712145c5eb94a1816).
+>  Most regular expression implementations employ comparable syntaxes and metacharacters (generally influenced by the regex syntax of a programming language called Perl), and they behave similarly for most pattern-matching in this lesson. But there are differences, often subtle, in each, so it's always a good practice to read the application or language's documentation whenever available, especially when you start using more advanced regex features. Some programs, notably many UNIX command line programs (for more on UNIX see our '[Shell Lesson](https://librarycarpentry.org/lc-shell/)'), use an older regex standard (called 'POSIX regular expressions') which is less feature-rich and uses different metacharacters than Perl-influenced implementations. For the purposes of our lesson, you don't need to worry too much about all this, but if you want to follow up on this see [this detailed engine comparison](https://gist.github.com/CMCDragonkai/6c933f4a7d713ef712145c5eb94a1816).
 {: .callout}
 
 A very simple use of a regular expression would be to locate the same word spelled two different ways. For example the regular expression `organi[sz]e` matches both "organise" and "organize". But it would also match `reorganise`, `reorganize`, `organises`, `organizes`, `organised`, `organized`, etc.
@@ -36,25 +36,25 @@ A very simple use of a regular expression would be to locate the same word spell
 ### Learning common regex metacharacters
 Square brackets can be used to define a list or range of characters to be found. So:
 
-- `[ABC]` matches A or B or C
-- `[A-Z]` matches any upper case letter
-- `[A-Za-z]` matches any upper or lower case letter
-- `[A-Za-z0-9]` matches any upper or lower case letter or any digit
+- `[ABC]` matches A or B or C.
+- `[A-Z]` matches any upper case letter.
+- `[A-Za-z]` matches any upper or lower case letter.
+- `[A-Za-z0-9]` matches any upper or lower case letter or any digit.
 
 Then there are:
 
-- `.` matches any character
-- `\d` matches any single digit
-- `\w` matches any part of word character (equivalent to `[A-Za-z0-9]`)
-- `\s` matches any space, tab, or newline
+- `.` matches any character.
+- `\d` matches any single digit.
+- `\w` matches any part of word character (equivalent to `[A-Za-z0-9]`).
+- `\s` matches any space, tab, or newline.
 - `\` used to escape the following character when that character is a special character. So, for example, a regular expression that found `.com` would be `\.com` because `.` is a special character that matches any character.
 - `^` is an "anchor" which asserts the position at the start of the line. So what you put after the caret will only match if they are the first characters of a line. The caret is also known as a circumflex.
 - `$` is an "anchor" which asserts the position at the end of the line. So what you put before it will only match if they are the last characters of a line.
 - `\b` asserts that the pattern must match at a word boundary. Putting this either side of a word stops the regular expression matching longer variants of words. So:
-	- the regular expression `mark` will match not only `mark` but also find `marking`, `market`, `unremarkable`, and so on
-	- the regular expression `\bword` will match `word`, `wordless`, and `wordlessly`
-	- the regular expression `comb\b` will match `comb` and `honeycomb` but not `combine`
-	- the regular expression `\brespect\b` will match `respect` but not `respectable` or `disrespectful`
+	- the regular expression `mark` will match not only `mark` but also find `marking`, `market`, `unremarkable`, and so on.
+	- the regular expression `\bword` will match `word`, `wordless`, and `wordlessly`.
+	- the regular expression `comb\b` will match `comb` and `honeycomb` but not `combine`.
+	- the regular expression `\brespect\b` will match `respect` but not `respectable` or `disrespectful`.
 
 So, what is `^[Oo]rgani.e\b` going to match?
 
@@ -80,8 +80,8 @@ Other useful special characters are:
 - `+` matches the preceding element one or more times. For example, ab+c matches "abc", "abbbc" but not "ac".
 - `?` matches when the preceding character appears zero or one time.
 - `{VALUE}` matches the preceding character the number of times defined by VALUE; ranges, say, 1-6, can be specified with the syntax `{VALUE,VALUE}`, e.g. `\d{1,9}` will match any number between one and nine digits in length.
-- `|` means or.
-- `/i` renders an expression case-insensitive (equivalent to `[A-Za-z]`)
+- `|` means **or**.
+- `/i` renders an expression case-insensitive (equivalent to `[A-Za-z]`).
 
 So, what are these going to match?
 
@@ -169,12 +169,12 @@ So, what are these going to match?
 > {: .solution}
 {: .challenge}
 
-This logic is useful when you have lots of files in a directory, when those files have logical file names, and when you want to isolate a selection of files. It can a be used for looking at cells in spreadsheets for certain values, or for extracting some data from a column of a spreadsheet to make  new columns. I could go on. The point is, it is useful in many contexts. To embed this knowledge we won't - however - be using computers. Instead we'll use pen and paper. 
+This logic is useful when you have lots of files in a directory, when those files have logical file names, and when you want to isolate a selection of files. It can be used for looking at cells in spreadsheets for certain values, or for extracting some data from a column of a spreadsheet to make  new columns. I could go on. The point is, it is useful in many contexts. To embed this knowledge we won't - however - be using computers. Instead we'll use pen and paper. 
 
 
 ### Exercise
 
-Work in teams of 4-6 on the exercises below. When you think you have the right answer, check it against the solution. 
+Work in teams of four to six on the exercises below. When you think you have the right answer, check it against the solution. 
 
 When you finish, split your team into two groups and write each other some tests. These should include a) strings you want the other team to write regex for and b) regular expressions you want the other team to work out what they would match. 
 
@@ -243,7 +243,7 @@ Then test each other on the answers. If you want to check your logic use [regex1
 {: .challenge}
 
 > ## Matching non-linguistic patterns
-> How would you find a string that ends with 4 letters preceded by at least one zero?
+> How would you find a string that ends with four letters preceded by at least one zero?
 >
 > > ## Solution
 > > ~~~
@@ -253,13 +253,13 @@ Then test each other on the answers. If you want to check your logic use [regex1
 {: .challenge}
 
 > ## Matching digits
-> How do you match any 4-digit string anywhere?
+> How do you match any four-digit string anywhere?
 >
 > > ## Solution
 > > ~~~
 > > \d{4}
 > > ~~~
-> > Note: this will also match 4 digit strings within longer strings of numbers and letters.
+> > Note: this will also match four-digit strings within longer strings of numbers and letters.
 > {: .solution}
 {: .challenge}
 
@@ -304,7 +304,7 @@ Open the [swcCoC.md file](https://github.com/LibraryCarpentry/lc-data-intro/tree
 
 For a quick test to see if it's working, type the string `community` into the regular expression box. 
 
-If you look in the box on the right of the screen, you see that the expression matches six instances of the string 'community' (the instances are also highlighted within the text)
+If you look in the box on the right of the screen, you see that the expression matches six instances of the string 'community' (the instances are also highlighted within the text).
 
 > ## Taking spaces into consideration
 > Type `community `. You get three matches. Why not six?
@@ -325,7 +325,7 @@ If you look in the box on the right of the screen, you see that the expression m
 {: .challenge}
 
 > ## Exploring effect of expressions matching different words
-> Change the expression to `communi` you get 13 full matches of several words. Why?
+> Change the expression to `communi` and you get 13 full matches of several words. Why?
 > > ## Solution
 > >
 > > Because the string 'communi' is present in all of those words, including `communi`cation and `communi`ty. Because the expression does not have a word boundary, this expression would also match in`communi`cado, were it present in this text. If you want to test this, type `incommunicado` into the text somewhere and see if it is found.
@@ -430,9 +430,9 @@ Open the [swcCoC.md file](https://github.com/LibraryCarpentry/lc-data-intro/tree
 Does this Code of Conduct contain a phone number?
 
 What to consider:
-1. It may or may not have a country code, perhaps starting with a "+"
-2. It will have an area code, potentially enclosed in parentheses
-3. It may have the sections all separated with a "-"
+1. It may or may not have a country code, perhaps starting with a "+".
+2. It will have an area code, potentially enclosed in parentheses.
+3. It may have the sections all separated with a "-".
 
 > ## Start with what you know: find strings of digits
 > Start with what we know, which is the most basic format of a phone number: three digits, a dash, and four digits. How would we write a regex expression that matches this?
