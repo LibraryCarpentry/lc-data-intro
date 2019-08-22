@@ -5,15 +5,15 @@ exercises: 25
 questions:
 - Why take an automated or computational approach?
 objectives:
-- Understand the main lessons of why you might automate your work
-- Learn about keyboard shortcuts you can use to improve your workflows
+- Understand the main lessons of why you might automate your work.
+- Learn about keyboard shortcuts you can use to improve your workflows.
 keypoints:
 - The main lessons of why you might automate or take a computational approach can help guide you as you consider whether to automate or not.
 ---
 
 ## Foundations
 
-Before we crack on with using the computational tools at our disposal, let's spend some time building a foundation that will help frame what you'll encounter in Library Carpentry. This lesson covers a few principles and behaviors that are useful to know when beginning to develop computational approaches to your work. 
+Before we crack on with using the computational tools at our disposal, let's spend some time building a foundation that will help frame what you'll encounter in Library Carpentry. This lesson covers a few principles and behaviours that are useful to know when beginning to develop computational approaches to your work. 
 
 ### The computer is a machine
 
@@ -22,8 +22,8 @@ People interpret. Machines don't. Given a repetitive task, an enumerative task, 
 ### Why take an automated or computational approach?
 
 Otherwise known as the 'why not do it manually?' question. There are plenty of times when manual work is the easiest, fastest and most efficient approach. Here are two conditions that should make you consider using automation: 
- - You know how to automate the task
- - You think this is a task you will do over and over again
+ - You know how to automate the task.
+ - You think this is a task you will do over and over again.
 
 Main lessons:
 
@@ -43,13 +43,13 @@ Automation refers to a process or procedure that runs with little to no supervis
 
 > ## Is there something you would like to automate in your work?
 >
-> Discuss in groups of 4-6 or altogether and note your discussion in the workshop collaborative document.
+> Discuss in groups of four to six or altogether and note your discussion in the workshop collaborative document.
 >
 {: .discussion}
 
 ### Keyboard shortcuts are your friend
 
-Though we will get more computational over the course of the programme, we can start our adventure into programming - as many of you will have already - with very simple things like keyboard shortcuts. We all have our favourites that are labour saving but also allow us to use our computer in the best possible way. You can do all the lessons in Library Carpentry without keyboard shortcuts, but note that they'll likely come up a lot.
+Though we will get more computational over the course of the programme, we can start our adventure into programming - as many of you will have already - with very simple things like keyboard shortcuts. We all have our favourites that are labour saving but also allow us to use this machine in the best possible way. You can do all the lessons in Library Carpentry without keyboard shortcuts, but note that they'll likely come up a lot.
 
 Action | Windows | Mac | + Keystroke
 --- | --- | --- | --- |
@@ -63,7 +63,7 @@ Keyboard shortcuts are the first step towards automation. Sometimes you don’t 
 
 > ## What keyboard shortcut(s) do you find helpful?
 >
-> Discuss in groups of 4-6 or altogether and note your discussion in the workshop collaborative document. For a list of common keyboard shortcuts, see [Wikipedia's Table of Keyboard Shortcuts](https://en.wikipedia.org/wiki/Table_of_keyboard_shortcuts).
+> Discuss in groups of four to six or altogether and note your discussion in the workshop collaborative document. For a list of common keyboard shortcuts, see [Wikipedia's Table of Keyboard Shortcuts](https://en.wikipedia.org/wiki/Table_of_keyboard_shortcuts).
 >
 {: .discussion}
 
@@ -75,4 +75,4 @@ Keyboard shortcuts are the first step towards automation. Sometimes you don’t 
 
 - Yelton, A. (2015). [Coding for Librarians: Learning by Example.](https://doi.org/10.5860/ltr.51n3). American Library Association.
 
-- Burton, M., Lyon, L., Erdmann, C., & Tijerina, B. (2018). [Shifting to data savvy: the future of data science in libraries](http://d-scholarship.pitt.edu/33891/).
+- Burton, M., Lyon, L., Erdmann, C., & Tijerina, B. (2018). [Shifting to data savvy: the future of data science in libraries](https://d-scholarship.pitt.edu/33891/).
