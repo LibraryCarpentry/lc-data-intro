@@ -1,5 +1,5 @@
 ---
-title: "Why automate or take a computational approach?"
+title: "Why automate?"
 teaching: 25
 exercises: 25
 questions:
