@@ -1,19 +1,14 @@
 ---
-title: "Foundations"
-teaching: 45
-exercises: 0
+title: "Why automate or take a computational approach?"
+teaching: 25
+exercises: 25
 questions:
-- What best practices and generic skills can be used to successfully use and create library related programs?
+- Why take an automated or computational approach?
 objectives:
-- Identify best practices in using software and data
-- Identify best practices in saving files
-- Identify best practices in naming files
+- Understand the main lessons of why you might automate your work
+- Learn about keyboard shortcuts you can use to improve your workflows
 keypoints:
-- Data structures should be consistent and predictable
-- Consider using semantic elements or data identifiers to data directories
-- Fit and adapt your data structure to your work
-- Apply naming conventions to directories and file names to identify them, to create associations between data elements, and to assist  
-  with the long term readability and comprehension of your data structures
+- The main lessons of why you might automate or take a computational approach can help guide you as you consider whether to automate or not.
 ---
 
 ## Foundations
