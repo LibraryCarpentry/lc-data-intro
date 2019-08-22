@@ -68,9 +68,9 @@ This multiple choice quiz is designed to embed the regex knowledge you learned d
 
 > ## Q5. What does the regular expression `[a-z]` match?
 > 
-> A) The characters a and z only
-> B) All characters between the ranges a to z and A to Z
-> C) All characters between the range a to z
+> A) `The characters a and z only`
+> B) `All characters between the ranges a to z and A to Z`
+> C) `All characters between the range a to z`
 >
 > > ## Answer
 > >
@@ -145,9 +145,9 @@ This multiple choice quiz is designed to embed the regex knowledge you learned d
 {: .challenge}
 
 > ## Q11. The regular expression `\d{4}` will match what?
-> A) Any four character sequence?
-> B) Any four digit sequence?
-> C) The letter `d` four times?
+> A) `Any four character sequence?`
+> B) `Any four digit sequence?`
+> C) `The letter `d` four times?`
 >
 > > ## Answer
 > >
@@ -158,9 +158,9 @@ This multiple choice quiz is designed to embed the regex knowledge you learned d
 
 > ## Q12. If brackets are used to define a group, what would match the regular expression `(,\s[0-9]{1,4}){4},\s[0-9]{1,3}\.[0-9]`?
 > 
-> A) , 135, 1155, 915, 513, 18.8
-> B) , 135, 11557, 915, 513, 18.8
-> C) , 135, 1155, 915, 513, 188
+> A) `, 135, 1155, 915, 513, 18.8`
+> B) `, 135, 11557, 915, 513, 18.8`
+> C) `, 135, 1155, 915, 513, 188`
 >
 > > ## Answer
 > >
