@@ -519,10 +519,10 @@ What to consider:
 One of the reasons we stress the value of consistent and predictable directory and filenaming conventions is that working in this way enables you to use the computer to select files based on the characteristics of their file names. For example, if you have a bunch of files where the first four digits are the year and you only want to do something with files from '2017', then you can. Or if you have 'journal' somewhere in a filename when you have data about journals, you can use the computer to select just those files. Equally, using plain text formats means that you can go further and select files or elements of files based on characteristics of the data *within* those files.
 
 > ## Extracting a substring in Google Sheets using regex
-> 1. Export the [2014 Public Library Survey](https://www.imls.gov/sites/default/files/pls_fy2014_data_files_csv.zip) from the IMLS data site as a CSV file.
-> 2. Upload to Google Sheets and open as a Google Sheet if it doesn't do this by default.
-> 3. Look in the `LOCATION` column and notice that the values contain the latitude and longitude in parenthesis after the library address.
-> 4. Construct a regular expression to match and extract the latitude and longitude into a new column named 'latlong'. HINT: Look up the function `REGEXEXTRACT` in Google Sheets. That function expects the first argument to be a string (a cell in `LOCATION` column) and a quoted regular expression in the second.
+> 1. Export and unzip the [2017 Public Library Survey](https://github.com/LibraryCarpentry/lc-data-intro/blob/gh-pages/files/PLS_FY17.zip) (originially from the IMLS data site) as a CSV file.
+> 2. Upload the CSV file to Google Sheets and open as a Google Sheet if it doesn't do this by default.
+> 3. Look in the `ADDRESS` column and notice that the values contain the latitude and longitude in parenthesis after the library address.
+> 4. Construct a regular expression to match and extract the latitude and longitude into a new column named 'latlong'. HINT: Look up the function `REGEXEXTRACT` in Google Sheets. That function expects the first argument to be a string (a cell in `ADDRESS` column) and a quoted regular expression in the second.
 >
 >> ## Solution
 > > This is one way to solve this challenge. You might have found others. Inside the cell you can use the below to extract the Latitude and Longitude into a single cell. You can then copy the formula down to the end of the column.
