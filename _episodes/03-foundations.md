@@ -1,5 +1,5 @@
 ---
-title: "Foundations"
+title: A computational approach
 teaching: 45
 exercises: 0
 questions:
@@ -14,14 +14,6 @@ keypoints:
 - Fit and adapt your data structure to your work.
 - Apply naming conventions to directories and file names to identify them, to create associations between data elements, and to assist with the long term readability and comprehension of your data structures.
 ---
-
-## Foundations
-
-Before we crack on with using the computational tools at our disposal, let's spend some time building a foundation that will help frame what you'll encounter in Library Carpentry. This lesson covers a few principles and behaviours that are useful to know when beginning to develop computational approaches to your work. 
-
-### The computer is a machine
-
-People interpret. Machines don't. Given a repetitive task, an enumerative task, or a task that relies on memory, a computer can produce results faster, more accurately, and less grudgingly than a person might. But a computer only does what you tell it to. If you get an error message, it is often not your fault! In most cases the computer has failed to interpret what you mean because it can only work with what it knows.
 
 ### Why take an automated or computational approach?
 
@@ -116,3 +108,5 @@ The crucial bit for our purposes, however, is the file naming convention you cho
 ## For further reading
 
 Andromeda Yelton, a US-based librarian closely involved in the [Code4Lib] (https://code4lib.org/about/) movement, put together an excellent American Library Association Library Technology Report called ["Coding for Librarians: Learning by Example"](https://thatandromeda.github.io/ltr/). In it, Yelton describes scenarios in which library professionals developed and shared code that made a difference to their work, to the work of their colleagues, and to the work of their library.
+
+
