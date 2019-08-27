@@ -14,7 +14,7 @@ keypoints:
 
 > ## Jargon Busting
 >
-> This exercise is an opportunity to begin to ask questions and to get a firmer grasp on the concepts around data, code or software development in libraries.
+> This exercise is an opportunity to gain a firmer grasp on the concepts around data, code or software development in libraries.
 >
 1. Pair with a neighbor and decide who will take notes (or depending on the amount of time available for the exercise, skip to forming groups of four to six). 
 1. Talk for three minutes (your instructor will be timing you!) on any terms, phrases, or ideas around code or software development in libraries that you've come across and perhaps feel you should know better.
