@@ -16,9 +16,9 @@ This multiple choice quiz is designed to embed the regex knowledge you learned d
 
 > ## Q1. What is the special character that matches zero or more characters?
 >
-> A) `^`
-> B) `#`
-> C) `*`
+> * A) `^`
+> * B) `#`
+> * C) `*`
 >
 > > ## Answer
 > >
@@ -29,9 +29,9 @@ This multiple choice quiz is designed to embed the regex knowledge you learned d
 
 > ## Q2. Which of the following matches any space, tab, or newline?
 >
-> A) `\s`
-> B) `\b`
-> C) `$`
+> * A) `\s`
+> * B) `\b`
+> * C) `$`
 >
 > > ## Answer
 > >
@@ -42,9 +42,9 @@ This multiple choice quiz is designed to embed the regex knowledge you learned d
 
 > ## Q3. How do you match the string `Confident` appearing at the beginning of a line?
 > 
-> A) `$Confident`
-> B) `^Confident`
-> C) `#Confident`
+> * A) `$Confident`
+> * B) `^Confident`
+> * C) `#Confident`
 >
 > > ## Answer
 > >
@@ -55,9 +55,9 @@ This multiple choice quiz is designed to embed the regex knowledge you learned d
 
 > ## Q4. How do you match the word `Confidential` appearing at the beginning of a line?
 > 
-> A) `^Confidential\d`
-> B) `^Confidential\b`
-> C) `^Confidential\w`
+> * A) `^Confidential\d`
+> * B) `^Confidential\b`
+> * C) `^Confidential\w`
 >
 > > ## Answer
 > >
@@ -68,9 +68,9 @@ This multiple choice quiz is designed to embed the regex knowledge you learned d
 
 > ## Q5. What does the regular expression `[a-z]` match?
 > 
-> A) `The characters a and z only`
-> B) `All characters between the ranges a to z and A to Z`
-> C) `All characters between the range a to z`
+> * A) `The characters a and z only`
+> * B) `All characters between the ranges a to z and A to Z`
+> * C) `All characters between the range a to z`
 >
 > > ## Answer
 > >
@@ -81,9 +81,9 @@ This multiple choice quiz is designed to embed the regex knowledge you learned d
 
 > ## Q6. Which of these will match the strings `revolution`, `revolutionary`, and `revolutionaries`?
 > 
-> A) `revolution[a-z]?`
-> B) `revolution[a-z]*`
-> C) `revolution[a-z]+`
+> * A) `revolution[a-z]?`
+> * B) `revolution[a-z]*`
+> * C) `revolution[a-z]+`
 >
 > > ## Answer
 > >
@@ -94,9 +94,9 @@ This multiple choice quiz is designed to embed the regex knowledge you learned d
 
 > ## Q7. Which of these will match the strings `revolution`, `Revolution`, and their plural variants only?
 > 
-> A) `[rR]evolution[s]+`
-> B) `revolution[s]?`
-> C) `[rR]evolution[s]?`
+> * A) `[rR]evolution[s]+`
+> * B) `revolution[s]?`
+> * C) `[rR]evolution[s]?`
 >
 > > ## Answer
 > >
@@ -107,9 +107,9 @@ This multiple choice quiz is designed to embed the regex knowledge you learned d
 
 > ## Q8. What regular expression matches the strings `dog` or `cat`?
 >
-> A) `dog|cat`
-> B) `dog,cat`
-> C) `dog | cat`
+> * A) `dog|cat`
+> * B) `dog,cat`
+> * C) `dog | cat`
 >
 > > ## Answer
 > >
@@ -120,9 +120,9 @@ This multiple choice quiz is designed to embed the regex knowledge you learned d
 
 > ## Q9. What regular expression matches the whole words `dog` or `cat`?
 >
-> A) `\bdog|cat\b`
-> B) `\bdog\b | \bcat\b`
-> C) `\bdog\b|\bcat\b`
+> * A) `\bdog|cat\b`
+> * B) `\bdog\b | \bcat\b`
+> * C) `\bdog\b|\bcat\b`
 >
 > > ## Answer
 > >
@@ -133,9 +133,9 @@ This multiple choice quiz is designed to embed the regex knowledge you learned d
 
 > ## Q10. What do we put after a character to match strings where that character appears two to four times in sequence?
 > 
-> A) `{2,4}`
-> B) `{2-4}`
-> C) `[2,4]`
+> * A) `{2,4}`
+> * B) `{2-4}`
+> * C) `[2,4]`
 >
 > > ## Answer
 > >
@@ -145,9 +145,9 @@ This multiple choice quiz is designed to embed the regex knowledge you learned d
 {: .challenge}
 
 > ## Q11. The regular expression `\d{4}` will match what?
-> A) `Any four character sequence?`
-> B) `Any four digit sequence?`
-> C) `The letter `d` four times?`
+> * A) `Any four character sequence?`
+> * B) `Any four digit sequence?`
+> * C) `The letter `d` four times?`
 >
 > > ## Answer
 > >
@@ -158,9 +158,9 @@ This multiple choice quiz is designed to embed the regex knowledge you learned d
 
 > ## Q12. If brackets are used to define a group, what would match the regular expression `(,\s[0-9]{1,4}){4},\s[0-9]{1,3}\.[0-9]`?
 > 
-> A) `, 135, 1155, 915, 513, 18.8`
-> B) `, 135, 11557, 915, 513, 18.8`
-> C) `, 135, 1155, 915, 513, 188`
+> * A) `, 135, 1155, 915, 513, 18.8`
+> * B) `, 135, 11557, 915, 513, 18.8`
+> * C) `, 135, 1155, 915, 513, 188`
 >
 > > ## Answer
 > >
