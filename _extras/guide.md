@@ -20,10 +20,10 @@ ____
 
 To teach regular expressions, instructors have used:
 
-- [slides](https://github.com/LibraryCarpentry/lc-data-intro/blob/gh-pages/files/regexslides.pdf)
+- [slides](https://github.com/LibraryCarpentry/lc-data-intro/blob/gh-pages/files/regexslides.pdf) to quiz the audience on examples.
 - Pen and paper, to work through exercises before using a tool and to explain that there can be multiple answers to the same question. 
 - Whiteboard with text examples and quized participants on regex approaches.
-- Online tools such as: [Regxr](https://regexr.com/), [regex101](https://regex101.com/), [rexegper](http://regexper.com/), [myregexp]([http://myregexp.com/]), or whichever service you prefer.
+- Online tools such as: [Regxr](https://regexr.com/), [regex101](https://regex101.com/), [rexegper](http://regexper.com/), [myregexp](http://myregexp.com/), or whichever service you prefer.
 - Used quiz/exercise files in [https://github.com/LibraryCarpentry/lc-data-intro/tree/gh-pages/files](https://github.com/LibraryCarpentry/lc-data-intro/tree/gh-pages/files).
 
 General guidance:
