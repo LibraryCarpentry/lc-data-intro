@@ -1,6 +1,6 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3264946.svg)](https://doi.org/10.5281/zenodo.3264946)  
 
-# Maintainers for Library Carpentry: Introduction to Working with Data
+# Maintainers for Library Carpentry: Introduction to Working with Data (Regular Expressions)
  
 - [Shari Laster](https://github.com/sharilaster) (Lead)
 - [Paul R. Pival](https://github.com/ppival)
