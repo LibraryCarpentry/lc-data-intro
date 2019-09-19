@@ -5,8 +5,12 @@
 - [Shari Laster](https://github.com/sharilaster) (Lead)
 - [Paul R. Pival](https://github.com/ppival)
 - [Anton Angelo](https://github.com/antonangelo)
-- [James Baker](https://github.com/drjwbaker)
 - [Carmi Cronje](https://github.com/ccronje)
+
+# Past Maintainers
+
+- [James Baker](https://github.com/drjwbaker)
+- [Chris Erdmann](https://github.com/libcce)
 
 Lesson Maintainers communication is via the [team site](https://github.com/orgs/LibraryCarpentry/teams/lc-data-intro-maintainers).
 
