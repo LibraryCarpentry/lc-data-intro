@@ -1,6 +1,6 @@
 ---
 title: "Regular Expressions"
-teaching: 15
+teaching: 20
 exercises: 15
 questions:
 - How can you imagine using regular expressions in your work?
