@@ -1,12 +1,16 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3264946.svg)](https://doi.org/10.5281/zenodo.3264946)  
 
-# Maintainers for Library Carpentry: Introduction to Data
+# Maintainers for Library Carpentry: Introduction to Working with Data (Regular Expressions)
  
 - [Shari Laster](https://github.com/sharilaster) (Lead)
 - [Paul R. Pival](https://github.com/ppival)
 - [Anton Angelo](https://github.com/antonangelo)
-- [James Baker](https://github.com/drjwbaker)
 - [Carmi Cronje](https://github.com/ccronje)
+
+# Past Maintainers
+
+- [James Baker](https://github.com/drjwbaker)
+- [Chris Erdmann](https://github.com/libcce)
 
 Lesson Maintainers communication is via the [team site](https://github.com/orgs/LibraryCarpentry/teams/lc-data-intro-maintainers).
 
@@ -36,6 +40,8 @@ Library Carpentry is authored and maintained through issues, commits, and pull r
 Shari Laster (Ed.), Paul R. Pival (Ed.), Anton Angelo (Ed.), James Baker (Ed.), Carmi Crone (Ed.), Christopher Erdmann, Tim Dennis, Elizabeth Lisa McAulay, François Michonneau, … remerjohnson. (2019, July). LibraryCarpentry/lc-data-intro: Library Carpentry: Introduction to Data, June 2019 (Version v2019.06.1). Zenodo. http://doi.org/10.5281/zenodo.3264946
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3264946.svg)](https://doi.org/10.5281/zenodo.3264946)
+
+_Note: Lesson formerly known as Introduction to Data_
 
 ## Checking and Previewing the Lesson
 
