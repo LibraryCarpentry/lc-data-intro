@@ -133,7 +133,7 @@ Open the [swcCoC.md file](https://github.com/LibraryCarpentry/lc-data-intro/tree
 > >
 > > `\w` matches any word (including digits and underscore)
 > >
-> > `{2,4}` limits the number of word characters and/or digits to a two or three-character string.
+> > `{2,3}` limits the number of word characters and/or digits to a two or three-character string.
 > >
 > > `[]` the brackets enclose the boolean string that 'OR' the digits, word characters, characters and dash.
 > >
