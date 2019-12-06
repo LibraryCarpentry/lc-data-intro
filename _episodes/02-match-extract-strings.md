@@ -10,7 +10,7 @@ objectives:
 keypoints:
 - Regular expressions are useful for searching and cleaning data.
 - Test regular expressions interactively with [regex101.com](https://regex101.com/) or [RegExr.com](http://www.regexr.com/), and visualise them with [regexper.com](https://regexper.com/).
-- Test yourself with [RegexCrossword.com/](https://regexcrossword.com/) or via the quiz and excercises in this lesson.
+- Test yourself with [RegexCrossword.com/](https://regexcrossword.com/) or via the quiz and exercises in this lesson.
 ---
 
 # Exercise Using Regex101.com
@@ -243,7 +243,7 @@ What to consider:
 # Extracting a substring in Google Sheets using regex
 
 > ## Extracting a substring in Google Sheets using regex
-> 1. Export and unzip the [2017 Public Library Survey](https://github.com/LibraryCarpentry/lc-data-intro/blob/gh-pages/files/PLS_FY17.zip) (originially from the IMLS data site) as a CSV file.
+> 1. Export and unzip the [2017 Public Library Survey](https://github.com/LibraryCarpentry/lc-data-intro/blob/gh-pages/files/PLS_FY17.zip) (originally from the IMLS data site) as a CSV file.
 > 2. Upload the CSV file to Google Sheets and open as a Google Sheet if it doesn't do this by default.
 > 3. Look in the `ADDRESS` column and notice that the values contain the latitude and longitude in parenthesis after the library address.
 > 4. Construct a regular expression to match and extract the latitude and longitude into a new column named 'latlong'. HINT: Look up the function `REGEXEXTRACT` in Google Sheets. That function expects the first argument to be a string (a cell in `ADDRESS` column) and a quoted regular expression in the second.
