@@ -42,7 +42,7 @@ If you look in the box on the right of the screen, you see that the expression m
 {: .challenge}
 
 > ## Exploring effect of expressions matching different words
-> Change the expression to `communi` and you get 13 full matches of several words. Why?
+> Change the expression to `communi` and you get 15 full matches of several words. Why?
 > > ## Solution
 > >
 > > Because the string 'communi' is present in all of those words, including `communi`cation and `communi`ty. Because the expression does not have a word boundary, this expression would also match in`communi`cado, were it present in this text. If you want to test this, type `incommunicado` into the text somewhere and see if it is found.
@@ -51,10 +51,10 @@ If you look in the box on the right of the screen, you see that the expression m
 {: .challenge}
 
 > ## Taking capitalization into consideration
-> Type the expression `[Cc]ommuni`. You get 14 matches. Why?
+> Type the expression `[Cc]ommuni`. You get 16 matches. Why?
 > > ## Solution
 > >
-> > The word Community is present in the text with a capital `C` and with a lowercase `c` 14 times.
+> > The word Community is present in the text with a capital `C` and with a lowercase `c` 16 times.
 > >
 > {: .solution}
 {: .challenge}
