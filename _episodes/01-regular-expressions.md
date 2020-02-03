@@ -69,7 +69,7 @@ So, what is `^[Oo]rgani.e\b` going to match?
 > > Organike
 > > ~~~
 > > Or, any other string that starts a line, begins with a letter `o` in lower or capital case, proceeds with `rgani`, has any character in the 7th position, and ends with the letter `e`.
-> > [See solution visulaized on Regexper.com](https://regexper.com/#%5E%5BOo%5Drgani.e%5Cb)
+> > [See solution visulaized on Regexper.com](https://regexper.com/#%5E%5BOo%5Drgani.e)
 > {: .solution}
 {: .challenge}
 
