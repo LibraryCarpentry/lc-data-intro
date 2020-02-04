@@ -11,5 +11,5 @@ This Library Carpentry lesson introduces people with library- and information-re
 
 > ## Prerequisites
 >
-> This lesson has no prerequisites. Ideally you will need a laptop and an internet connection, though this is not required.
+> This lesson has no prerequisites. You will need a laptop and an internet connection to complete Episode 2.
 {: .prereq}
