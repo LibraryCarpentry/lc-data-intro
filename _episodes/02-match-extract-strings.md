@@ -36,7 +36,7 @@ If you look in the box on the right of the screen, you see that the expression m
 > If you want to match 'community-led' by adding other regex characters to the expression `community`, what would they be?
 > > ## Solution
 > >
-> > IFor instance, `\S+\b`. This would match one or more non-space characters followed by a word boundary. 
+> > For instance, `\S+\b`. This would match one or more non-space characters followed by a word boundary. 
 > >
 > {: .solution}
 {: .challenge}
