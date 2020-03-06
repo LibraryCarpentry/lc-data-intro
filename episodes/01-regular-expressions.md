@@ -229,7 +229,12 @@ Then test each other on the answers. If you want to check your logic use [regex1
 > > \b[Cc]olou?r\b|\bCOLOU?R\b
 > > /colou?r/i
 > > ~~~
-> > In real life, you *should* only come across the case insensitive variations `colour`, `color`, `Colour`, `Color`, `COLOUR`, and `COLOR` (rather than, say, `coLour`). So based on what we know, the logical regular expression is `\b[Cc]olou?r\b|\bCOLOU?R\b`. An alternative more elegant option we've not discussed is to take advantage of the `/` delimiters and add an 'ignore case' flag: so `/colou?r/i` will match all case insensitive variants of `colour` and `color`.
+> > In real life, you *should* only come across the case insensitive variations `colour`, `color`, `Colour`, `Color`, `COLOUR`, and `COLOR` (rather than, say, `coLour`). So based on what we know, the logical regular expression is `\b[Cc]olou?r\b|\bCOLOU?R\b`. 
+> > 
+> > An alternative more elegant option we've not discussed is to take advantage of the `/` delimiters and add an 'ignore case' flag.
+> > To use these flags, include `/` delimiters before and after the expression then letters after to raise each flag (where `i` is
+> > 'ignore case'): 
+> > so `/colou?r/i` will match all case insensitive variants of `colour` and `color`.
 > {: .solution}
 {: .challenge}
 
