@@ -14,7 +14,9 @@ keypoints:
 
 Regular expressions are a concept and an implementation used in many different programming environments for sophisticated pattern matching. They are an incredibly powerful tool that can amplify your capacity to find, manage, and transform data and files. 
 
-A regular expression, often abbreviated to *regex*, is a method of using a sequence of characters to define a search to match strings, i.e. "find and replace"-like operations. In computation, a 'string' is a contiguous sequence of symbols or values. For example, a word, a date, a set of numbers (e.g., a phone number), or an alphanumeric value (e.g., an identifier). In library searches, we are most familiar with a small part of regular expressions known as the "wild card character," but there are many more features to the complete regular expressions syntax. Regular expressions will let you:
+A regular expression, often abbreviated to *regex*, is a method of using a sequence of characters to define a search to match strings, i.e. "find and replace"-like operations. In computation, a 'string' is a contiguous sequence of symbols or values. For example, a word, a date, a set of numbers (e.g., a phone number), or an alphanumeric value (e.g., an identifier). A string could be any length, ranging from empty (zero characters) to one that spans many lines of text (including line break characters). The terms 'string' and 'line' are sometimes used interchangeably, even when they are not strictly the same thing.
+
+In library searches, we are most familiar with a small part of regular expressions known as the "wild card character," but there are many more features to the complete regular expressions syntax. Regular expressions will let you:
 
 - Match on types of characters (e.g. 'upper case letters', 'digits', 'spaces', etc.).
 - Match patterns that repeat any number of times.
