@@ -12,6 +12,9 @@ carpentry: "lc"
 # Overall title for pages.
 title: "Library Carpentry: Introduction to Working with Data (Regular Expressions)"
 
+# Life cycle stage of the lesson
+# possible values: "pre-alpha", "alpha", "beta", "stable"
+life_cycle: "stable"
 
 #------------------------------------------------------------
 # Generic settings (should not need to change).
