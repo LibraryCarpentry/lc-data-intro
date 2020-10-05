@@ -17,7 +17,7 @@ keypoints:
 
 For this exercise, open a browser and go to [https://regex101.com](https://regex101.com). 
 
-Open the [swcCoC.md file](https://github.com/LibraryCarpentry/lc-data-intro/tree/gh-pages/data/swcCoC.md), copy it, and paste it into the test string box.
+Open the [swcCoC.md file](https://github.com/LibraryCarpentry/lc-data-intro/tree/gh-pages/data/swcCoC.md), copy the text, and paste that into the test string box.
 
 For a quick test to see if it's working, type the string `community` into the regular expression box. 
 
