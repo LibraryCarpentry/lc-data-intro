@@ -15,7 +15,7 @@ keypoints:
 
 # Exercise Using Regex101.com
 
-For this exercise, open a browser and go to [https://regex101.com](https://regex101.com). 
+For this exercise, open a browser and go to [https://regex101.com](https://regex101.com). Regex101.com is a free regular expression debugger with real time explanation, error detection, and highlighting.
 
 Open the [swcCoC.md file](https://github.com/LibraryCarpentry/lc-data-intro/tree/gh-pages/data/swcCoC.md), copy the text, and paste that into the test string box.
 
