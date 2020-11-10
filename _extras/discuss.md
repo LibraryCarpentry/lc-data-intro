@@ -1,7 +1,5 @@
 ---
-layout: page
 title: Discussion
-permalink: /discuss/
 ---
 There are many ways to discuss Library Carpentry lessons:
 
