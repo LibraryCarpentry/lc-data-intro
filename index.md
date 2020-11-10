@@ -1,8 +1,9 @@
 ---
 layout: lesson
 root: .
+permalink: index.html
 ---
-This Library Carpentry lesson introduces people with library- and information-related roles to working with data using regular expressions. The lesson provides background on the regular expression language and how it can be used to match and extract text and to clean data. 
+This Library Carpentry lesson introduces people with library- and information-related roles to working with data using regular expressions. The lesson provides background on the regular expression language and how it can be used to match and extract text and to clean data.
 
 > ## Teaching this lesson
 >
