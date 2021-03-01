@@ -5,6 +5,8 @@ exercises: 15
 questions:
 - How can you imagine using regular expressions in your work?
 objectives:
+- Identify potential use cases for regular expressions
+- Recognize common regex metacharacters
 - Use regular expressions in searches
 keypoints:
 - Regular expressions are a language for pattern matching.
