@@ -10,7 +10,7 @@ objectives:
 keypoints:
 - Regular expressions are useful for searching and cleaning data.
 - Test regular expressions interactively with [regex101.com](https://regex101.com/) or [RegExr.com](http://www.regexr.com/), and visualise them with [regexper.com](https://regexper.com/).
-- Test yourself with [RegexCrossword.com/](https://regexcrossword.com/) or via the quiz and exercises in this lesson.
+- Test yourself with [RegexCrossword.com](https://regexcrossword.com/) or via the quiz and exercises in this lesson.
 ---
 
 # Exercise Using Regex101.com
