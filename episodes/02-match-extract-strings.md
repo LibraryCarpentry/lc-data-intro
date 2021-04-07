@@ -10,7 +10,7 @@ objectives:
 keypoints:
 - Regular expressions are useful for searching and cleaning data.
 - Test regular expressions interactively with [regex101.com](https://regex101.com/) or [RegExr.com](http://www.regexr.com/), and visualise them with [regexper.com](https://regexper.com/).
-- Test yourself with [RegexCrossword.com/](https://regexcrossword.com/) or via the quiz and exercises in this lesson.
+- Test yourself with [RegexCrossword.com](https://regexcrossword.com/) or via the quiz and exercises in this lesson.
 ---
 
 # Exercise Using Regex101.com
@@ -125,7 +125,7 @@ Open the [swcCoC.md file](https://github.com/LibraryCarpentry/lc-data-intro/tree
 > The string after the "@" could contain any kind of word character, special character or digit in any combination and length as well as the dash. In addition, we know that it will with some characters after a period (`.`). Most common domain names have two or three characters, but many more are now possible. Find the latest list [here](http://stats.research.icann.org/dns/tld_report/). What expression would capture this? Hint: the `.` is also a regex expression, so you'll have to use the escape `\` to express a literal period. Note: for the string after the period, we did not try to match a character, since those rarely appear in the characters after the period at the end of an email address.
 > > ## Solution
 > > ~~~
-> > [\w.-]+\.[\w]
+> >   [\w.-]+\.[\w]{2,3} OR [\w.-]+\.[\w]
 > > ~~~
 > > See the previous exercise for the explanation of the expression up to the `+`
 > >
@@ -133,6 +133,8 @@ Open the [swcCoC.md file](https://github.com/LibraryCarpentry/lc-data-intro/tree
 > >
 > > `\w` matches any word (including digits and underscore)
 > >
+> > `+` matches any word character OR digit OR character OR `-` repeated 1 or more times.
+> > 
 > > `{2,3}` limits the number of word characters and/or digits to a two or three-character string.
 > >
 > > `[]` the brackets enclose the boolean string that 'OR' the digits, word characters, characters and dash.
