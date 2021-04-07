@@ -28,7 +28,7 @@ Since regular expressions defines some ASCII characters as "metacharacters" that
 
 
 > ## Regex Syntax and interoperability
->  Most regular expression implementations employ similar syntaxes and metacharacters (generally influenced by the regex syntax of a programming language called Perl), and they behave similarly for most pattern-matching in this lesson. But there are differences, often subtle, in each, so it's always a good practice to read the application or language's documentation whenever available, especially when you start using more advanced regex features. Some programs, notably many UNIX command line programs (for more on UNIX see our '[Shell Lesson](https://librarycarpentry.org/lc-shell/)'), use an older regex standard (called 'POSIX regular expressions') which is less feature-rich and uses different metacharacters than Perl-influenced implementations. For the purposes of our lesson, you don't need to worry too much about all this, but if you want to follow up on this see [this detailed syntax comparison](https://gist.github.com/CMCDragonkai/6c933f4a7d713ef712145c5eb94a1816).
+>  Most regular expression implementations employ similar syntaxes and metacharacters (generally influenced by the regex syntax of a programming language called Perl), and they behave similarly for most pattern-matching in this lesson. But there are differences, often subtle, in each, so it's always a good practice to read the application or language's documentation whenever available, especially when you start using more advanced regex features. Some programs, notably many UNIX command line programs (for more on UNIX see our '[Shell Lesson](https://librarycarpentry.org/lc-shell/)'), use an older regex standard (called 'POSIX regular expressions') which is less feature-rich and uses different metacharacters than Perl-influenced implementations. For the purposes of our lesson, you do not need to worry too much about all this, but if you want to follow up on this see [this detailed syntax comparison](https://gist.github.com/CMCDragonkai/6c933f4a7d713ef712145c5eb94a1816).
 {: .callout}
 
 A very simple use of a regular expression would be to locate the same word spelled two different ways. For example the regular expression `organi[sz]e` matches both `organise` and `organize`. But because it locates all matches for the pattern in the file, not just for that word, it would also match `reorganise`, `reorganize`, `organises`, `organizes`, `organised`, `organized`, etc.
@@ -173,7 +173,7 @@ So, what are these going to match?
 This logic is useful when you have lots of files in a directory, when those files have logical file names, and when you want to isolate a selection of files. It can be used for looking at cells in spreadsheets for certain values, or for extracting some data from a column of a spreadsheet to make new columns. There are many other contexts in which regex is useful when using a computer to search through a document, spreadsheet, or file structure. Some real-world use cases for regex are included on an [ACRL Tech Connect blog](https://acrl.ala.org/techconnect/post/fear-no-longer-regular-expressions/) .
 
 
-To embed this knowledge we won't - however - be using computers. Instead we'll use pen and paper for now. 
+To embed this knowledge we will not - however - be using computers. Instead we'll use pen and paper for now. 
 
 
 ### Exercise
