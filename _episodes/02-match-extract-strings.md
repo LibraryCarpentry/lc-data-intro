@@ -125,7 +125,7 @@ Open the [swcCoC.md file](https://github.com/LibraryCarpentry/lc-data-intro/tree
 > The string after the "@" could contain any kind of word character, special character or digit in any combination and length as well as the dash. In addition, we know that it will end with two or three characters after a period (`.`) What expression would capture this. Hint: the `.` is also a regex expression, so you'll have to use the escape `\` to express a literal period. Note: for the string after the period, I did not try to match a character, since those rarely appear in the .xx or .xxx at the end of an email address.
 > > ## Solution
 > > ~~~
-> > [\w.-]+\.[\w]{2,3}
+> >   [\w.-]+\.[\w]{2,3} OR [\w.-]+\.[\w]
 > > ~~~
 > > See the previous exercise for the explanation of the expression up to the `+`
 > >
@@ -133,6 +133,8 @@ Open the [swcCoC.md file](https://github.com/LibraryCarpentry/lc-data-intro/tree
 > >
 > > `\w` matches any word (including digits and underscore)
 > >
+> > `+` matches any word character OR digit OR character OR `-` repeated 1 or more times.
+> > 
 > > `{2,3}` limits the number of word characters and/or digits to a two or three-character string.
 > >
 > > `[]` the brackets enclose the boolean string that 'OR' the digits, word characters, characters and dash.
