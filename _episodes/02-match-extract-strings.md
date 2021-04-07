@@ -122,7 +122,7 @@ Open the [swcCoC.md file](https://github.com/LibraryCarpentry/lc-data-intro/tree
 {: .challenge}
 
 > ## Finish the expression
-> The string after the "@" could contain any kind of word character, special character or digit in any combination and length as well as the dash. In addition, we know that it will end with two or three characters after a period (`.`) What expression would capture this. Hint: the `.` is also a regex expression, so you'll have to use the escape `\` to express a literal period. Note: for the string after the period, I did not try to match a character, since those rarely appear in the .xx or .xxx at the end of an email address.
+> The string after the "@" could contain any kind of word character, special character or digit in any combination and length as well as the dash. In addition, we know that it will with some characters after a period (`.`). Most common domain names have two or three characters, but many more are now possible. Find the latest list [here](http://stats.research.icann.org/dns/tld_report/). What expression would capture this? Hint: the `.` is also a regex expression, so you'll have to use the escape `\` to express a literal period. Note: for the string after the period, we did not try to match a character, since those rarely appear in the characters after the period at the end of an email address.
 > > ## Solution
 > > ~~~
 > >   [\w.-]+\.[\w]{2,3} OR [\w.-]+\.[\w]
