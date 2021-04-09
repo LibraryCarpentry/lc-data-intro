@@ -251,9 +251,9 @@ What to consider:
 >> ## Solution
 > > This is one way to solve this challenge. You might have found others. Inside the cell you can use the below to extract the latitude and longitude into a single cell. You can then copy the formula down to the end of the column.
 >>~~~
-> > =REGEXEXTRACT(G2,"\d+\.\d+, -?\d+\.\d+")
+> > =REGEXEXTRACT(G2,"-?\d+\.\d+, -?\d+\.\d+")
 > >~~~
 > >{: .source}
-> > Latitude and longitude are in decimal degree format so here we are using `\d+` for a one or more digit match followed by a period `\.`. Note we had to escape the period using `\`. After the period we look for one or more digits  `\d+` again followed by a literal comma `,`. We then have a literal space match followed by an optional dash `-` (there are few `0.0` latitude/longitudes that are probably errors, but we'd want to retain so we can deal with them). We then repeat our `\d+\.\d+` we used for the latitude match.
+> > Latitude and longitude are in decimal degree format and can be positive or negative, so we start with an optional dash for negative values then use `\d+` for a one or more digit match followed by a period `\.`. Note we had to escape the period using `\`. After the period we look for one or more digits  `\d+` again followed by a literal comma `,`. We then have a literal space match followed by an optional dash `-` (there are few `0.0` latitude/longitudes that are probably errors, but we'd want to retain so we can deal with them). We then repeat our `\d+\.\d+` we used for the latitude match.
 > {: .solution}
 {: .challenge}
