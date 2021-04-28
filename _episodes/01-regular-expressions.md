@@ -49,6 +49,7 @@ Then there are:
 - `\d` matches any single digit.
 - `\w` matches any part of word character (equivalent to `[A-Za-z0-9]`).
 - `\s` matches any space, tab, or newline.
+- `\S` matches any non-whitespace character (equivalent to `[^\r\n\t\f\v ]`, i.e. opposite of `\s`).
 - `\` used to escape the following character when that character is a special character. So, for example, a regular expression that found `.com` would be `\.com` because `.` is a special character that matches any character.
 - `^` is an "anchor" which asserts the position at the start of the line. So what you put after the caret will only match if they are the first characters of a line. The caret is also known as a circumflex.
 - `$` is an "anchor" which asserts the position at the end of the line. So what you put before it will only match if they are the last characters of a line.
@@ -275,7 +276,7 @@ Then test each other on the answers. If you want to check your logic use [regex1
 {: .challenge}
 
 > ## Matching dates
-> How would you match the date format `dd-MM-yyyy`?
+> How would you match the date format `dd-mm-yyyy`?
 >
 > > ## Solution
 > > ~~~
@@ -286,7 +287,7 @@ Then test each other on the answers. If you want to check your logic use [regex1
 {: .challenge}
 
 > ## Matching multiple date formats
-> How would you match the date format `dd-MM-yyyy` or `dd-MM-yy` at the end of a line only?
+> How would you match the date format `dd-mm-yyyy` or `dd-mm-yy` at the end of a line only?
 >
 > > ## Solution
 > > ~~~
