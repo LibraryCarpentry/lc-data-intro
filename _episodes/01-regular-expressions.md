@@ -172,7 +172,7 @@ So, what are these going to match?
 > {: .solution}
 {: .challenge}
 
-This logic is useful when you have lots of files in a directory, when those files have logical file names, and when you want to isolate a selection of files. It can be used for looking at cells in spreadsheets for certain values, or for extracting some data from a column of a spreadsheet to make new columns. There are many other contexts in which regex is useful when using a computer to search through a document, spreadsheet, or file structure. Some real-world use cases for regex are included on an [ACRL Tech Connect blog](https://acrl.ala.org/techconnect/post/fear-no-longer-regular-expressions/) .
+This logic is useful when you have lots of files in a directory, when those files have logical file names, and when you want to isolate a selection of files. It can be used for looking at cells in spreadsheets for certain values, or for extracting some data from a column of a spreadsheet to make new columns. There are many other contexts in which regex is useful when using a computer to search through a document, spreadsheet, or file structure. 
 
 
 To embed this knowledge we will not - however - be using computers. Instead we'll use pen and paper for now. 
