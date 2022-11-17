@@ -12,7 +12,7 @@ layout: reference
 - `\s` matches any space, tab, or newline.
 - `^` asserts the position at the start of the line. So what you put after it will only match if they are the first characters of a line.
 - `$` asserts the position at the end of the line. So what you put before it will only match if they are the last characters of a line.
-- `\b` adds a word boundary. Putting this either side of a stops the regular expression matching longer variants of words.
+- `\b` adds a word boundary. Putting this either side of a word stops the regular expression matching longer variants of words.
 - `*` matches the preceding element zero or more times. For example, `ab*c` matches 'ac', 'abc', 'abbbc', etc.
 - `+` matches the preceding element one or more times. For example, `ab+c` matches 'abc', 'abbbc' but not 'ac'.
 - `?` matches when the preceding character appears zero or one time.
