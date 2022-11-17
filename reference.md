@@ -6,7 +6,7 @@ layout: reference
 
 - `[]` defines a range of characters.
 - `.` matches any character.
-- `\` is used to escape the following character when that character is a special character. So, for example, a regular expression that found '.com' would be `\.com` because `.` is a special character that matches any character.
+- `\` is used to escape the following character when that character is a special character. So, for example, a regular expression that found '.com' would be `\\.com` because `.` is a special character that matches any character.
 - `\d` matches any single digit.
 - `\w` matches any part of word character (equivalent to `[A-Za-z0-9]`).
 - `\s` matches any space, tab, or newline.
