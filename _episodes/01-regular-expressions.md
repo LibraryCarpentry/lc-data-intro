@@ -102,7 +102,7 @@ So, what are these going to match?
 > {: .solution}
 {: .challenge}
 
-> ## [Oo]rgani.e\w+$
+> ## `[Oo]rgani.e\w+$`
 > What will the regular expression `[Oo]rgani.e\w+$` match?
 >
 > > ## Solution
@@ -116,7 +116,7 @@ So, what are these going to match?
 > {: .solution}
 {: .challenge}
 
-> ## ^[Oo]rgani.e\w?\b
+> ## `^[Oo]rgani.e\w?\b`
 > What will the regular expression `^[Oo]rgani.e\w?\b` match?
 >
 > > ## Solution
@@ -130,7 +130,7 @@ So, what are these going to match?
 > {: .solution}
 {: .challenge}
 
-> ## ^[Oo]rgani.e\w?$
+> ## `^[Oo]rgani.e\w?$`
 > What will the regular expression `^[Oo]rgani.e\w?$` match?
 >
 > > ## Solution
@@ -144,7 +144,7 @@ So, what are these going to match?
 > {: .solution}
 {: .challenge}
 
-> ## \b[Oo]rgani.e\w{2}\b
+> ## `\b[Oo]rgani.e\w{2}\b`
 > What will the regular expression `\b[Oo]rgani.e\w{2}\b` match?
 >
 > > ## Solution
@@ -158,7 +158,7 @@ So, what are these going to match?
 > {: .solution}
 {: .challenge}
 
-> ## \b[Oo]rgani.e\b|\b[Oo]rgani.e\w{1}\b
+> ## `\b[Oo]rgani.e\b|\b[Oo]rgani.e\w{1}\b`
 > What will the regular expression `\b[Oo]rgani.e\b|\b[Oo]rgani.e\w{1}\b` match?
 >
 > > ## Solution
