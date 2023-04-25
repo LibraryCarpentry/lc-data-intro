@@ -7,8 +7,8 @@
 # Past Maintainers
 
 - [Angela Zoss](https://github.com/amzoss)
-- [Paul R. Pival](https://github.com/ppival)
 - [Carmi Cronje](https://github.com/ccronje)
+- [Paul R. Pival](https://github.com/ppival)
 - [Anton Angelo](https://github.com/antonangelo)
 - [James Baker](https://github.com/drjwbaker)
 - [Chris Erdmann](https://github.com/libcce)
