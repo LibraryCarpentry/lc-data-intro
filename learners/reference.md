@@ -1,5 +1,5 @@
 ---
-layout: reference
+title: 'Regular Expression Cheat Sheet'
 ---
 
 ## Regular Expression Cheat Sheet
@@ -18,3 +18,5 @@ layout: reference
 - `?` matches when the preceding character appears zero or one time.
 - `{VALUE}` matches the preceding character the number of times define by VALUE; ranges can be specified with the syntax `{VALUE,VALUE}`.
 - `|` means or.
+
+
