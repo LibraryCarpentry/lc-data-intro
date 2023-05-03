@@ -14,7 +14,7 @@ carpentry: 'lc'
 title: 'Library Carpentry: Introduction to Working with Data (Regular Expressions)'
 
 # Date the lesson was created (YYYY-MM-DD, this is empty by default)
-created: 
+created: '2018-04-12'
 
 # Comma-separated list of keywords for the lesson
 keywords: 'software, data, lesson, The Carpentries'
@@ -27,7 +27,7 @@ life_cycle: 'stable'
 license: 'CC-BY 4.0'
 
 # Link to the source repository for this lesson
-source: 'https://github.com/fishtree-attempt/lc-data-intro/'
+source: 'https://github.com/librarycarpentry/lc-data-intro'
 
 # Default branch of your lesson
 branch: 'main'
@@ -79,7 +79,6 @@ profiles:
 # sandpaper and varnish versions) should live
 
 
-url: https://preview.carpentries.org/lc-data-intro
+url: 'https://librarycarpentry.github.io/lc-data-intro'
 analytics: carpentries
 lang: en
-workbench-beta: 'true'
