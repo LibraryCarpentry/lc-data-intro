@@ -21,7 +21,7 @@ exercises: 30
 
 For this exercise, open a browser and go to [https://regex101.com](https://regex101.com). Regex101.com is a free regular expression debugger with real time explanation, error detection, and highlighting.
 
-Open the [swcCoC.md file](https://github.com/LibraryCarpentry/lc-data-intro/tree/gh-pages/data/swcCoC.md), copy the text, and paste that into the test string box.
+Open the [swcCoC.md file](https://github.com/LibraryCarpentry/lc-data-intro/tree/main/episodes/data/swcCoC.md), copy the text, and paste that into the test string box.
 
 For a quick test to see if it is working, type the string `community` into the regular expression box.
 
@@ -139,7 +139,7 @@ Find all of the words starting with Comm or comm that are plural.
 
 For this exercise, open a browser and go to [https://regex101.com](https://regex101.com).
 
-Open the [swcCoC.md file](https://github.com/LibraryCarpentry/lc-data-intro/tree/gh-pages/data/swcCoC.md), copy it, and paste it into the test string box.
+Open the [swcCoC.md file](https://github.com/LibraryCarpentry/lc-data-intro/tree/main/episodes/data/swcCoC.md), copy it, and paste it into the test string box.
 
 :::::::::::::::::::::::::::::::::::::::  challenge
 
@@ -253,8 +253,6 @@ Start with what we know, which is the most basic format of a phone number: three
 
 This expression should find three matches in the document.
 
-
-
 :::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -284,8 +282,6 @@ Start with what we know, which is the most basic format of a phone number: three
 `{4}` matches 4 digits.
 
 This expression should find one match in the document
-
-
 
 :::::::::::::::::::::::::
 
@@ -319,8 +315,6 @@ See the previous exercise for the explanation of the rest of the expression.
 
 This expression should find two matches in the document.
 
-
-
 :::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -351,8 +345,6 @@ See the previous exercise for the explanation of the rest of the expression.
 
 This expression should find one match in the document.
 
-
-
 :::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -361,7 +353,7 @@ This expression should find one match in the document.
 
 ### Using regular expressions when working with files and directories
 
-One of the reasons we stress the value of consistent and predictable directory and filenaming conventions is that working in this way enables you to use the computer to select files based on the characteristics of their file names. For example, if you have a bunch of files where the first four digits are the year and you only want to do something with files from '2017', then you can. Or if you have 'journal' somewhere in a filename when you have data about journals, you can use the computer to select just those files. Equally, using plain text formats means that you can go further and select files or elements of files based on characteristics of the data *within* those files. See Workshop Overview: [File Naming \& Formatting](https://librarycarpentry.org/lc-overview/06-file-naming-formatting/index.html) for further background.
+One of the reasons we stress the value of consistent and predictable directory and filenaming conventions is that working in this way enables you to use the computer to select files based on the characteristics of their file names. For example, if you have a bunch of files where the first four digits are the year and you only want to do something with files from '2017', then you can. Or if you have 'journal' somewhere in a filename when you have data about journals, you can use the computer to select just those files. Equally, using plain text formats means that you can go further and select files or elements of files based on characteristics of the data *within* those files. See Workshop Overview: [File Naming \& Formatting](https://librarycarpentry.org/lc-overview/06-file-naming-formatting) for further background.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -371,7 +363,7 @@ One of the reasons we stress the value of consistent and predictable directory a
 
 ### Extracting a substring in Google Sheets using regex
 
-1. Export and unzip the [2017 Public Library Survey](https://github.com/LibraryCarpentry/lc-data-intro/blob/gh-pages/files/PLS_FY17.zip) (originally from the IMLS data site) as a CSV file.
+1. Export and unzip the [2017 Public Library Survey](https://github.com/LibraryCarpentry/lc-data-intro/blob/main/episodes/files/PLS_FY17.zip) (originally from the IMLS data site) as a CSV file.
 2. Upload the CSV file to Google Sheets and open as a Google Sheet if it does not do this by default.
 3. Look in the `ADDRESS` column and notice that the values contain the latitude and longitude in parenthesis after the library address.
 4. Construct a regular expression to match and extract the latitude and longitude into a new column named 'latlong'. HINT: Look up the function `REGEXEXTRACT` in Google Sheets. That function expects the first argument to be a string (a cell in `ADDRESS` column) and a quoted regular expression in the second.
@@ -387,8 +379,6 @@ This is one way to solve this challenge. You might have found others. Inside the
 ```
 
 Latitude and longitude are in decimal degree format and can be positive or negative, so we start with an optional dash for negative values then use `\d+` for a one or more digit match followed by a period `\.`. Note we had to escape the period using `\`. After the period we look for one or more digits  `\d+` again followed by a literal comma `,`. We then have a literal space match followed by an optional dash `-` (there are few `0.0` latitude/longitudes that are probably errors, but we'd want to retain so we can deal with them). We then repeat our `\d+\.\d+` we used for the latitude match.
-
-
 
 :::::::::::::::::::::::::
 

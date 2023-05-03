@@ -18,11 +18,11 @@ To make a handout for this lesson, adapt/print from [https://librarycarpentry.or
 
 To teach regular expressions, instructors have used:
 
-- [slides](https://github.com/LibraryCarpentry/lc-data-intro/blob/gh-pages/files/regexslides.pdf) to quiz the audience on examples.
+- [slides](https://github.com/LibraryCarpentry/lc-data-intro/blob/main/episodes/files/regexslides.pdf) to quiz the audience on examples.
 - Pen and paper, to work through exercises before using a tool and to explain that there can be multiple answers to the same question.
 - Whiteboard with text examples and quized participants on regex approaches.
 - Online tools such as: [Regxr](https://regexr.com/), [regex101](https://regex101.com/), [rexegper](https://regexper.com/), [myregexp](https://myregexp.com/), or whichever service you prefer.
-- Used quiz/exercise files in [https://github.com/LibraryCarpentry/lc-data-intro/tree/gh-pages/files](https://github.com/LibraryCarpentry/lc-data-intro/tree/gh-pages/files).
+- Used quiz/exercise files in [episodes/files](https://github.com/LibraryCarpentry/lc-data-intro/tree/main/episodes/files).
 
 General guidance:
 
