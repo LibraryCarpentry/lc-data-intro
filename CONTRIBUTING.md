@@ -102,7 +102,7 @@ community listed at <https://carpentries.org/connect/> including via social
 media, slack, newsletters, and email lists. You can also [reach us by
 email][contact].
 
-[repo]: https://example.com/FIXME
+[repo]: https://github.com/LibraryCarpentry/lc-data-intro
 [repo-issues]: https://github.com/LibraryCarpentry/lc-data-intro/issues
 [contact]: mailto:team@carpentries.org
 [cp-site]: https://carpentries.org/
