@@ -3,6 +3,7 @@
 # Maintainers for Library Carpentry: Introduction to Working with Data (Regular Expressions)
 
 - [Shari Laster](https://github.com/sharilaster) (Lead)
+- [Kevin French](https://github.com/kevintfrench)
 
 # Past Maintainers
 
