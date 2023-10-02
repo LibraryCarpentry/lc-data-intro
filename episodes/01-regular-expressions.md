@@ -113,7 +113,7 @@ So, what are these going to match?
 
 :::::::::::::::::::::::::::::::::::::::  challenge
 
-## ^[Oo]rgani.e\\w\*
+## `^[Oo]rgani.e\\w\*`
 
 What will the regular expression `^[Oo]rgani.e\w*` match?
 
