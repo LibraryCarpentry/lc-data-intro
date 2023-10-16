@@ -85,7 +85,7 @@ Type the expression `[Cc]ommuni`. You get 16 matches. Why?
 
 ### Solution
 
-The word Community is present in the text with a capital `C` and with a lowercase `c` 16 times.
+The pattern `communi` with either a capital `C` or lowercase `c` is present in the text 16 times.
 
 :::::::::::::::::::::::::
 
