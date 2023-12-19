@@ -32,7 +32,7 @@
     </div>
   </div>
   <hr></header><nav class="navbar navbar-expand-xl navbar-light bg-white bottom-nav library" aria-label="Main Navigation"><div class="container-fluid nav-container">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle Navigation">
       <span class="navbar-toggler-icon"></span>
       <span class="menu-title">Menu</span>
     </button>
@@ -43,7 +43,7 @@
     </div>
     <div class="search-icon-sm">
       <!-- TODO: do not show until we have search
-      <i role="img" aria-label="search button" data-feather="search"></i>
+        <i role="img" aria-label="search button" data-feather="search"></i>
       -->
     </div>
     <div class="desktop-nav">
@@ -90,7 +90,7 @@
         <!-- START: inst/pkgdown/templates/navbar.html -->
 <div id="sidebar-col" class="col-lg-4">
   <div id="sidebar" class="sidebar">
-      <nav aria-labelledby="flush-headingEleven"><button role="button" aria-label="close menu" alt="close menu" aria-expanded="true" aria-controls="sidebar" class="collapse-toggle">
+      <nav aria-labelledby="flush-headingEleven"><button role="button" aria-label="close menu" alt="close menu" aria-expanded="true" aria-controls="sidebar" class="collapse-toggle" data-collapse="Collapse " data-episodes="Episodes ">
           <i class="search-icon" data-feather="x" role="img"></i>
         </button>
         <div class="sidebar-inner">
@@ -127,14 +127,16 @@
               <div id="flush-collapseEleven" class="accordion-collapse show collapse" aria-labelledby="flush-headingEleven" data-bs-parent="#accordionFlush11">
 
                 <div class="accordion-body">
-                  <div class="accordion accordion-flush" id="accordionFlush1">
+                  <?xml version="1.0" encoding="UTF-8"?><div class="accordion accordion-flush" id="accordionFlush1">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading1">
-        <a href="index.html">Summary and Setup</a>
-    </div><!--/div.accordion-header-->
-        
-  </div><!--/div.accordion-item-->
-</div><!--/div.accordion-flush-->
+      <a href="index.html">Summary and Setup</a>
+    </div>
+    <!--/div.accordion-header-->
+  </div>
+  <!--/div.accordion-item-->
+</div>
+<!--/div.accordion-flush-->
 
 <div class="accordion accordion-flush" id="accordionFlush2">
   <div class="accordion-item">
@@ -244,14 +246,14 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Matching &amp; Extracting Strings</h1>
-        <p> Last updated on 2023-10-20 | 
+        <p>Last updated on 2023-10-20 |
         
         <a href="https://github.com/librarycarpentry/lc-data-intro/edit/main/episodes/02-match-extract-strings.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
         
         
         
         <div class="text-end">
-          <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right"> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
+          <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
         </div>
 
         
@@ -308,11 +310,9 @@ instances are also highlighted within the text).</p>
 <div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
-  <h4 class="accordion-header" id="headingSolution1">
-  Show me the solution
-  </h4>
+  <h4 class="accordion-header" id="headingSolution1">Show me the solution</h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>The string ‘community-led’ matches the first search, but drops out of
 this result because the space does not match the character
@@ -337,11 +337,9 @@ to the expression <code>community</code>, what would they be?</p>
 <div id="accordionSolution2" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
-  <h4 class="accordion-header" id="headingSolution2">
-  Show me the solution
-  </h4>
+  <h4 class="accordion-header" id="headingSolution2">Show me the solution</h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <p>For instance, <code>\S+\b</code>. This would match one or more
 non-space characters followed by a word boundary.</p>
@@ -366,11 +364,9 @@ matches of several words. Why?</p>
 <div id="accordionSolution3" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
-  <h4 class="accordion-header" id="headingSolution3">
-  Show me the solution
-  </h4>
+  <h4 class="accordion-header" id="headingSolution3">Show me the solution</h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
 <div class="accordion-body">
 <p>Because the string ‘communi’ is present in all of those words,
 including <code>communi</code>cation and <code>communi</code>ty. Because
@@ -398,11 +394,9 @@ Why?</p>
 <div id="accordionSolution4" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution4" aria-expanded="false" aria-controls="collapseSolution4">
-  <h4 class="accordion-header" id="headingSolution4">
-  Show me the solution
-  </h4>
+  <h4 class="accordion-header" id="headingSolution4">Show me the solution</h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
 <div class="accordion-body">
 <p>The pattern <code>communi</code> with either a capital <code>C</code>
 or lowercase <code>c</code> is present in the text 16 times.</p>
@@ -426,11 +420,9 @@ Why?</p>
 <div id="accordionSolution5" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution5" aria-expanded="false" aria-controls="collapseSolution5">
-  <h4 class="accordion-header" id="headingSolution5">
-  Show me the solution
-  </h4>
+  <h4 class="accordion-header" id="headingSolution5">Show me the solution</h4>
 </button>
-<div id="collapseSolution5" class="accordion-collapse collapse" data-bs-parent="#accordionSolution5" aria-labelledby="headingSolution5">
+<div id="collapseSolution5" class="accordion-collapse collapse" aria-labelledby="headingSolution5" data-bs-parent="#accordionSolution5">
 <div class="accordion-body">
 <p>There is no matching string present at the start of a line. Look at
 the text and replace the string after the <code>^</code> with something
@@ -454,11 +446,9 @@ that matches a word at the start of a line. Does it find a match?</p>
 <div id="accordionSolution6" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution6" aria-expanded="false" aria-controls="collapseSolution6">
-  <h4 class="accordion-header" id="headingSolution6">
-  Show me the solution
-  </h4>
+  <h4 class="accordion-header" id="headingSolution6">Show me the solution</h4>
 </button>
-<div id="collapseSolution6" class="accordion-collapse collapse" data-bs-parent="#accordionSolution6" aria-labelledby="headingSolution6">
+<div id="collapseSolution6" class="accordion-collapse collapse" aria-labelledby="headingSolution6" data-bs-parent="#accordionSolution6">
 <div class="accordion-body">
 <pre><code>[Cc]omm\w+s\b</code></pre>
 <p><code>[Cc]</code> finds capital and lowercase <code>c</code></p>
@@ -493,11 +483,9 @@ addresses?</p>
 <div id="accordionSolution7" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution7" aria-expanded="false" aria-controls="collapseSolution7">
-  <h4 class="accordion-header" id="headingSolution7">
-  Show me the solution
-  </h4>
+  <h4 class="accordion-header" id="headingSolution7">Show me the solution</h4>
 </button>
-<div id="collapseSolution7" class="accordion-collapse collapse" data-bs-parent="#accordionSolution7" aria-labelledby="headingSolution7">
+<div id="collapseSolution7" class="accordion-collapse collapse" aria-labelledby="headingSolution7" data-bs-parent="#accordionSolution7">
 <div class="accordion-body">
 <p>The ‘@’ character.</p>
 </div>
@@ -523,11 +511,9 @@ expression (\w). How do you capture this in the expression?</p>
 <div id="accordionSolution8" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution8" aria-expanded="false" aria-controls="collapseSolution8">
-  <h4 class="accordion-header" id="headingSolution8">
-  Show me the solution
-  </h4>
+  <h4 class="accordion-header" id="headingSolution8">Show me the solution</h4>
 </button>
-<div id="collapseSolution8" class="accordion-collapse collapse" data-bs-parent="#accordionSolution8" aria-labelledby="headingSolution8">
+<div id="collapseSolution8" class="accordion-collapse collapse" aria-labelledby="headingSolution8" data-bs-parent="#accordionSolution8">
 <div class="accordion-body">
 <pre><code>[\w.-]+@</code></pre>
 <p><code>\w</code> matches any word character (including digits and
@@ -568,11 +554,9 @@ in the characters after the period at the end of an email address.</p>
 <div id="accordionSolution9" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution9" aria-expanded="false" aria-controls="collapseSolution9">
-  <h4 class="accordion-header" id="headingSolution9">
-  Show me the solution
-  </h4>
+  <h4 class="accordion-header" id="headingSolution9">Show me the solution</h4>
 </button>
-<div id="collapseSolution9" class="accordion-collapse collapse" data-bs-parent="#accordionSolution9" aria-labelledby="headingSolution9">
+<div id="collapseSolution9" class="accordion-collapse collapse" aria-labelledby="headingSolution9" data-bs-parent="#accordionSolution9">
 <div class="accordion-body">
 <pre><code>[\w.-]+\.\w{2,3} OR [\w.-]+\.\w+</code></pre>
 <p>See the previous exercise for the explanation of the expression up to
@@ -619,11 +603,9 @@ regex expression that matches this?</p>
 <div id="accordionSolution10" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution10" aria-expanded="false" aria-controls="collapseSolution10">
-  <h4 class="accordion-header" id="headingSolution10">
-  Show me the solution
-  </h4>
+  <h4 class="accordion-header" id="headingSolution10">Show me the solution</h4>
 </button>
-<div id="collapseSolution10" class="accordion-collapse collapse" data-bs-parent="#accordionSolution10" aria-labelledby="headingSolution10">
+<div id="collapseSolution10" class="accordion-collapse collapse" aria-labelledby="headingSolution10" data-bs-parent="#accordionSolution10">
 <div class="accordion-body">
 <pre><code>\d{3}-\d{4}</code></pre>
 <p><code>\d</code> matches digits</p>
@@ -654,11 +636,9 @@ expression to include an area code (three digits and a dash)?</p>
 <div id="accordionSolution11" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution11" aria-expanded="false" aria-controls="collapseSolution11">
-  <h4 class="accordion-header" id="headingSolution11">
-  Show me the solution
-  </h4>
+  <h4 class="accordion-header" id="headingSolution11">Show me the solution</h4>
 </button>
-<div id="collapseSolution11" class="accordion-collapse collapse" data-bs-parent="#accordionSolution11" aria-labelledby="headingSolution11">
+<div id="collapseSolution11" class="accordion-collapse collapse" aria-labelledby="headingSolution11" data-bs-parent="#accordionSolution11">
 <div class="accordion-body">
 <pre><code>\d{3}-\d{3}-\d{4}</code></pre>
 <p><code>\d</code> matches digits</p>
@@ -691,11 +671,9 @@ separated from the phone number, with or without a space.</p>
 <div id="accordionSolution12" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution12" aria-expanded="false" aria-controls="collapseSolution12">
-  <h4 class="accordion-header" id="headingSolution12">
-  Show me the solution
-  </h4>
+  <h4 class="accordion-header" id="headingSolution12">Show me the solution</h4>
 </button>
-<div id="collapseSolution12" class="accordion-collapse collapse" data-bs-parent="#accordionSolution12" aria-labelledby="headingSolution12">
+<div id="collapseSolution12" class="accordion-collapse collapse" aria-labelledby="headingSolution12" data-bs-parent="#accordionSolution12">
 <div class="accordion-body">
 <pre><code>\(\d{3}\) ?\d{3}-\d{4}</code></pre>
 <p><code>\(</code> escape character with the parenthesis as
@@ -730,11 +708,9 @@ the country code and anything appearing next.</p>
 <div id="accordionSolution13" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution13" aria-expanded="false" aria-controls="collapseSolution13">
-  <h4 class="accordion-header" id="headingSolution13">
-  Show me the solution
-  </h4>
+  <h4 class="accordion-header" id="headingSolution13">Show me the solution</h4>
 </button>
-<div id="collapseSolution13" class="accordion-collapse collapse" data-bs-parent="#accordionSolution13" aria-labelledby="headingSolution13">
+<div id="collapseSolution13" class="accordion-collapse collapse" aria-labelledby="headingSolution13" data-bs-parent="#accordionSolution13">
 <div class="accordion-body">
 <pre><code>\+\d{1,3} ?\(\d{3}\)\s?\d{3}-\d{4}</code></pre>
 <p><code>\+</code> escape character with the plus sign as
@@ -803,11 +779,9 @@ and a quoted regular expression in the second.</li>
 <div id="accordionSolution14" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution14" aria-expanded="false" aria-controls="collapseSolution14">
-  <h4 class="accordion-header" id="headingSolution14">
-  Show me the solution
-  </h4>
+  <h4 class="accordion-header" id="headingSolution14">Show me the solution</h4>
 </button>
-<div id="collapseSolution14" class="accordion-collapse collapse" data-bs-parent="#accordionSolution14" aria-labelledby="headingSolution14">
+<div id="collapseSolution14" class="accordion-collapse collapse" aria-labelledby="headingSolution14" data-bs-parent="#accordionSolution14">
 <div class="accordion-body">
 <p>This is one way to solve this challenge. You might have found others.
 Inside the cell you can use the below to extract the latitude and
@@ -834,7 +808,7 @@ match.</p>
 <i class="callout-icon" data-feather="key"></i>
 </div>
 <div class="callout-inner">
-<h3 class="callout-title">Keypoints<a class="anchor" aria-label="anchor" href="#keypoints1"></a>
+<h3 class="callout-title">Key Points<a class="anchor" aria-label="anchor" href="#keypoints1"></a>
 </h3>
 <div class="callout-content">
 <ul><li>Regular expressions are useful for searching and cleaning data.</li>
@@ -866,13 +840,13 @@ quiz and exercises in this lesson.</li>
 
       </div><!--/div.row-->
       		<footer class="row footer mx-md-3"><hr><div class="col-md-6">
-				<p>This lesson is subject to the <a href="CODE_OF_CONDUCT.html">Code of Conduct</a></p>
+        <p>This lesson is subject to the <a href="CODE_OF_CONDUCT.html">Code of Conduct</a></p>
         <p>
         
         <a href="https://github.com/librarycarpentry/lc-data-intro/edit/main/episodes/02-match-extract-strings.md" class="external-link">Edit on GitHub</a>
         
 	
-        | <a href="https://github.com/librarycarpentry/lc-data-intro/blob/main/CONTRIBUTING.md" class="external-link">Contributing</a> 
+        | <a href="https://github.com/librarycarpentry/lc-data-intro/blob/main/CONTRIBUTING.md" class="external-link">Contributing</a>
         | <a href="https://github.com/librarycarpentry/lc-data-intro/" class="external-link">Source</a></p>
 				<p><a href="https://github.com/librarycarpentry/lc-data-intro/blob/main/CITATION" class="external-link">Cite</a> | <a href="mailto:team@carpentries.org">Contact</a> | <a href="https://carpentries.org/about/" class="external-link">About</a></p>
 			</div>
@@ -880,15 +854,13 @@ quiz and exercises in this lesson.</li>
         
         <p>Materials licensed under <a href="LICENSE.html">CC-BY 4.0</a> by the authors</p>
         
-        <p><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">Template licensed under CC-BY 4.0</a> by <a href="https://carpentries.org" class="external-link">The Carpentries</a></p>
-        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.15.0" class="external-link">sandpaper (0.15.0)</a>,
-        <a href="https://github.com/carpentries/pegboard/tree/0.7.3" class="external-link">pegboard (0.7.3)</a>,
-      and <a href="https://github.com/carpentries/varnish/tree/0.4.0" class="external-link">varnish (0.4.0)</a>.</p>
+        <p>Template licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">CC-BY 4.0</a> by <a href="https://carpentries.org/" class="external-link">The Carpentries</a></p>
+        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.16.1" class="external-link">sandpaper (0.16.1)</a>, <a href="https://github.com/carpentries/pegboard/tree/0.7.3" class="external-link">pegboard (0.7.3)</a>, and <a href="https://github.com/carpentries/varnish/tree/1.0.1" class="external-link">varnish (1.0.1)</a></p>
 			</div>
 		</footer></div> <!-- / div.container -->
 	<div id="to-top">
 		<a href="#top">
-			<i class="search-icon" data-feather="arrow-up" role="img" aria-label="Back to top"></i><br><span class="d-none d-sm-none d-md-none d-lg-none d-xl-block">Back</span> To Top
+      <i class="search-icon" data-feather="arrow-up" role="img" aria-label="Back To Top"></i><br><!-- <span class="d-none d-sm-none d-md-none d-lg-none d-xl-block">Back</span> To Top --><span class="d-none d-sm-none d-md-none d-lg-none d-xl-block">Back</span> To Top
 		</a>
 	</div>
   <script type="application/ld+json">
@@ -905,7 +877,7 @@ quiz and exercises in this lesson.</li>
   "identifier": "https://librarycarpentry.github.io/lc-data-intro/02-match-extract-strings.html",
   "dateCreated": "2018-04-12",
   "dateModified": "2023-10-20",
-  "datePublished": "2023-12-12"
+  "datePublished": "2023-12-19"
 }
 
   </script><script>
