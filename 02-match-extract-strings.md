@@ -177,7 +177,7 @@ The string before the "@" could contain any kind of word character, special char
 
 `-` matches a dash
 
-`[]` the brackets enclose the boolean string that 'OR' the word characters, dot, and dash.
+`[]` the brackets enclose the Boolean string that 'OR' the word characters, dot, and dash.
 
 `+` matches any word character OR digit OR character OR `-` repeated 1 or more times
 
@@ -209,7 +209,7 @@ See the previous exercise for the explanation of the expression up to the `+`
 
 `{2,3}` limits the number of word characters and/or digits to a two or three-character string.
 
-`[]` the brackets enclose the boolean string that 'OR' the digits, word characters, characters and dash.
+`[]` the brackets enclose the Boolean string that 'OR' the digits, word characters, characters and dash.
 
 `+` matches any word character OR digit OR character OR `-` repeated 1 or more times
 
@@ -387,7 +387,7 @@ Latitude and longitude are in decimal degree format and can be positive or negat
 :::::::::::::::::::::::::::::::::::::::: keypoints
 
 - Regular expressions are useful for searching and cleaning data.
-- Test regular expressions interactively with [regex101.com](https://regex101.com/) or [RegExr.com](https://www.regexr.com/), and visualise them with [regexper.com](https://regexper.com/).
+- Test regular expressions interactively with [regex101.com](https://regex101.com/) or [RegExr.com](https://www.regexr.com/), and visualize them with [regexper.com](https://regexper.com/).
 - Test yourself with [RegexCrossword.com](https://regexcrossword.com/) or via the quiz and exercises in this lesson.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
