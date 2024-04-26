@@ -189,7 +189,7 @@ The string before the "@" could contain any kind of word character, special char
 
 ### Finish the expression
 
-The string after the "@" could contain any kind of word character, special character or digit in any combination and length as well as the dash. In addition, we know that it will have some characters after a period (`.`). Most common domain names have two or three characters, but many more are now possible. Find the latest list [here](https://data.iana.org/TLD/tlds-alpha-by-domain.txt). What expression would capture this? Hint: the `.` is also a metacharacter, so you will have to use the escape `\` to express a literal period. Note: for the string after the period, we did not try to match a `-` character, since those rarely appear in the characters after the period at the end of an email address.
+The string after the "@" could contain any kind of word character, special character or digit in any combination and length as well as the dash. In addition, we know that it will have some characters after a period (`.`). Most common domain names have two or three characters, but many more are now possible ([access the latest list](https://data.iana.org/TLD/tlds-alpha-by-domain.txt)). What expression would capture this? Hint: the `.` is also a metacharacter, so you will have to use the escape `\` to express a literal period. Note: for the string after the period, we did not try to match a `-` character, since those rarely appear in the characters after the period at the end of an email address.
 
 :::::::::::::::  solution
 
