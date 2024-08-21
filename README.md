@@ -23,11 +23,11 @@ Lesson Maintainers communication is via the [team site](https://github.com/orgs/
 ## License
 
 All Software, Data, and Library Carpentry instructional material is made available under the [Creative Commons Attribution
-license](https://github.com/LibraryCarpentry/lc-data-intro/blob/gh-pages/LICENSE.md).
+license](https://github.com/LibraryCarpentry/lc-data-intro/blob/main/LICENSE.md).
 
 ## Contributing
 
-There are many ways to discuss and contribute to Library Carpentry lessons. Visit the lesson [discussion page](https://librarycarpentry.org/lc-data-intro/discuss/index.html) to learn more. Also see [Contributing](https://github.com/LibraryCarpentry/lc-data-intro/blob/gh-pages/CONTRIBUTING.md).
+There are many ways to discuss and contribute to Library Carpentry lessons. Visit the lesson [discussion page](https://librarycarpentry.org/lc-data-intro/discuss/index.html) to learn more. Also see [Contributing](https://github.com/LibraryCarpentry/lc-data-intro/blob/main/CONTRIBUTING.md).
 
 ## Code of Conduct
 
