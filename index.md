@@ -7,9 +7,9 @@ This Library Carpentry lesson introduces people with library- and information-re
 
 :::::::::::::::::::::::::::::::::::::::::  callout
 
-## Teaching this lesson
+## Getting Started
 
-This lesson is taught either as a combination with the episodes [Jargon Busting](https://librarycarpentry.org/lc-overview/03-jargon-busting) and [A Computational Approach](https://librarycarpentry.org/lc-overview/04-computational-approach) in [Workshop Overview](https://librarycarpentry.org/lc-overview/) (with the possibility of adding optional episodes from Workshop Overview), as part of a self-organised mix-and-match training, or separately as an individual lesson.
+Library Carpentry’s teaching is hands-on, so participants are encouraged to use their own computers to insure the proper setup of tools for an efficient workflow. These lessons assume no prior knowledge of the skills or tools. 
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
