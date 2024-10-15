@@ -31,7 +31,7 @@ If you look in the box on the right of the screen, you see that the expression m
 
 ### Taking spaces into consideration
 
-Type `community `. You get three matches. Why not six?
+Type `community ` (note the trailing space). You get three matches. Why not six?
 
 :::::::::::::::  solution
 
