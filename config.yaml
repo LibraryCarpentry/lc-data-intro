@@ -11,7 +11,7 @@
 carpentry: 'lc'
 
 # Overall title for pages.
-title: 'Library Carpentry: Introduction to Working with Data (Regular Expressions)'
+title: 'Library Carpentry: Introduction to Regular Expressions'
 
 # Date the lesson was created (YYYY-MM-DD, this is empty by default)
 created: '2018-04-12'
