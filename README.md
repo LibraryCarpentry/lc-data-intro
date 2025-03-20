@@ -2,11 +2,11 @@
 
 # Maintainers for Library Carpentry: Introduction to Regular Expressions
 
-- [Shari Laster](https://github.com/sharilaster) 
 - [Kevin French](https://github.com/kevintfrench)
 
 # Past Maintainers
 
+- [Shari Laster](https://github.com/sharilaster)
 - [Angela Zoss](https://github.com/amzoss)
 - [Carmi Cronje](https://github.com/ccronje)
 - [Paul R. Pival](https://github.com/ppival)
