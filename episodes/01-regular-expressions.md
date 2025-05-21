@@ -94,11 +94,65 @@ Organike
 Or, any other string that starts a line, begins with a letter `o` in lower or capital case, proceeds with `rgani`, has any character in the 7th position, and ends with the letter `e`.
 [See solution visualised on Regexper.com](https://regexper.com/#%5E%5BOo%5Drgani.e%5Cb)
 
-
-
 :::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
+
+## Getting help with regular expressions
+
+Although powerful, the mix of special and regular characters in a regular expression can make them difficult to interpret and to troubleshoot when we get them wrong. 
+The [Regexper](https://regexper.com) tool linked in the solution above visualises and annotates a regular expression provided by the user, which can be very helpful as you learn to read and write them.
+Other online tools such as [Regex101](https://regex101.com/) provide a more powerful -- and more complex! -- interface that can help you develop a regular expression to fit your use case.
+
+If you get stuck when writing a regular expression, it is helpful to prepare a collection of "test strings": words, sentences, or other blocks of text that represent the things you do _and do not_ want to match. 
+To test for matches you do not want, think about words/sentences/text that is similar to the matches you _do_ want to make, and include those in your test strings.
+For example, you might include "disorganised" in a set of test strings for the regular expression in the exercise above, if you only wanted to match whole words.
+
+Paste your test strings into a new file in your favourite text editor or the _Test String_ box on Regex101 then paste or compose your regular expression to see which of these test strings are matched.
+
+As well as trying to figure things out on your own, you might also get help by talking to somebody! 
+If you have a colleague or friend with more expertise in regular expressions than you have, show them the problem you are having and ask them for help.
+Sometimes, the act of articulating your question can help you to identify what is going wrong.
+This is known as ["rubber duck debugging"](https://en.wikipedia.org/wiki/Rubber_duck_debugging) among programmers.
+
+### Generative AI
+
+::::::::::::::::::::::::::::: instructor
+
+### Choose how to teach this section
+The section on generative AI is intended to be concise but Instructors may choose to devote more time to the topic in a workshop.
+Depending on your own level of experience and comfort with talking about and using these tools, you could choose to do any of the following:
+
+* Explain how large language models work and are trained, and/or the difference between generative AI, other forms of AI that currently exist, and the limits of what LLMs can do (e.g., they can't "reason").
+* Demonstrate how you recommend that learners use generative AI.
+* Discuss the ethical concerns listed below, as well as others that you are aware of, to help learners make an informed choice about whether or not to use generative AI tools.
+
+This is a fast-moving technology. 
+If you are preparing to teach this section and you feel it has become outdated, please open an issue on the lesson repository to let the Maintainers know and/or a pull request to suggest updates and improvements.
+
+::::::::::::::::::::::::::::::::::::::::
+
+It is increasingly common for people to use _generative AI_ chatbots such as ChatGPT to get help with regular expressions. 
+You will probably receive some useful guidance by presenting your regular expression to the chatbot and asking why it matches (or does not match) a given string.
+However, the way this help is provided by the chatbot is different from that provided by a human. 
+Generative AI chatbots, which are based on an advanced statistical model, respond by generating the _most likely_ sequence of text that would follow the prompt they are given.
+
+While responses from generative AI tools can often be helpful, they are not always reliable. 
+These tools sometimes generate plausible but incorrect or misleading information, so (just as with an answer found on the internet or shared with you by somebody else) it is essential to verify their accuracy.
+You need the knowledge and skills to be able to understand these responses, to judge whether or not they are accurate, and to fix any errors in the regular expression the chatbot offers you.
+
+In addition to asking for help, generative AI tools can be used to generate regular expressions from scratch (especially when given clear and precise instructions and examples); extend, improve and reorganise existing regular expressions; and more.
+However, there are drawbacks that you should be aware of.
+
+The models used by these tools have been "trained" on very large volumes of data, much of it taken from the internet, and the responses they produce reflect that training data, and may recapitulate its inaccuracies or biases.
+The environmental costs (energy and water use) of LLMs are a lot higher than other technologies, both during development (known as training) and when an individual user uses one (also called inference). For more information see the [AI Environmental Impact Primer](https://huggingface.co/blog/sasha/ai-environment-primer) developed by researchers at HuggingFace, an AI hosting platform. 
+Concerns also exist about the way the data for this training was obtained, with questions raised about whether the people developing the LLMs had permission to use it.
+Other ethical concerns have also been raised, such as reports that workers were exploited during the training process.
+
+**We recommend that you avoid getting help from generative AI during the workshop** because the foundational knowledge and skills you will learn in this lesson by writing and fixing your own regular expressions are essential to be able to evaluate the correctness and safety of any answers you receive from other people or a generative AI chatbot. 
+If you choose to use these tools in the future, the expertise you gain from learning and practising these fundamentals on your own will help you use them more effectively.
+
+### More special characters
 
 Other useful special characters are:
 
