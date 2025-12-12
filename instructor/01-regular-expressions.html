@@ -208,6 +208,7 @@
     <div id="flush-collapsecurrent" class="accordion-collapse collapse show" aria-labelledby="flush-headingcurrent" data-bs-parent="#accordionFlushcurrent">
       <div class="accordion-body">
         <ul><li><a href="#regular-expressions">Regular expressions</a></li>
+<li><a href="#getting-help-with-regular-expressions">Getting help with regular expressions</a></li>
         </ul></div><!--/div.accordion-body-->
     </div><!--/div.accordion-collapse-->
 
@@ -299,7 +300,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Regular Expressions</h1>
-        <p>Last updated on 2024-09-30 |
+        <p>Last updated on 2025-12-12 |
 
         <a href="https://github.com/librarycarpentry/lc-data-intro/edit/main/episodes/01-regular-expressions.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -490,7 +491,7 @@ match?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <pre><code><span><span class="va">organise</span></span>
 <span><span class="va">organize</span></span>
@@ -507,6 +508,110 @@ visualised on Regexper.com</a></p>
 </div>
 </div>
 </div>
+</div>
+</section><section><h2 class="section-heading" id="getting-help-with-regular-expressions">Getting help with regular expressions<a class="anchor" aria-label="anchor" href="#getting-help-with-regular-expressions"></a></h2>
+<hr class="half-width"><p>Although powerful, the mix of special and regular characters in a
+regular expression can make them difficult to interpret and to
+troubleshoot when we get them wrong. The <a href="https://regexper.com" class="external-link">Regexper</a> tool linked in the solution
+above visualises and annotates a regular expression provided by the
+user, which can be very helpful as you learn to read and write them.
+Other online tools such as <a href="https://regex101.com/" class="external-link">Regex101</a>
+provide a more powerful – and more complex! – interface that can help
+you develop a regular expression to fit your use case.</p>
+<p>If you get stuck when writing a regular expression, it is helpful to
+prepare a collection of “test strings”: words, sentences, or other
+blocks of text that represent the things you do <em>and do not</em> want
+to match. To test for matches you do not want, think about
+words/sentences/text that is similar to the matches you <em>do</em> want
+to make, and include those in your test strings. For example, you might
+include “disorganised” in a set of test strings for the regular
+expression in the exercise above, if you only wanted to match whole
+words.</p>
+<p>Paste your test strings into a new file in your favourite text editor
+or the <em>Test String</em> box on Regex101 then paste or compose your
+regular expression to see which of these test strings are matched.</p>
+<p>As well as trying to figure things out on your own, you might also
+get help by talking to somebody! If you have a colleague or friend with
+more expertise in regular expressions than you have, show them the
+problem you are having and ask them for help. Sometimes, the act of
+articulating your question can help you to identify what is going wrong.
+This is known as <a href="https://en.wikipedia.org/wiki/Rubber_duck_debugging" class="external-link">“rubber duck
+debugging”</a> among programmers.</p>
+<div class="section level3">
+<h3 id="generative-ai">Generative AI<a class="anchor" aria-label="anchor" href="#generative-ai"></a></h3>
+<div id="accordionInstructor1" class="accordion instructor-note accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
+  <h3 class="accordion-header" id="headingInstructor1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Choose how to teach this section </h3>
+</button>
+<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
+<div class="accordion-body">
+<p>The section on generative AI is intended to be concise but
+Instructors may choose to devote more time to the topic in a workshop.
+Depending on your own level of experience and comfort with talking about
+and using these tools, you could choose to do any of the following:</p>
+<ul><li>Explain how large language models work and are trained, and/or the
+difference between generative AI, other forms of AI that currently
+exist, and the limits of what LLMs can do (e.g., they can’t
+“reason”).</li>
+<li>Demonstrate how you recommend that learners use generative AI.</li>
+<li>Discuss the ethical concerns listed below, as well as others that
+you are aware of, to help learners make an informed choice about whether
+or not to use generative AI tools.</li>
+</ul><p>This is a fast-moving technology. If you are preparing to teach this
+section and you feel it has become outdated, please open an issue on the
+lesson repository to let the Maintainers know and/or a pull request to
+suggest updates and improvements.</p>
+</div>
+</div>
+</div>
+</div>
+<p>It is increasingly common for people to use <em>generative AI</em>
+chatbots such as ChatGPT to get help with regular expressions. You will
+probably receive some useful guidance by presenting your regular
+expression to the chatbot and asking why it matches (or does not match)
+a given string. However, the way this help is provided by the chatbot is
+different from that provided by a human. Generative AI chatbots, which
+are based on an advanced statistical model, respond by generating the
+<em>most likely</em> sequence of text that would follow the prompt they
+are given.</p>
+<p>While responses from generative AI tools can often be helpful, they
+are not always reliable. These tools sometimes generate plausible but
+incorrect or misleading information, so (just as with an answer found on
+the internet or shared with you by somebody else) it is essential to
+verify their accuracy. You need the knowledge and skills to be able to
+understand these responses, to judge whether or not they are accurate,
+and to fix any errors in the regular expression the chatbot offers
+you.</p>
+<p>In addition to asking for help, generative AI tools can be used to
+generate regular expressions from scratch (especially when given clear
+and precise instructions and examples); extend, improve and reorganise
+existing regular expressions; and more. However, there are drawbacks
+that you should be aware of.</p>
+<p>The models used by these tools have been “trained” on very large
+volumes of data, much of it taken from the internet, and the responses
+they produce reflect that training data, and may recapitulate its
+inaccuracies or biases. The environmental costs (energy and water use)
+of LLMs are a lot higher than other technologies, both during
+development (known as training) and when an individual user uses one
+(also called inference). For more information see the <a href="https://huggingface.co/blog/sasha/ai-environment-primer" class="external-link">AI
+Environmental Impact Primer</a> developed by researchers at HuggingFace,
+an AI hosting platform. Concerns also exist about the way the data for
+this training was obtained, with questions raised about whether the
+people developing the LLMs had permission to use it. Other ethical
+concerns have also been raised, such as reports that workers were
+exploited during the training process.</p>
+<p><strong>We recommend that you avoid getting help from generative AI
+during the workshop</strong> because the foundational knowledge and
+skills you will learn in this lesson by writing and fixing your own
+regular expressions are essential to be able to evaluate the correctness
+and safety of any answers you receive from other people or a generative
+AI chatbot. If you choose to use these tools in the future, the
+expertise you gain from learning and practising these fundamentals on
+your own will help you use them more effectively.</p>
+</div>
+<div class="section level3">
+<h3 id="more-special-characters">More special characters<a class="anchor" aria-label="anchor" href="#more-special-characters"></a></h3>
 <p>Other useful special characters are:</p>
 <ul><li>
 <code>*</code> matches the preceding element zero or more times. For
@@ -546,7 +651,7 @@ match?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <pre><code><span><span class="va">organise</span></span>
 <span><span class="va">Organize</span></span>
@@ -579,7 +684,7 @@ match?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
   <h4 class="accordion-header" id="headingSolution3"> Show me the solution </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
 <div class="accordion-body">
 <pre><code><span><span class="va">organiser</span></span>
 <span><span class="va">Organized</span></span>
@@ -612,7 +717,7 @@ match?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution4" aria-expanded="false" aria-controls="collapseSolution4">
   <h4 class="accordion-header" id="headingSolution4"> Show me the solution </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
 <div class="accordion-body">
 <pre><code><span><span class="va">organise</span></span>
 <span><span class="va">Organized</span></span>
@@ -645,7 +750,7 @@ match?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution5" aria-expanded="false" aria-controls="collapseSolution5">
   <h4 class="accordion-header" id="headingSolution5"> Show me the solution </h4>
 </button>
-<div id="collapseSolution5" class="accordion-collapse collapse" aria-labelledby="headingSolution5" data-bs-parent="#accordionSolution5">
+<div id="collapseSolution5" class="accordion-collapse collapse" data-bs-parent="#accordionSolution5" aria-labelledby="headingSolution5">
 <div class="accordion-body">
 <pre><code><span><span class="va">organise</span></span>
 <span><span class="va">Organized</span></span>
@@ -678,7 +783,7 @@ match?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution6" aria-expanded="false" aria-controls="collapseSolution6">
   <h4 class="accordion-header" id="headingSolution6"> Show me the solution </h4>
 </button>
-<div id="collapseSolution6" class="accordion-collapse collapse" aria-labelledby="headingSolution6" data-bs-parent="#accordionSolution6">
+<div id="collapseSolution6" class="accordion-collapse collapse" data-bs-parent="#accordionSolution6" aria-labelledby="headingSolution6">
 <div class="accordion-body">
 <pre><code><span><span class="va">organisers</span></span>
 <span><span class="va">Organizers</span></span>
@@ -711,7 +816,7 @@ from the range <code>[A-Za-z0-9]</code>.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution7" aria-expanded="false" aria-controls="collapseSolution7">
   <h4 class="accordion-header" id="headingSolution7"> Show me the solution </h4>
 </button>
-<div id="collapseSolution7" class="accordion-collapse collapse" aria-labelledby="headingSolution7" data-bs-parent="#accordionSolution7">
+<div id="collapseSolution7" class="accordion-collapse collapse" data-bs-parent="#accordionSolution7" aria-labelledby="headingSolution7">
 <div class="accordion-body">
 <pre><code><span><span class="va">organise</span></span>
 <span><span class="va">Organi1e</span></span>
@@ -770,7 +875,7 @@ the workflow of a regular expression.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution8" aria-expanded="false" aria-controls="collapseSolution8">
   <h4 class="accordion-header" id="headingSolution8"> Show me the solution </h4>
 </button>
-<div id="collapseSolution8" class="accordion-collapse collapse" aria-labelledby="headingSolution8" data-bs-parent="#accordionSolution8">
+<div id="collapseSolution8" class="accordion-collapse collapse" data-bs-parent="#accordionSolution8" aria-labelledby="headingSolution8">
 <div class="accordion-body">
 <pre><code><span><span class="va">French</span></span>
 <span><span class="va">France</span></span>
@@ -804,7 +909,7 @@ match?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution9" aria-expanded="false" aria-controls="collapseSolution9">
   <h4 class="accordion-header" id="headingSolution9"> Show me the solution </h4>
 </button>
-<div id="collapseSolution9" class="accordion-collapse collapse" aria-labelledby="headingSolution9" data-bs-parent="#accordionSolution9">
+<div id="collapseSolution9" class="accordion-collapse collapse" data-bs-parent="#accordionSolution9" aria-labelledby="headingSolution9">
 <div class="accordion-body">
 <pre><code><span><span class="va">French</span></span>
 <span><span class="va">France</span></span>
@@ -836,7 +941,7 @@ line. It will also find strings with other characters coming
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution10" aria-expanded="false" aria-controls="collapseSolution10">
   <h4 class="accordion-header" id="headingSolution10"> Show me the solution </h4>
 </button>
-<div id="collapseSolution10" class="accordion-collapse collapse" aria-labelledby="headingSolution10" data-bs-parent="#accordionSolution10">
+<div id="collapseSolution10" class="accordion-collapse collapse" data-bs-parent="#accordionSolution10" aria-labelledby="headingSolution10">
 <div class="accordion-body">
 <pre><code>^France|^French</code></pre>
 <p>This will also find words where there were characters after
@@ -863,7 +968,7 @@ line. It will also find strings with other characters coming
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution11" aria-expanded="false" aria-controls="collapseSolution11">
   <h4 class="accordion-header" id="headingSolution11"> Solutions </h4>
 </button>
-<div id="collapseSolution11" class="accordion-collapse collapse" aria-labelledby="headingSolution11" data-bs-parent="#accordionSolution11">
+<div id="collapseSolution11" class="accordion-collapse collapse" data-bs-parent="#accordionSolution11" aria-labelledby="headingSolution11">
 <div class="accordion-body">
 <pre><code>\b[Cc]olou?r\b|\bCOLOU?R\b
 /colou?r/i</code></pre>
@@ -903,7 +1008,7 @@ two spaces between <code>head</code> and <code>rest</code>?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution12" aria-expanded="false" aria-controls="collapseSolution12">
   <h4 class="accordion-header" id="headingSolution12"> Show me the solution </h4>
 </button>
-<div id="collapseSolution12" class="accordion-collapse collapse" aria-labelledby="headingSolution12" data-bs-parent="#accordionSolution12">
+<div id="collapseSolution12" class="accordion-collapse collapse" data-bs-parent="#accordionSolution12" aria-labelledby="headingSolution12">
 <div class="accordion-body">
 <pre><code>\bhead ?rest\b</code></pre>
 <p>Note that although <code>\bhead\s?rest\b</code> does work, it will
@@ -932,7 +1037,7 @@ at least one zero?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution13" aria-expanded="false" aria-controls="collapseSolution13">
   <h4 class="accordion-header" id="headingSolution13"> Show me the solution </h4>
 </button>
-<div id="collapseSolution13" class="accordion-collapse collapse" aria-labelledby="headingSolution13" data-bs-parent="#accordionSolution13">
+<div id="collapseSolution13" class="accordion-collapse collapse" data-bs-parent="#accordionSolution13" aria-labelledby="headingSolution13">
 <div class="accordion-body">
 <pre><code>0+[A-Za-z]{4}\b</code></pre>
 </div>
@@ -956,7 +1061,7 @@ at least one zero?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution14" aria-expanded="false" aria-controls="collapseSolution14">
   <h4 class="accordion-header" id="headingSolution14"> Show me the solution </h4>
 </button>
-<div id="collapseSolution14" class="accordion-collapse collapse" aria-labelledby="headingSolution14" data-bs-parent="#accordionSolution14">
+<div id="collapseSolution14" class="accordion-collapse collapse" data-bs-parent="#accordionSolution14" aria-labelledby="headingSolution14">
 <div class="accordion-body">
 <pre><code>\d{4}</code></pre>
 <p>Note: this will also match four-digit strings within longer strings
@@ -982,7 +1087,7 @@ of numbers and letters.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution15" aria-expanded="false" aria-controls="collapseSolution15">
   <h4 class="accordion-header" id="headingSolution15"> Show me the solution </h4>
 </button>
-<div id="collapseSolution15" class="accordion-collapse collapse" aria-labelledby="headingSolution15" data-bs-parent="#accordionSolution15">
+<div id="collapseSolution15" class="accordion-collapse collapse" data-bs-parent="#accordionSolution15" aria-labelledby="headingSolution15">
 <div class="accordion-body">
 <pre><code>\b\d{2}-\d{2}-\d{4}\b</code></pre>
 <p>Depending on your data, you may choose to remove the word
@@ -1009,7 +1114,7 @@ bounding.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution16" aria-expanded="false" aria-controls="collapseSolution16">
   <h4 class="accordion-header" id="headingSolution16"> Show me the solution </h4>
 </button>
-<div id="collapseSolution16" class="accordion-collapse collapse" aria-labelledby="headingSolution16" data-bs-parent="#accordionSolution16">
+<div id="collapseSolution16" class="accordion-collapse collapse" data-bs-parent="#accordionSolution16" aria-labelledby="headingSolution16">
 <div class="accordion-body">
 <pre><code>\d{2}-\d{2}-\d{2,4}$</code></pre>
 <p>Note this will also find strings such as <code>31-01-198</code> at
@@ -1039,7 +1144,7 @@ choose to add word bounding at the start of the expression.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution17" aria-expanded="false" aria-controls="collapseSolution17">
   <h4 class="accordion-header" id="headingSolution17"> Show me the solution </h4>
 </button>
-<div id="collapseSolution17" class="accordion-collapse collapse" aria-labelledby="headingSolution17" data-bs-parent="#accordionSolution17">
+<div id="collapseSolution17" class="accordion-collapse collapse" data-bs-parent="#accordionSolution17" aria-labelledby="headingSolution17">
 <div class="accordion-body">
 <pre><code>.* ?: .*, \d{4}</code></pre>
 <p>Without word boundaries you will find that this matches any text you
@@ -1123,8 +1228,8 @@ data.</p>
   "url": "https://librarycarpentry.github.io/lc-data-intro/instructor/01-regular-expressions.html",
   "identifier": "https://librarycarpentry.github.io/lc-data-intro/instructor/01-regular-expressions.html",
   "dateCreated": "2018-04-12",
-  "dateModified": "2024-09-30",
-  "datePublished": "2025-12-09"
+  "dateModified": "2025-12-12",
+  "datePublished": "2025-12-12"
 }
 
   </script><script>
