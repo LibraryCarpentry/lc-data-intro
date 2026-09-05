@@ -98,7 +98,7 @@ In real life, you *should* only come across the case insensitive variations `col
 
 ## Answer
 
-`0+[a-z]{4}\b`
+`0+[A-Za-z]{4}\b`
 
 :::::::::::::::::::::::::
 
@@ -154,7 +154,7 @@ In real life, you *should* only come across the case insensitive variations `col
 
 ## Answer
 
-`.* : .*, \d{4}` You will find that this matches any text you put before `British` or `Manchester`. In this case, this regular expression does a good job on the first look up and may be need to be refined on a second depending on your real world application.
+`.* ?: .*, \d{4}` You will find that this matches any text you put before `British` or `Manchester`. In this case, this regular expression does a good job on the first look up and may be need to be refined on a second depending on your real world application.
 
 :::::::::::::::::::::::::
 
